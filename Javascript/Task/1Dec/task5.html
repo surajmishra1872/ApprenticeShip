@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 400px;
+            height: 40px;
+            font-size: 25px;
+            margin: 50px auto;
+        }
+        button{
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin-top:20px ;
+            padding-top:10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <input type="text"  id="txt"><br/>
+    <button onclick="demo()">show result</button>
+    <div id="dv"></div>
+</center>
+<script>
+    function demo()
+    {
+    var a=parseInt(document.getElementById("txt").value);
+ 
+    var b=document.getElementById("dv");
+    b.innerText=(a*a);
+    }
+</script>
+</body>
+</html>

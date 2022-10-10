@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            border: 2px solid purple;
+        }
+        select{
+            width:150px;
+            height: 50px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <input type="text" id="txt1" ><br />
+    <button onclick="demo()">Click Here</button>
+    <script>
+        function demo() {
+            var a = document.getElementById("txt1");
+            var arr = (a.value).split(" ");
+            var name="";
+            for(var i=0;i<=arr.length-2;i++)
+            {
+            name+=arr[i].charAt(0)+".";
+            }
+            name+=arr[arr.length-1];
+
+            
+            document.getElementById("p1").innerText=name;
+           
+        }
+    </script>
+</body>
+</html>

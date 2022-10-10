@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input{
+        width: 400px;
+        height: 40px;
+        font-size: 25px;
+        margin: 50px auto;
+    }
+    button{
+        background-color: green;
+        color: white;
+        font-size: 25px;
+        padding-top: 10px;
+        
+    }
+    div{
+        width: 400px;
+        height: 100px;
+        border: 2px solid green;
+        margin-top:20px ;
+        font-size: 20px;
+        line-height: 40px;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <input type="text" id="txt1" placeholder="Input here to check"/><br/>
+    <button onclick="demo()">Check</button>
+    <div id="dv"></div></center>
+    <script>
+        function demo()
+        {
+            var a=document.getElementById("txt1").value
+            var b=document.getElementById("dv")
+            var ab=0;
+            var arr=["RAM","SHYAM","SITA","MITA","SURAJ","KUMAR","MISHRA","SHARMA","ROHIT","VIRAT"]
+            for(var i=0;i<=arr.length-1;i++)
+            {
+                if(a==arr[i])
+                {
+                    ab++
+                }
+            }
+            if(ab>0)
+            {
+                b.innerText="Name  is Presented."
+            }
+            else
+            {
+                b.innerText="Name is Not Present."
+            }
+        }
+    </script>
+</body>
+</html>

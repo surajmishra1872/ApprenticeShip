@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <img src="gg1.jpg" id="img1" alt="photo1" height="350px" style="margin-left: 30px;">
+    <img src="Shiva.jpg" id="img2" alt="photo2" height="350px"style="margin-left: 30px;">
+    <img src="OIP.jpg" id="img3" alt="photo3" height="350px"style="margin-left: 30px;">
+    <img src="s2.jpg" id="img4" alt="phot4" height="350px"style="margin-left: 30px;">
+    <img src="dd.jpg" id="img5" alt="photo5" height="350px"style="margin-left: 30px;">
+    <br><br>
+    <img src="v.jpg" id="img6" alt="photo6" height="350px"style="margin-left: 30px;">
+    <img src="dd2.jpg" id="img7" alt="photo7" height="350px"style="margin-left: 30px;">
+    <img src="v2.jpg" id="img8" alt="phot8" height="350px"style="margin-left: 30px;">
+    <img src="kr.jpg" id="img9" alt="phot09" height="350px"style="margin-left: 30px;">
+    <img src="k.jpg" id="img10" alt="photo10" height="350px"style="margin-left: 30px;">
+</center>
+<audio id="myAudio" controls autoplay>
+    <source src="aarti.mp3" type="audio/mpeg">
+  </audio>
+    <script>
+        function slider()
+        {
+            var im1 = document.getElementById("img1")
+            var im2 = document.getElementById("img2")
+            var im3 = document.getElementById("img3")
+            var im4 = document.getElementById("img4")
+            var im5 = document.getElementById("img5")
+            var im6 = document.getElementById("img6")
+            var im7 = document.getElementById("img7")
+            var im8 = document.getElementById("img8")
+            var im9 = document.getElementById("img9")
+            var im10 = document.getElementById("img10")
+            var path1 = im1.src
+            var path2 = im2.src
+            var path3 = im3.src
+            var path4 = im4.src
+            var path5 = im5.src
+            var path6 = im6.src
+            var path7 = im7.src
+            var path8 = im8.src
+            var path9 = im9.src
+            var path10 = im10.src
+
+            im1.src=path4
+            im2.src=path1
+            im4.src=path3
+            im3.src=path2
+            im5.src=path7
+            im8.src=path10
+            im6.src=path7
+            im9.src=path6
+            im7.src=path8
+            im10.src=path9
+        }
+        setInterval(slider,2000)
+    </script>
+</body>
+</html>

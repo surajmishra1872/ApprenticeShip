@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        input {
+            width: 350px;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        button {
+            color:
+                white;
+            width: 200px;
+            height: 30px;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        div {
+            min-height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    Enter Number For Table:<br />
+    <input type="text" id="id1" /><br /><br />
+    <button onclick="demo()">See Table</button>
+    <br /><br />
+    <div id="dv"></div>
+    <script>
+        function demo() {
+            var a = parseInt(document.getElementById("id1").value)
+            let text = "";
+
+            for (let i = 1; i <= a; i++) { 
+                document.getElementById("dv").innerHTML = text+=a+"X"+i+"="+a*i+"<br/>"
+        }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/11.jpg" height="400px"/>
+    <button onclick="demo()">GET ATTR</button>
+    <button onclick="demo1()">SET ATTR</button>
+    <script>
+        function demo()
+        {
+            var im=document.querySelector("img")
+            alert(im.getAttribute("src"))
+            alert(im.getAttribute("height"))
+        }
+        function demo1()
+        {
+            document.querySelector("img").setAttribute("src","img/7.jpg");
+            document.querySelector("img").setAttribute("height","500px");
+        }
+    </script>
+</body>
+</html>

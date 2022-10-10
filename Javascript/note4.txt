@@ -1,0 +1,32 @@
+getElementsByClassName
+-----------------------------------
+=>getElementsByClassName function is used to return collection of elements with specified className as ObjectHTMLCollection.
+Syntax
+-------
+var variableName=document.getElementsByClassName("className")
+
+Exa:
+-----
+<b class="a">SUMMER TRAINING</b>
+<b class="a">WINTER TRAINING</b>
+<b class="a">APPRENTICESHIP</b>
+Exa:
+----
+var x=document.getElementsByClassName("a")[0].textContent//SUMMER TRAINING
+var x=document.getElementsByClassName("a")[1].textContent//WINTER TRAINING
+var x=document.getElementsByClassName("a")[2].textContent//APPRENTICESHIP
+
+querySelectorAll("#a,#b,#c")
+-------------------
+
+
+
+
+
+
+
+
+
+
+
+

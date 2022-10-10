@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1 id="b">Ranchi</h1><br>
+    <h1 id="g">Delhi</h1><br>
+    <h1 id="m">Noida</h1><br>
+    <h1 id="c">Ayodhya</h1><br>
+    <h1 id="v">Varanasi</h1><br>
+    <h1 id="p">Prayagraj</h1><br>
+    <h1 id="mir">Mirzapur</h1><br>
+    <h1 id="j">Kanpur</h1><br>
+    <h1 id="l">Lucknow</h1><br>
+    <h1 id="a">Indore</h1><br><br>
+    <button onclick="go()">Swap</button>
+    <script>
+        function go()
+        {
+        var a = document.getElementById("b")
+        var b = document.getElementById("g")
+        var c = document.getElementById("m")
+        var d = document.getElementById("c")
+        var e = document.getElementById("v")
+        var f = document.getElementById("p")
+        var g = document.getElementById("mir")
+        var h = document.getElementById("j")
+        var i = document.getElementById("l")
+        var j = document.getElementById("a")
+        var city1=b.innerText
+        var city2=g.innerText
+        var city3=m.innerText
+        var city4=c.innerText
+        var city5=v.innerText
+        var city6=p.innerText
+        var city7=mir.innerText
+        var city8=j.innerText
+        var city9=l.innerText
+        var city10=a.innerText
+       b.innerText=city2
+       m.innerText=city1
+       g.innerText=city8
+       v.innerText=city4
+       j.innerText=city5
+       p.innerText=city9
+       mir.innerText=city6
+       a.innerText=city10
+       l.innerText=city3
+       c.innerText=city7
+        }
+        setInterval(go,1000)
+
+    </script>
+</center>
+</body>
+</html>

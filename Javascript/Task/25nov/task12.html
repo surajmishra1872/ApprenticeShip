@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt1"/>
+    <button onclick="demo()">Click Here</button>
+    <h1 id="h1"></h1>
+<script>
+    function demo(){
+    var a=parseInt(document.getElementById("txt1").value)
+    var res = a%2==0?"Even":"Odd"
+    document.getElementById("h1").innerText=res
+}
+</script>
+</body>
+</html>

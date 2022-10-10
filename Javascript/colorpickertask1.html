@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+            border: 2px solid black;
+            padding: 30px;
+        }
+        #inner1{
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            font-size: 35px;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body onload="demo()">
+    <div id="outer">
+        <div id="inner1"></div>
+        <input type="txt" id="txt1"/><br/>
+        <button onclick="demo2()">Set Background</button>
+    </div>
+    <script>
+        function demo()
+        {
+            var colortxt="0123456789abcdef";
+            var color1="#"
+            for(var i=0;i<6;i++)
+            {
+            var index=Math.floor(Math.random()*colortxt.length)
+            color1+=colortxt.charAt(index)
+            }
+        document.getElementById("inner1").style.background=color1;
+        document.getElementById("txt1").value=color1;
+        }
+        window.setInterval(demo,1000);
+        function demo2()
+        {
+            var dv=document.getElementById("outer");
+            var a= document.getElementById("txt1").value;
+            dv.style.background=a;
+            
+        }
+        
+    </script>
+</body>
+</html>

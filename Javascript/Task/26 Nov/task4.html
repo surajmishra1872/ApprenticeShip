@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    Enter the Number to check divisible by 7 or not
+    <br><br>
+    <input type="text" id="t1">
+    <br><br>
+    <button onclick="go()"> Check</button>
+    <script>
+        function go()
+        {
+        var a = Number(document.getElementById("t1").value)
+        if(a%7==0)
+        {
+            alert("Yes! Numbwr is divisival By 7")
+        }
+        else
+        {
+            alert("No! Numbwr is not divisival By 7")
+        }
+    }
+    </script>
+</body>
+</html>

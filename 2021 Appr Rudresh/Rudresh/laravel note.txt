@@ -1,0 +1,635 @@
+Introduction To laravel
+############################
+
+varsion 8.0
+
+stable version for php 7.4+
+
+check verson 
+**************
+
+open cmd>php --version
+
+check composer
+******************
+open cmd  > composer --version
+goto project directory in htdocs
+***********************************
+
+open cmd >cd/
+cd / xampp/ htdocs/
+
+make laravel folder or any folder
+mkdir laravel
+
+dir 
+
+--dir
+---dir..
+
+--dir laravel
+goto laravel folder
+install laravel installer globally
+
+composer global require laravel/installer
+
+how to create new laravel project from scratch
+***************************************************
+laravel new <project_name>
+====Application is ready to build
+cd <project_name by laravel-above>
+cd practice
+run the server 
+php artisan serve
+go to browser make  request:
+
+http://localhost:8000
+
+creating a project at different distribution:
+=============================================
+Laravel Installer is a package it is branch in Git.
+Different different version are redistribution for its own.
+
+How to download distributed Repository
+++++++++++++++++++++++++++++++++++++++
+
+1. native composer
+	composer create-project --prefer-dist laravel/laravel <app-name>
+2. Laravel Installer
+	composer global requier laravel/installer
+
+Different Distribution
+
+1. native composer
+	composer create-project --prefer-dist laravel/laravel="5.1.*" college
+
+2. Laravel Installer
+	composer global requier laravel/installer --version
+
+
+How many yoy can Run laravel project
+************************************
+CLI server : Testing server or devlopment
+Deploy Server:
+Apache used in Production Server
+Artisan is Terminal Package for CLI mode
+
+php <file_name.php> : CLI Mode
+for Laravel
+php artisan <Terminal Command>
+
+How to close server
+*******************
+ctrl+c : cli server will stop
+
+
+number of ways to Run project in CLI Server
+1. php artisan serve
+	every request goes inside public folder
+	1. php -S localhost:<post_no> -t public
+
+	2. php -S localhost:<port_no> <router_file>
+	   php -S localhost:<7000> <server.php>
+
+How to run Laravel Project outside the public folder
+
+rename the server.php file to index.php
+and goto public copy .htaccess file
+and paste it parellel to server.php at root location
+
+<app_laravel>
+	|-->app
+	|-->..
+	|-->..
+	|-->public
+		|-->index.php
+		|-->.htaccess file (copy)
+	|-->server.php[router]
+	|-->.htaccess (paste from public)
+
+.htaccess(optional)
+	RewriteEngine On
+	Options -Indexes
+	DirectoryIndex index.html
+	IgnoreIndexes *
+
+Rename Server.php index.php
+
+Request Url :
+localhost:portno/project_name/laravel_appname/
+
+Another to send Request
+localhost:7000/practice/laravel_appname/
+
+Note: 
+CLI SERVER does not recognise the .htaccess file
+For Cli server inportatn file is server.php or router.php
+
+Date : 04/02/2021
+
+Project Archecture and directory
+********************************
+
+Laravel strictly follows psr -autoleoading
+what is PSR Autoloading
+PSR : PHP Standard Recommendation
+PEAR : PHP Extension Application Repository
+		[packagist.org]
+
+		All the extension generated in any package for php is nothing bua dill file
+		all these extension will loaded at soon as php Interpreter
+
+		How to find which module extension are loaded at run time.
+		command Line: php -m
+
+		where is location of these extension
+
+		php/ext
+		All the dll files are stored here.
+		All the Registery of dill are being added in php.ini
+
+PECL(PHP Extension Community Library)
+(4096-4098 column make in mysql
+and tables 4 billion )
+
+
+
+Since now php has envolved very much since the till today
+php has following version
+1. Legacy or stable version(PHP 5.5+)
+2. Current Version (PHP 7.2+)
+3. PHP Latest Version (PHP 8.00)
+
+Earlier Autoloading of class was done using memory_register
+global_register =on
+
+The autoloading is a concept of object oriented Approach
+when ever a objectr is created it is register in a heap memoryand will untill and unless it is expliclity destroyed.
+
+The only person responsible for destroying these Object at Run Time.
+Such Function are called destructors.
+ andsince each object in heap memory is registered in memory_register it becomes global.
+
+Autoloading in object Oriented or Autoloading Classes:
+==========================================================
+
+In order to achieve autoloading we need Bootstraping Architecture.
+
+<root-Folder>
+	|
+	|--->core
+		|-->bootstrap.php
+	|--->classes
+	|
+	|--->index.php
+	|--->Student.php 
+		<?php $student =new Student(); ?>
+	|--->Teacher.php
+		<?php $teacher =new Teacher(); ?> 
+	|--->Route.php 
+		<?php $route =new Route(); ?>
+
+Inside bootstrap.php
+==================
+Write the Bootstrappnig Script for loading the each requirement . In memory-register.
+Note: Bootstrapping means pre-processing the file or loading small software, programs utilities or programs into the memory before calling main thread(process)
+
+
+#init.php/bootsptrap.php is a special files that is require before any script or peice 
+#of code to be executed in memory
+
+#which is method responsible for Autoloading
+1. __autoload() :Magic Function used for autoloading class as soon as object is created.
+	This method is Rest in piece(Deprecated)
+
+2. spl_autoload_register() : is a special function for autoloading classes at instantiation.
+spl : special
+
+
+core folder
+|------->bootstrap.php
+<?php
+
+spl_autoload_register(function($classname){
+	
+$root = dirname(__DIR__);
+$class_path ="classes";
+$path ="{$root}/{$class_path}/{$classname}.class.php";
+
+if(file_exists($path)){
+	include $path;
+}else{
+	die("Such class File Does not Exist");
+}
+});
+?>
+
+ $test =new Test();
+ $route =new route();
+ $teacher =new Teacher();
+ $student =new Student();
+ $example =new Example();
+
+ 
+classes 
+	|-->Anclass.class.php
+	|-->Test.class.php
+	|-->Student.class.php
+	|-->Teacher.class.php
+	|-->Route.class.php
+
+Make sure .class is mendatory
+#make a class with the file name
+
+ Test.class.php
+ class Test{
+
+ }
+
+ Student.class.php
+ class student{
+
+ }
+
+ Teacher.class.php
+ class Teacher{
+
+ }
+
+ Route.class.php
+ class Route{
+
+ }
+ 
+ Root 
+ 	|--->index.php
+
+ 	index.php
+ 	include __DIR__."/core/bootstrap.php";
+	 $route =new route();
+	 $teacher =new teacher();
+	 $student =new student();
+	 $example =new example();
+
+
+what is diffrent include,include_once,require and require;
+ There are two types of Autoloaders
+ 1. Strict Autoloaders (require)
+ 2. Flexible Autoloaders (include)
+
+
+
+Date: 06/02/2021
+Routes in laravel:
+==================
+Go to inside laravel App and in the terminal mode hit the command
+php artisan serve
+cli server will open at port 8000
+php artisan serve --port 7000
+
+
+Routes: In general are the part of Uri Segment
+
+Uri = $_SERVER['REQUEST_URI'];
+This uri is collective String having multiple identities
+
+Multiple Identity here means = each part seperated By /(trailing Slashes) In uri has unique component
+
+http://localhost:8000:resource_name/file_name/params
+|		Domain name 	Relative Url 	Filename
+|		Server Host
+|
+|Protocol
+
+If ypu explode this with "/"
+$uri_arr=explode("/",$uri);
+
+print_r($uri_arr);
+
+Array(
+	[0]=>
+	[1]=>resource_name [Uri Segment]
+	[2]=>file_name [Uri Segment]
+	[3]=>params [Uri Segment]
+);
+
+What is routing:
+++++++++++++++++
+Maping Uri to a resource
+For example in laravel
+
+Laravel App
+Routes
+	|-->web.php
+	|-->api.php
+	|-->channels.php
+	|-->console.php
+
+web.php : web-app specific Routes
+api.php : web-api specific Routes
+channels.php : Here all the routes are registerd for broadcasting Purposing
+console.php : (cron Jobs)
+					Terminal based Programs
+					php artisan command
+					Any request to be handled using Terminal the routes is created in console
+
+
+Current Version :
+Laravel 5.1.x
+App
+|-->http
+	|--->routes.php
+
+Every request is routed inside Public/index.php
+
+in order to make a routes
+
+route::<http-method-or-verbs>("url",function(){
+	return response;
+});
+
+get
+post
+put
+patch
+delete
+head
+lock
+options.
+......
+
+Route::get('/home', function () {
+    return response;
+});
+
+1. Argument : '/home' it is the uri which you will write on the Current Url.
+
+If you are using Apache server
+you must have used .htaccess
+http://localhost:8000/laravel.test5.1/= Current Uri
+
+2. Anonymous function(){} : It handles the response
+
+	Type of response:
+	_________________
+	1. Plain/Text
+	2. Block of code
+	3. Map to view
+	4. Map to Controller
+Get Route for response plain/text
+Route::get('/home', function () {
+    return ("<h1>welcome to home</h1>");
+});
+
+
+Get Route for response view
+Route::get('/', function () {
+    return view('welcome1');
+});
+
+
+consider the example:
+
+if($SERVER['REQUEST_METHOD']=='POST'){
+	//PROCESS THE FORMS
+	//POST METHOD
+}else{
+	//GET REQUEST
+}
+
+How to make your own Route
+
+
+Date : 08/02/2021
+
+
+More about route and Resources:-
+================================
+Route::get('url',function(){
+	
+	//Anything
+});
+
+Route with other http Method [http-verbs]:
+==========================================
+http Methods  GET,POST,Put,Patch..............
+
+
+Laravel Project Root
+http://localhost/test/home
+
+
+
+HTTP/1.1 200 OK GET http://localhost/test/home
+Route::get('/home',function(){
+	
+});
+
+HTTP/1.1 200 OK POST http://localhost/test/home
+Route::post('/home',function(){
+	
+});
+
+HTTP/1.1 200 OK LOCK http://localhost/test/home
+Route::LOCK('/home',function(){
+	
+});
+
+HTTP/1.1 200 OK DELETE http://localhost/test/home
+Route::delete('/home',function(){
+	
+});
+
+HTTP/1.1 200 OK Options http://localhost/test/home
+Route::Options('/options',function(){
+	
+});
+
+
+Route Placeholder:
+
+Route::get('/home/{name}/{id}', function ($name,$id) {
+    echo "<h1>Welcome to home with name={$name} and id={$id}</h1>";
+});
+
+Route::get('/edit/{id}', function ($id) {
+    echo $id;
+});
+
+Route::get('/edit/{id}', function ($id) {
+    echo $id;
+    echo $_GET['id'];
+});
+
+
+
+Working with html/css or front end using Routes:-
+
+Front end 
+html/css
+	|-->This layer is part of view
+
+	then view() is responsible handling this
+	and view file can blade file or non blade file
+	resources/views
+
+Using routes with block of codes:-
+==================================
+PHP 7+ provides two blocks which can be used for placing html and php variable without php tag
+
+HEREDOC Syntax
+NEWDOC Syntax
+
+Date: 09/02/2021
+
+Working with views in Routes:-
+==============================
+We know that we can sent any response like plain/text, Block of code(Using HereDoc or NewDoc)
+but if there is multiple lines of code for html/css you must go for view concept.
+
+Resources
+	|
+	Views
+		|---> std_edit.blade.php (view file)
+
+
+How to pass the data from view
+1. Key and value Pair
+	$id=10;
+	$name='rudra';
+	return view('edit',['id'=>$id,'student_name'=>$name]);
+
+
+	In edit.blade.php
+	id={{$id}}
+	id={{$$student_name}}
+
+2. Using $data variable
+
+	$data = ['id'=>$id,'student_name'=>$name];
+	return view('edit',$data]);
+
+
+3. Using compact() : Is a Reciprocal (reverse) of extract convert predefined variable in Array keys
+
+$id=10;
+$name='rudra';
+return view('edit',compact(['id','name']));
+
+edit.blade.php
+id = {{$id}}
+name = {{$name}}
+
+
+Explain How compact function works
+compact.php
+
+<?php
+$name = 'ryu';
+$class='12th';
+$marks='100';
+echo "<pre>Using compact() <br>";     
+// print_r(get_defined_vars());
+print_r(compact('name','class','marks'));
+
+
+foreach (get_defined_vars() as $key => $value) {
+	if(!in_array($key,['_GET','_POST','_COOKIE','_FILES'])){
+	$tmp[$key]=$value;
+}else{
+	continue;
+}
+}
+echo "<pre>Using Without compact()<br>";
+print_r($tmp);
+?>
+
+
+Date : 17/02/2021
+HTML Form Spoofing:
+===================
+
+Laravel include structure:-
+uses PSR 4 Loading
+PSR :: Php standard Recommendation.
+
+Generally when you want load anything
+you have two option
+1. manual loading
+	Keep Including
+2. autoloading
+	Register Each class in sql_autoload_register
+	and soon as you make the object class will be autoloaded.
+
+	spl_autoload_register under PSR-4 it states that path to the class must be absolute.
+	example:
+	class
+		|--->Ravi.class.php
+	spl_autoload_register(function($classname){
+	require_once __DIR__.'/class/'.$classname."class.php";
+	});
+
+How to use Request claa in Laravel for Handling Form request
+------------------------------------------------------------
+In order to use request class you have to follow PSR-4 Autoloading using namspace
+
+Add : Namespace
+use Illuminate\Http\Request
+Create the alias name so that can use request alone
+
+Creating Alias:
+use Illuminate\Http\Request as Request;
+Now Composer wil add Request class into package.
+Now Instantiate the class inside function() of Request.
+
+Route::get("contact-us",function(Request $request){
+	$request->get('keyname-1');
+	$request->get('keyname-2');
+});
+
+
+How to send POST Request
+************************
+According to laravel design pattern each request other than get request need to verify the session
+This token valid for each session is called as CSRF_Token
+
+Route::POST()
+$csrf_token =csrf_token();
+<input type="hidden" name="_token" value="$csrf_token">
+
+Route::PUT()
+$csrf_token =csrf_token();
+<input type="hidden" name="_token" value="$csrf_token">
+
+Route::DELETE()
+$csrf_token =csrf_token();
+<input type="hidden" name="_token" value="$csrf_token">
+
+
+how to send request other than Get and Post
+By using postman
+
+Working with put and delete request
+-----------------------------------
+In order to sent the put request and delete request from upgraded version in laravel
+you must consider api.php in Latest Version 5.6+
+
+Add hidden field with _method with key _method and value="REQUEST_METHOD_NAME"
+
+Route::put()
+<input type="hidden" name="_method" value="PUT"/>
+
+Route::patch()
+
+<input type="hidden" name="_method" value="PATCH"/>
+
+Route::delete()
+<input type="hidden" name="_method" value="DELETE"/>
+
+
+
+Date : 18/02/2021
+
+
+
+

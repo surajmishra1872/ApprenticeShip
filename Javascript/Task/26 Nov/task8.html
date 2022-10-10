@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+        input {
+            width: 300px;
+            height: 35px;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="txt1"><br/>
+    <input type="text" id="txt2"><br/>
+    <button onclick="demo()">Click To Check</button>
+    <script>
+        function demo()
+        {
+        var a= Number(document.getElementById("txt1").value)
+        var b= Number(document.getElementById("txt2").value)
+        var res = a+b
+        if(a==10 || res==10)
+        {
+            alert("OK")
+        }
+    }
+    </script>
+</body>
+</html>

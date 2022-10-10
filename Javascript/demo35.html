@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+<select id="ddl" onchange="demo(this)">
+<option>--Select Course--</option>
+<option value="a">HTML</option>
+<option>CSS</option>
+<option>JS</option>
+<option>JQUERY</option>
+<option>JSON</option>
+<option>AJAX</option>
+</select>
+<p id="p1"><p>
+<script>
+function demo(x)
+{
+//var a=document.getElementById("ddl").value
+//alert(a)
+document.getElementById("p1").innerText=x.value
+}
+</script>
+</body>
+</html>

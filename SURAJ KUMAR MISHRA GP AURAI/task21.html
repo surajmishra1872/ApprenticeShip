@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr onclick="demo(this)">
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr onclick="demo(this)">
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr onclick="demo(this)">
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr onclick="demo(this)">
+            <td>Suraj</td>
+            <td>Kumar</td>
+            <td>Mishra</td>
+          </tr>
+      </table>
+      <script>
+          function demo(x)
+          {
+             x.style.display="none"; 
+          }
+      </script>
+</body>
+</html>

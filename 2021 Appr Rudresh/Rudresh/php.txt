@@ -1,0 +1,3412 @@
+source forge for php
+
+	mita de apni hsti ko gr mrtba chaho
+	ki dana khak me mil kr gule guljar hota hai
+
+JWT(json web token)
+amcat
+elitmus
+cocubes
+hackearth
+hackerrank
+codesheff
+
+ 					8299502081
+ 					awnishmmg.a41@gmail.com
+
+  netstat -a
+  Network Statistics
+
+ Foriegn address of localhost [::1]
+
+ 
+
+	GPS(General purpose source),GNU(
+	)
+	MIT(Massachusetts Institue of technology)
+	BSD(Berkeley software Distribution)
+
+
+PHP:(PHP is an acronym for "PHP: Hypertext Preprocessor" PHP is a widely-used, open source scripting language. PHP scripts are executed on the server.)
+
+SGML(standerd generanl markup Language)
+YML
+JSON(Javascript Object Nortion)
+
+north ockla industrial devlopment area
+
+Singlertn
+fasad pattern
+observer  
+er digram:software()
+
+software:
+xamp starct
+sublime,PHP storm
+composer
+dia(UML(Unified modery language) for DFD
+postman
+gitbash
+SVN
+
+
+Testing type:
+	white box(validation is called white box testing) 
+	black box()
+
+
+Whta is a acronym:-
+php (Rusmas Redolf)~=1995.
+
+YML and JSON for use inter opravibility.
+
+JSON
+Json_incode
+Json_decode
+
+nosql Database:-
+	MongoDb
+
+TimeStamp:-
+
+
+cmd:-
+tracert www.facebook.com
+netstat -a
+
+
+Version:-
+stable is 5.5.6
+latest stable relase 7.4
+latest current version 8.0
+community:-
+php.net
+pecl/pear(PHP Extentions application reprositry).org
+
+
+What is stack:-(collection)
+	Backend Technology Stack(BTS)
+
+
+four type of s/w technology:-
+	1. Console Based Application:-
+							Any application which is runs on command line interface.
+								Main input Device:-
+									Keyboard
+										e.i.:-
+											MS DOS
+											Linux Terminal
+											Git Bash
+											SVN BAsh
+				Plateform Railway Services for Ticketing are the live example for the Console Based Application
+					The only reason is Management Trancaction Control Mechnism
+
+			Note:What is difference Normal and Transaction Query?
+
+				Time and sace Complexity
+				1. Unit Seconds For Time standarization
+				2. Words for the Bytes and Memory allocation standarization
+
+			Diffrence B/W Noramal query and transaction query is that 
+			tarncation Queries have read and write Operation both while Normal Queries donot have, they perform single Operation at same instant.
+			Either Read or write.
+
+			Disadvantages of using transaction query:-
+			1. It requires Commit.
+			2. Ambiguity problem or Redundant Data 
+				Explain:Generaly when ever we try to fire these Queriess if there is Syntax error is Another case but even if there is conflict with PK and FK these Query will raise Exception but query wont be stoped it will keep on Executing Untill all the record set has been written.
+			3. Once Commited Exception cannot be rolled back.
+			    
+
+2. GUI Based Application:-
+
+
+
+why does the port 80 gets block:-
+				It is because your system generally(windows) has a default server installed on its environment(IIS Server) this is used by .net technology.
+				Reason:-
+					 By default all the request from browser to the filesystem resources is forward using port No 80.
+
+					 if you write http://localhost:80 this will convert to
+					 http://localhost
+					 but if you write http://70 or 786 or any thing else it leads to error util and unless you configure a [port] to Listen apache.
+
+
+in Unix lamp  dstatc present. 
+WAMP(Window),XAMP(Cross plateform),LAMP(Linux,Unix)
+
+
+Introduction to Xampp:-
+		Xampp is a BST(backend services technology) stack software.
+		X= Cross Platefrom
+		AMP=(AMP stact)
+			A= Apache
+			M= Mysql
+			P=PHP
+
+		Accesor:-
+			1. Apache
+				provides resource b/w localsystem and server.
+			2. MySql
+				database(Mariadb)
+			3. FileZilla
+				FTP(File Transfer Protocol) Software
+					Putty,Cyber Duck,SSh Terminal.
+			4. Mercury
+				SMTP
+
+	Local Directory system on XAMPP:
+			resources file
+			(cgi-bin,apache,mysql,php,phpNMyAdmin,tmp are resource oriented folder
+			htdocs is htdocs project level folder)
+
+
+			How to request htdocs:-
+				Internaly apache is configured to access htdocs  with url(C:/xampp/htdocs) this url is replaced by localhost.
+
+ 	Accesssing the resource from browser:-
+ 		1.using file as protocol
+ 		1.using http as protocol
+
+
+ 	Special files which are automatically loaded in the url
+ 		index.php
+ 		index.html
+ 		default.php
+ 		default.html
+ 		inside Apache only
+
+ 		But this can behaviour can be modified using special file
+ 		<>.htaccess file
+  		----------------
+ 				It contains set of Rewrite Rules
+ 					RewriteEngine On
+ 					DirectoryIndex rudresh.html p1.html
+
+date:19-dec-2020
+ Running first php Script on localhost:
+ step1:-
+ 	goto directory path c:/xampp/htdocs.
+ step2:-
+ 	Make folder <test>
+ step3:-
+ 	Make php file using any text editor.
+ step4:-
+ 	write a Script code <? php echo "Test"; ?>
+  step5:-
+ 	Make the request to the resource.
+
+How to request to the Resource?
+Client Server model
+Here client =Browser
+Here Server = It is autonomous Computer /Hardeware / Any Feeding Machine that can take input and perform the task According to your choice.
+	Note: Meaning of Autonomous = donot Require any human Intervension
+	In todays Scenerio we are in distributed Network System every resource is distributed.
+
+	Requirement :-
+		1. All the resources shuld be available 24x7
+		2. I can Access that Resource from Anywhere
+		3. Security and Backup
+	Such kind of autonomous computer is called seerver. 
+
+Types of server:-
+ 	1. Online server (Public Server)
+	2. Offline server
+		1. Virtually setup server
+		2. Privately setup Server (ISPconfig)
+			It is a third party tool used to setup the your own dedicated Server.
+				Note: In hardware terms there are two types of server
+					1. Dedicated : Are meant for serving specific server
+						1. Master slave configuration based server is a Example of dedicated
+						for example ganga and gomti in Urise Portal
+					2. Non Dedicated : Are general Purpose
+	 Online  Server: Are server from where resources can be accessed using web as a service http:// protocal ftp:// smtp://
+	 WebServices : services provided by webserver is called webservices.
+
+
+ 	 Offline Server : Are also called LocalServers.
+ 	 your Simple Laptop or Pc with Good configuration is capable of becoming local server.
+
+	 In oreder o make any computer work as local server you need a server Resource stack
+	 1. After Apache Installing Your system becomes a Local Server
+	 In order to work as devloper You should know server side language in such language can  be
+	 php,Perl C++, Java,Python,Ruby,haskell,Scala,GO
+	 PHP is server side language which can be used to make dynamic webpages 
+
+	 Since we are require Apache+ ServerSide Language + (database) + configuration
+
+ 	 this configuration should  Ondependent of plateform
+
+	 It is Better to go with Amp stack = Xampp
+
+
+
+
+
+GNU 
+Gnu not unix.
+EoL:end of line
+
+Note:
+Non terminating behaviour  of PHP;
+	if your line is the last line of a php script then termination(;) is not compulsary/madanatory
+
+MIME type:-
+	Multipurpose Internet Mail Extention(MIME) type
+
+Supported Protocol and wrappers:-
+http:// -   Accessing HTTP(s) URLs
+file:// -   Accessing local file system
+ftp:// -    Accessing FTP(s) URLs
+php:// -    Accessing various I/O streams
+zlib:// -   Compression Streams
+data:// -   Data (RFC 2397)
+glob:// -   Find pathnames matching pattern
+phar:// -   PHP Archive
+ssh2:// -   Secure Shell 2
+rar:// -    RAR
+ogg:// -    Audio streams
+expect:// - Process Interaction Streams
+
+Since php is devloped in c & c++  language under unix enviroment dollar "$" is the default predefine refrence variable in PHP. 
++
+ Php is a secure Serverside  Imterpreted language.
+
+
+ How php Works in browser:-
+ 
+Date: 19/01/2021
+
+
+
+
+
+
+
+
+
+
+ Introduction to php
+
+ PHP Script:-
+ 	Any Php file with MIME type .php and Container as <?php ?> Scriplet.
+
+ Types Of PHP Script:-
+ 		<?php ?> Container or php or php scriplet is important for interpreter.
+
+ 	<?php : is called opening  of php container
+ 	?> : is called closing  of php container
+ Note that ?> this container defined EOL(End Of Line)
+ If ?> is not available then last line of php scriplet must be terminated.
+ This means that php files is core file
+
+
+Generally there are two types of file
+1. PHP core file:-
+	These are the file which is only container PHP tags and code.
+	e.i.:-
+		<img src="helo.png"/>
+		<?php echo"Hello World"?>
+2. PHP Embeded File:-
+	Here tag closing is compulsary
+
+comments in PHP:-
+	# is used as single line comment
+	// is used a ssingle line comment
+	/**/ is used as multi line comment
+
+	For example:-
+		#echo"Hello World ";
+		This line wont run
+
+		//echo"Hello World ";
+		this line also wont Run
+
+		/*
+		echo"Hello World1 ";
+		echo"Hello World2 ";
+		echo"Hello World3 ";
+		echo"Hello World4 "; 
+		*/
+
+	I/O stream  in php
+	How many ways we can print output in PHP
+	echo
+	print
+	print_r
+	printf
+	sprintf
+	exit
+	die
+	vprint
+	vprintf
+	fprintf
+	vardump
+
+
+How to take Input:-
+	fopen("STDIN") is used to read user input in command line
+	Details from php.net
+
+STDIN define interms php://input
+STDOUT define interms php://output
+
+
+	How to declare variable in PHP:-
+		since PHP is developed using c,c++ written and Developed under Unix Environment $ is Reserved refrence variable.
+
+	Variable Refrencing:-
+	 $$ Operator: It created variable to variable Referincing
+
+	 <?php
+	 	#wap in php to echo $
+	 	$x=2;
+	 	echo $x;//2
+
+
+	 	#variable to variable Referincing 
+	 	$x="ravi";
+	 	$$x=2;//$($x)=2 //$(ravi)=2
+	 	echo $x;//ravi
+	 	echo $ravi;//2
+	 ?>
+
+
+Date: 21/12/2020
+
+Do phpPHP require Xampp server to be Kept On?
+Yes: If you are Localhost to Access php file as resource
+No:Using php Command line in this php file is directly taken a input by php interpreter and desired output is generated.
+
+
+Since php command line does not have any predefine scanner class or function to read input stream or buffer from command Line.
+
+
+How to make our scanner function in php and write it to a file and import when required.
++
+Steps:1 Make a file named scanner.php
+Steps:2 file name:scanner.php
+<?php
+function input($msg){
+	$buffersize=1024;
+	echo $msg,"\n";
+	$input=fgets(STDIN,$buffersize);
+	return trim($input);
+}
+?>
+How to import scanner file:
+
+include'scanner.php'
+$x=input('Enter a No: ');
+echo $x;
+
+
+
+Explanation for scanner file
+============================
+function input():function is keyword to make user defined function
+	input($msg):$msg is a formal argument
+
+$buffersize=1024:
+	$buffersize is a simple variable which stores 1024 number of character space.
+
+$input = fgets(STDIN,$buffersize):
+	1. fgets:it is a function which is used to get the no of characters from a file or any Stream(I/O Stream)
+	2. STDIN : Read from Standard Input buffer or stream.
+	3. $buffersize: Php Interpreter => Memory space reserve Max of 1024
+		-------------------
+		|m1|m2| ...|m1024|
+		------------------
+	Since php is dynamic language run time memory allocate takes for less no of character.
+trim(): It trims illegal characterset like Extra spaces,\r,\n
+return:returns the trimmed value from the function.
+
+
+2include :  It is a predefine function of PHP used to Import any resource.
+include'scanner.php' is same as import statement in Java same as include in C language.
+
+Question:WAP for the following:
+1. area of circle using radius as a input from the user 
+2. find  the sum without + allowed. 
+2. find  the sum using +,/,* and - but + not allowed. 
+
+
+
+
+Exponent Operator Introduced in PHP7.0
+Exponent Operator:
+	2^3=8
+	2**=8
+
+Php interactive mode: In python there is chevron>>>2+2=>4
+to run interactive of php:
+	php -a Command to open Interactive
+	ctrl+c to exit.
+
+	php- -a
+	Interactive Mode Shell
+	php>
+	without using php Tag
+	single line code or expresion
+
+
+
+Diffrence B/W language construct and functions:
+	Function: Parenthesis() Compulsary
+	print_r(),printf()
+	language Construct :Parenthesis() is not Compulsary 
+	echo,print
+
+Diffrencd B/W echo and print:
+	echo: echo is used to print multiple argument.
+	print: Print it prints single argument at time;
+
+	echo arg1,arg2,arg3...argn; as same as
+	print arg1;
+	print arg2;
+	print arg3;
+	print argn;
+
+Diffrencd B/W echo and print_r:
+	echo is a Language Construct but print_r is function
+	echo can be used to print primptive datatype
+	e.i.:-
+	echo 10;
+	echo "hello";
+	echo 'h';
+	echo "This is sentence";
+	echo true;
+	echo false;
+	echo 12.25;
+	But it cant print Array
+	If you use echo to print Array it will 
+	Notice Error saying Array to string Conversion Error
+
+	print_r can be used to print array
+
+	best is print_r 
+
+
+Diffrence B/W echo and printf():
+	printf():printf() is called formating print it supports format specifiers
+	which can be used to format the output while printing.
+	printf() is function not language construct.
+
+Prototype of printf
+	printf(<[Output-string]>,<varg method>)
+	output string means: Any thing printed inside " " and ' ' are(double Qoutes or single Qoutes are printed on the Output Stream)
+	<varg method>: defines the variable set or arguments with placeholder value.
+	Note: printf() is same as c printf()
+	place holder value means: $x=2 variable name $x and placeholder value=2
+  
+	supported format specifier:
+	1. int->> %d since php is dynamic language signed and unsigned also long and very long
+	2. charracter data type :This is not supported in PHP
+		Why charcter data type is not supported in php:
+		#in order to answer such question we should be clear primitive datatype concept
+		primitive datatype in PHP:
+		------------------------
+		1. int
+		2. float or double
+		3. boolean
+		4. string
+		5. NULL as a datatype 
+		Note: In php NULL is the predefine Dataset
+
+		WAP IN php to display the datatype of primitive datatype
+		in order to print type we use gettype()
+		$x=10;
+		echo "The Type of",$x"is",gettype($x);
+
+
+		$a="helo";
+		$b='helo';
+		there is a diffrence B/W '' and " " but datatype remains the same.  
+
+The predefined data type of Any Input Stream or Output stream the return type is usually The highest datatype Available
+
+In our case if you using Scanner function it returns every value in <string datatype>
+
+Warning Error : Non numeric value Encountered Error
+This erroe is raised whenever there is confusion b/w String datatype and int datatype
+
+$a="10  ";
+$b="  20";
+echo
+
+
+Non numeric value encountered error is a special error due to very special concept called  type juggling.
+consider following example.
+$a="10 ";
+echo gettype($a);//integer
+$b=" 20";
+echo gettype($b);//integer
+$c=$a+$b;
+echo $c;
+echo gettype($c);//integer
+A non well formed numeric value encountered in php.
+
+
+echo "result = ",$a+$b;
+result = 30
+
+echo $b+$c;
+A non well formed numeric value encountered in php.
+
+
+echo "Result is : ",intval($a)+intval($b);//type casting
+Result = 30
+
+echo "Result is : ",intval($a+$b);//type juggling
+Result =PHP Notice: A non well formed numeirc value encountered in php shell. 
+30
+
+when does stack trace error invoke:
+	When error in syntax
+	#0{main}
+		thrown in php sh=ell code on line...............
+
+
+
+
+Special behaviour of boolean value in PHP
+-----------------------------------------
+1. true and false is a logical entity.
+logocally represent true=1
+false=0
+in case of php
+int(true) =>1
+int(false) =>0
+
+but without int true ===>1
+false => "Nothing or empty "
+
+what is the formate specifiers?
+for the following:
+==================
+int-->%d
+string-->%s
+character-->%c[test]
+boolean-->%d 
+
+Postmortem of Printf():
+
+1. By default it support single Argument.
+printf("Hello world"); 
+printf('Hello world');
+
+printf() accepts firsts argument as a mendatory argument.
+this first argument can be  two type:
+1. Constatnt or literal
+2. Variable
+in this case behaviour of printf()--->print
+
+$x=10;
+printf($x);//10
+$y=10;
+print($y);//10
+
+You can also print formated string using printf()
+any thing written " " or ' ' Qoutes inside printf is treated as formated string
+
+echo "Hello world"; //Printing String
+printf("Hello world");//formatted string
+printf('Hello world');// not a formatted string
+
+Consider following example
+printf(10,20,30,40);//10
+printf(20,10,30,40);//20
+printf('20',10,30,40);//20
+printf("20",10,30,40);//20
+printf(100);//100
+printf("100");//100
+printf('100');//100
+printf(hello world);
+//PHP Parse error:  syntax error, unexpected identifier "world", expecting ")" in php shell code on line 1
+Parse error: syntax error, unexpected identifier "world", expecting ")" in php shell code on line 1
+
+$hello="hello world";
+printf($hello);//hello world
+
+What is formatted string?
+
+Formatted string=Plain String + Convertible string
+Plain string: Any string inside single qoutes or double qoutes which printed as plain text is called plain string.
+
+for example
+==========
+printf("Hello World");
+printf(;Hello World');
+
+We can print any thing inside and double and single .
+ printf("$ @ # *  ... a-z A-Z 0-9");
+ But you cannot print two special reserved symbols
+
+Ginger technic or string manipulation:
+ 
+
+you can print every character in printf but can not use defined printf()
+printf("$x")//it will replaced by $x= value
+note that echo "$x" will print $x= value
+it is nothing related to output function rather it is telated to " " Such behaviour is called string interpolation
+and to make varibles readable
+
+
+{} Variable place holder/or ginger techinic
+{} : length 0 it will print as it is
+{$x}: print the variable value.
+
+$x=20;
+printf('$x');
+$x
+printf("{");
+{
+printf("}");
+}
+printf("{}");
+{}
+printf("[]");
+[]
+printf("()");
+()
+printf("{$x}");
+20
+
+$x="Ravi";
+$$x=10;
+echo "{{$x}}";
+{Ravi}
+echo "{${$x}}";
+10
+
+
+What is Paamayim_Nekudotayim error
+============
+:: is called as scope resolution operator. It will be very usefull in case of accessing  static members in any class in object oriented in case of php.
+
+% and \ are the reserved convertable Operators
+
+% and \ they  will print as plain text but convert into a special behaviour
+
+convertible string are prefixed by two operators
+1. % as a prifix => formate specifier
+2. \ as prefix => escape cahracter sequence
+	\ is known escape operator.
+
+Escape(skip) Operator
+===============
+Whenever you use \ operator it has nothing to do with Second Argument
+printf("...") only with First Argument.
+
+
+
+
+
+ ___________				 ___________			 ___________
+|			|			    |			|		    |			|
+|			|				|			|			|			|
+|			|				|			|			|			|
+|___________|				|___________|			|___________|
+
+ob.start()					  ob.flush()			   ob.end()
+
+
+Behaviour of printf :
+====================
+1. If ' ' or " " are not used the behaviour of printf becomes to be print and echo.
+important interview Question based on
+Escape Operator
+1.How will you print \ using printf
+	printf("\\");
+
+2. What does escape operator internally do
+	\ escape operator convert convertible string to plain string.
+
+3. How to print \n inside printf()
+	printf("hello \\n world");
+
+4. How to print %d inside printf()
+	behaviour of escape operator can only be change by its operator itself
+	 printf("%%d");
+
+5. How to print % inside printf()
+	use %% to escape suffix %
+
+
+6. Can you tell me a special operator which cannot be escape by \
+	% modulo operator
+
+7. can you tell a special digit which  cannot escape by \
+	\0
+
+
+Some of the important escape character sequence
+\a : alaram Beap
+\f : form feed
+\b : backspace
+\v : verticle tab
+\t : horizontal tab
+\n : new line
+\r : return carriage 
+
+
+formate Specifiers:
+=============
+1. %d : integer
+printf("The number is %d");
+
+Argument List [<...>] : is the no of supplied argument seperated by commas(",") in any function as single argument entity.
+Q1. 
+
+for example
+printf([arg1],[arg2,arg3,arg4,arg5...]);valid
+		|1		1	2		3	4|
+									|2
+
+printf([arg1],[arg2],[arg3],[arg4],[arg5]);invalid
+		|1		|2		|3		|4		|5
+Total no of argument=5
+Total no of entity=5
+
+Example:
+	$a=10;	
+	$b=20;
+	add($a,$b);
+	total no of argument=2
+	total no of entity=2
+	$a=10;
+	$b=[10,20,30,40,50,60...]
+	add($a,%b);	
+
+print_r([arg1] ,[arg2]);
+printf([arg1],[arg2,arg3,arg4,arg5]);
+printf(arg1,arg2);
+
+
+
+
+
+most  common error while using format specifier 
+Few Argument supplied Count error
+	if you using min 1 format specifier and not supplying argument list too few argument supplied error will raise.
+
+printf("%d",10);//10
+printf("%d %d",10);//php warning:printf(): too argument in php shell code
+printf("%d %d",10,20,30);//10 20
+
+character in dynamic typed language:
+	character data type = 
+	1. gettype():string
+	2. strlen(): lenght in digit
+		 if length == 1 it is a character  else string
+		 This can be using ord() function.
+
+printf("%d",true);//1
+printf("%d",false);//0
+printf("%s",'false');//false
+printf("%s",True);//1
+printf("%f",false);//0.000000
+$a=10.5;
+echo $a;//10.5
+$a=10.0;
+echo $a;//10
+printf("%f",false);//0.000000
+printf("%f",0.0000001);//0.000000
+
+Sprintf(): it is same as printf but it do not print anything it returns.
+
+
+printf("This is no value =%d",10);
+This is no value =10
+sprintf("This is no value =%d",10);
+
+$a=sprintf("This is no value =%d",10);
+echo $a;
+This is no value = 10
+
+diffrrecne b/w printf and sprintf:
+==================================
+$x=printf(10);//10
+echo $x;//2
+
+
+$x=printf(1000000000000000);//1000000000000000
+echo $x;//16
+
+$x=printf("awanish");//awanish
+echo $x;//7
+$y=printf(10);//10
+echo $y;//2
+$y=printf(printf("awanish"));//awanish7
+echo $y;//1
+
+
+Question:-
+	1. WAP to take the input from the user as a name.
+	and find the length name .
+
+	Running php script as a python script [standAlone script] or tagless Script.
+	1. little slow.
+
+	wap to make a expression based calculator ?
+	inorder to solve any expression we can use eval() to evaluate a expressin as a string.
+
+	limitation of using eval()
+	eval() can be used to evaluate the expression as a string it may contain keyword or variable as string.
+	for example
+	 This is valid
+	  $i=10;
+	  eval("if($i==10){echo 'hello';}else{echo 'hi';}");//hello
+
+	  $i=8;
+	  eval("if($i==10){echo 'hello';}else{echo 'hi';}");//hi
+
+	 1. eval() does not support assignment operator if you try to execute this then d'code() error is raised since it is  		parse error no output is going to generate.
+
+	 2. PHP community it self discourages the use of eval().
+	 It is dangerous to use.
+
+	 Advantage:
+	  1. Donot allow any script specially to run enclosed as <?php tag?>
+	  2. Using eval() expression you donot required wrapper tags or tag container it is you need not wrap your code inside
+	  <?php tag?>
+	  example:
+	  <?php echo 'hello world'?>
+
+	    eval("<? php echo 'hello world'; ?>");//parse Error unexpected EOL at line no something unexecpted '<'
+	  
+
+	  PHPRun compiler it is Best Example of eval()
+	  1. phprun.bat
+	  			run.php
+
+	  	phprun
+	  			Environment
+
+	  	eval();
+	  		|---->FILENAME----->Run.php
+
+	  	code:phprun <filename>
+	  			|
+	  			|-------->Command Line Argument
+	  	php -a
+	  	eval("echo 'hello';");
+
+file_get_contents():
+	It is used to get all the content from the file and return them as a string.
+
+
+Command line Argument in PHP
+============================
+Till know that we can take input using scanner method implemented by us.
+No of ways taking input.
+1. using Scanner calass/Method
+2. Command Line Argument
+
+Command line argument are the compile time inputs.
+Generally there are two types of input:
+ 1. runtime input
+ ===========
+ 	Example: Input is given after programs starts running
+ 	java p1.java
+ 	Enter your name : input supply
+
+ 	in python
+ 	python p1.py
+ 	Enter a number : 2
+ 	Enter second number : 2
+ 	4
+
+ 	in PHP
+ 	php p1.php
+ 	Enter a name : awanish
+ 	awanish
+
+ 2. compile time input
+ 	javac p1.java 2 2
+
+ 	python p1.py 2 2
+ 	4
+
+ 	php p1.php awanish
+ 	awanish
+
+ wap to emplement command line argument----
+ php has inbuilt variable set : super global varible
+ for example: $_POST,$_GET,$_REQUEST.......$_FILES
+ $argv : it is a super global varible which is used to accept the argument varible from the compile time input or (command line argument).
+
+print_r($argv);
+1. compile time Input
+2. Its datatype is array
+3. These value are space seperated 
+4. arguments supply its personal index by default 0 index is reserved for file name
+5. $argv is a dynamic array list
+6. by default it support all the type of data type  but string should be applied in " " only.
+7. it is a hectrogenious array
+8. $argv() is the super global varible used for accepting command line argument
+9. no other super global varible can run other	than command line argument.
+10. By default datatype of each argument inside command line argument is of string type
+11. By default size of $argv is 1.
+12. Min size of input is 1.
+13. min index of $argv is 0.
+
+
+date:28/12/2020
+
+Assumming php for loop to be same as C for loop write a program to find the sum and average of input supplied from the user any number without using scanner class.
+program:-
+=========
+
+<?php
+#wap in php to find sum and average using command line argument
+//print_r(sizeof($argv));
+//print_r($argv);
+$sum=0;
+for($i=1;$i<sizeof($argv);$i++)
+{
+echo "{$argv[$i]}";
+$sum=$sum+$argv[$i];
+}
+echo "The sum is {$sum}\n";
+$avg = $sum/(sizeof($argv)-1);
+echo "The Average is = {$avg}";
+?>
+
+
+#wap in php to find sum and average using command line argument without sizeof
+
+offset error in $argv
+java index out of bound error is same as offset error in php
+If you try to get the value of such index or key which donot exist in array of php it will lead to offset error
+
+for example
+
+php p1.php 10 20 30
+total size : 4
+[0] -p1.php
+[1] - 10
+[2] - 20
+[3] -30
+
+if we try to get value of index greater 3
+$argv[4]
+$argv[5]
+$argv[6]
+$argv[7]
+$argv[8]..............
+
+Notice or Warning Error Undefined offset error
+
+Minimum and  maximum index of $argv
+-----------------------------------
+$argv is special array because in normal array min = 0th Index
+here 1st Index is min
+because file name is at index 0
+$min = $argv[1];
+$max = $argv[sizeof($argv)-1];
+$max = $argv
+
+
+Calculating the size of any array
+1. sizeof()
+2. count()
+
+What is the difference b/w sizeof and count:
+============================================
+1. count : Used to static array Run Time
+2. sizeof : Used to Dynamic array compile time
+
+<?php
+#wap in php  to show use of sizeof and count
+print_r(count($argv));//1
+echo "\n";
+print_r(count($argv));//1
+?>
+
+
+alternate of size of array
+
+Algorithm for calculating the size of array.
+Suppose : $a = [10,20,30,40];
+$a[0] = 10 $a[$i]=10 where $i=0;
+$a[1] = 20 $a[$i]=10 where $i=0+1;
+$a[2] = 30 $a[$i]=10 where $i=1+2;
+$a[3] = 40 $a[$i]=10 where $i=2+1;
+$a[4] = '' or false  $a[$i]='' where $i=3+1; in general $i=$i+1;
+$a[5] =''
+$a[6] =''
+$a[7] =''
+$a[8] =''
+
+$i=0;
+while(true)
+{
+	if($a[$i]=='')
+	{
+		break;
+	}
+	$i=$i+1;
+}
+echo $i;
+
+NOte: @ is called error handling operator. Ot is used to hide Notice and warning error. 
+
+
+
+Difference b/w single Quotes('') and Double Quotes(""):
+According to output string there are teo type of strings in php 
+1. processed string:denoted by ""
+2. Unprocessed string(raw string):denoted by ''
+Invalid case:
+"" inside "" : invalid X Manage using escape operator
+'' inside '' : invalid X using escape operator
+"" inside '' : valid
+'' inside "" : valid
+
+Process String : " " each character is first processed then sent to output stream.
+1. varible inside "" are processed then printed
+2. escape character sequence inside (\n,\t,\r,......) are processed
+
+
+
+Raw strings : '' NO processing each character printed as it is directly flush to output stream.
+1. varible itsef is printed
+2. escape character sequence inside (\n,\t,\r,......) are not processed printed as it is
+
+Common Behaviour:
+if you try to use <html> tags inside "" or '' it is treated as string for printing html you can only '' or "" Quo4tes no issue at all.
+
+Running PHP WebServer On command Line
+-------------------------------------
+php version 5.5.6+ php donot require any webserver it has its own inbuilt CLI serever
+
+command : php -S localhost:<port-no>
+example:
+
+	php -S localhost:8888
+
+Date:29/12/2020
+Request and request forwarding in php CLI server:
+	1. php 5.5.6 provides inbuilt web server support .
+	It do not require any other servers like Apache for testing purpose
+	But inorder to deploy your project built on php will require certain resource like smtp, mail services, database driver such type of resource can only possible with multi purpose server.
+	so Apache is a goog choice for all C-Panel in web-hosting
+
+	ngix Server is also good choice for all Cpanel in Web-Hosting
+
+	2. php CLI server uses your Operating System environment Access and uses it since every command is executed from command line priority is highest
+	For Example:
+	Which file will be processed first placed at c:/xampp/htdocsat port :8000 
+	[Apache is a third prty services] it is using 8000 port but termperory asign
+	or
+	 c:/users/path/to/file at port :8000 
+	 [use php CLI server has highest priority due to cmd line hence port is reassigned]
+
+	 3. If you  try to access resource ata a port which is already reserved for system sppecific services then such port cannot be assigned.
+	 Before you assign any port to php CLI server use "neststat -a" to get list of all TCP/IP port List.
+
+	 4. Command to run php CLI server : php -S localhost:portno
+	 5. Each request is processed by a foreign Address ::1:[Any port No]
+	 6. As soon as port is assigne following things takes place
+	 	1. port is assigned
+	 	2. foreign Address is reserved
+	 	3. Document Root is created 
+	 	4. Request is sent to index.php file if not then to index.html if not to 404 error
+	 but every request can be re-routed using any router.php(any file) file.
+	 php -S localhost:8000 index.php (code Ignitor 3,4.0 , yii)
+	 phalcon framework re-routes request in router.php
+
+//SAPI= Specific Application Programming Interface
+
+
+How to run server to any target location or SAPI:-
+
+create a folder test
+test
+	public_html//folder
+ 		css/js/images//folder
+ 		index.php//file name
+ 		server.php//file name
+
+ 		command:-
+		mkdir test//test folder
+
+		cd test
+
+		mkdir public_html
+
+		cd public_html
+
+		start notepad index.php
+
+server.php:-
+	<?php
+	$uri= $_SERVER['REQUEST_URI'];
+	echo $uri;
+
+index.php:-
+<?php
+echo " This is Public file welcome to my Framework";
+include '../server.php';
+?>
+
+This project  can be run by two ways
+1. php -S localhost:8000
+
+		
+date: 30/12/2020
+	Working with Webform in PHP:-
+
+	(WHATWG): Web Hypertext Application Technology Working Group is responsible for concept called user interactivity by introducing the concept of web form
+	1. HTML Form
+	2. Web Forms 2.0
+	3. Advanced Forms 3.0 [html 5]
+	First web form was launched on 2004
+
+	============================
+	How php related to web form
+	============================
+
+
+	Web application
+			html/css/sass/less/botstrap/mediaQuery
+
+			JS= prgromming language  -->Interpreter
+			php= programming language --> PHP Interpreter
+
+	JS work on the basis of event
+	PHP work on page submit/load event
+		1. page load: you are requesting for a page URL
+			when ever a page is called (Resource) then browser will a create  or make a Request it will to server 
+
+			c--->s<--->Nic database  select * from marks_table where 
+			roll no <---> return   roll no zzzzzzzzz;
+
+
+	Syncronous programming:
+			All the resource, Devices hardware will wait and untill and 1 response processed.
+
+	Asyncronous Programming : Nodejs
+
+	All the resource, devices, hardware does not to wait requestwill be accepted from all but delivered once which is processed first.
+
+
+	Page loading:-
+	1. form submit <form></form>
+	2. using anchor tag <a href=""></a>
+	3. using shadow load [At network Layer]
+
+	Question:-
+	Consider a progream with js and php code inbuilt together 
+	<h1>
+	<?php 
+	$arr=[10,20,30,40]
+	?>
+	</h1>
+
+	<?php print_r($arr);?>
+
+	<script>
+	var arr=[<?php echo $arr; ?>];//var arr=[10,20,30,40];//jass(javaScript syncronous script)
+	console.log(arr);//[10,20,30,40]
+	</script>
+
+	1. Complete the code at line 1207
+
+	answer: Js it work on text or tag
+	request-->page call-->resource-->MIME type-->File(.php)-->Apache-->
+	php://[interpreter]
+		php code
+			plain text
+				browser
+					plain +HTML tag
+						DOM tree
+							Javascript
+
+
+
+	WAP to dynamically accept the input from the form and disply on another page.
+
+	FileName:input.php
+
+		step 1: Analyse the page load Event
+		step 2: if it is using <form> tag
+					1. action attribute compulsary <form action="output.php">
+						if action="" is self or empty
+						action="input.php" or action=""
+						submit the form at this location
+
+		# is called fragment Identifier
+		and will be a key concept spa application (single page Application).
+
+		navigator location Api to change # convet into /
+
+		<a href="javascript:alert('hello')" title="">GO to row 4</a>
+
+					2. if action is available onsumbit attribute is checked
+					<from action="output.php" onsumbit="return false;">
+
+	Task : perform client side validation onsubmit attribute
+	name: blank
+	mobile: blank and length
+	email: type="text" empty and @ and dot.
+
+Date: 31/12/2020
+
+	Regular Expression(RegEx):
+	==========================
+	Regular expression means the entity or string consisting of many number of character with a specific index position such that it forms a unique or format.
+
+	for example:
+	Vehicle no.
+	UP63 N7398
+	01>= state code
+	23=> district code
+	4=> space
+	N7398=> pattern
+
+	Regular exapression Index set are Evaluated and it return true if format set match the character index set.
+
+	$pattern = "[9|8|7|6]{0}"
+
+	{0} =In {} is called index set
+	|   = delimeter
+	[]  = Character entitiy
+	All the allowed character set are return inside []
+	[abcd] only a,b,c,d are allowed. 
+
+	Consider this example Mobile: 8299502081
+								  ^
+								  mobile [0] match with $pattern
+								  it evaluates to be true
+
+	Real time example:
+	1. ctrl+f matches and find the matched pattern.
+	2. Email Validation in web application
+
+
+	Note:
+	 Comment Line:
+	// single line
+	/**/ multiline comment
+
+	Regex
+	/[a-z]+/ Non Length Based Regex
+	/^[a-z]{}$/ Length based Regex
+
+	// Unparsed Token
+
+	Postmortem of Regular expression:- 
+	==================================
+	Refrence : Mastering regular Expression Oriely publication.(book download)
+	 1. Wild card character set:
+	 	Thesde are just like operator or reserved symbol of regular expression 
+	.	wild card character
+	()	Substring or sub pattern 
+	-	range (a-z A-Z 0-9)
+	[]	character set entity all list of  allow character are placed inside it.
+	{}	No of valid character count including character set
+
+	Example:-
+	[a]{1}[a-z]{5}
+	[a]{1}][w]{1}[n]{1}[i]{1}[s]{1}[h]{1 
+	}
+
+	a at 0th index :-
+
+
+
+	[com]	length is : 3  == min length 3 
+	[com] {2} Invalid
+
+	[com] {3} == [com] true
+
+Date: 01/01/2021
+
+	1. Goto browser press ctrl+shift+i or F12 for Developer Tools
+	2. Goto console mode
+
+	Initilize the regex by var regex=/^Pattern$/
+	use regex.test("<input string>") return true or false
+
+	Other wild card character set:-
+	. =period
+	()
+	[]
+	{}
+	-
+	Note : All the reserved symbol to be used in regex can not be directly used for pattern matching
+	[[]] invalid
+	We can use escape operator sequence to stop or to ignore being parsed
+	[\[\]]
+
+	Meta pattern fixing:
+	====================
+
+	[a-z] regex.test(input)
+
+	Any character specified outside the charater set[] will make its fixed position for the given expression that means it will become are part of pattern with that symbol being mendatory.
+
+	Example:
+	@[a-z] This means before matching  a-z pattern sequence @ is Mendatory.
+
+
+
+	Reserved meta Operators:-
+	=========================
+	For example:-
+	a-z 26 character set of Alphabatic letters
+	 \d 0-9 digits Non case sensitive
+	 1. every meta operator is followed by escape operator.
+	 2. It specified unique Range set
+
+	\w : a-z word list 
+	\s : space allowed
+	\S : space not allowed
+	\W : lower a-z not allowed 
+
+	Context rammer rule:
+
+	No meta operator should be alone used in character set
+	meta operator will never used outside of the character set.
+
+	 ^[\w]{6}$/;// invalid regex
+
+	Quantifire:
+	===========
+	^n : starting of a pattern
+	n$ : ending of a pattern
+	^ donot include
+	[a-z]{6}
+	[0-9]{10}
+	[^\d]{10} is same as [not a-z]
+
+Date : 04/01/2021
+	line no 1250 to continue....
+
+	3. after client side data is validated 
+		1. How to send the data to the server on clicking submit button
+		2. How to send data to the server without submit button
+			Ajax <input type="button">
+
+
+	4. Considering submit from submit button
+		1. Identify the method the method type by default method is Get Type 
+		<form action="output.php" onsubmit="return validate();" method="get"> 
+		<form action="output.php" onsubmit="return validate();" method="post"> 
+		<form action="output.php" onsubmit="return validate();">
+		by default method is get
+		
+
+	Difference b/w get and post:
+	============================
+	 1. GET is a by default method of form tag.
+	 	Post is Strict method of form tag.
+	 
+	 2. GET is a insucure method 
+	 	Post is secure method
+
+	 3. Get result in the generation of QueryString
+	 	POST does not generates QueryString hence the data is sent in Encoded Standard and data remain hidden.
+
+	 	Explanation:
+	 		Any string in url followed by ? as a key and value pair seperated by & is calld QueryString.
+	 		in GET Request : ? = 1
+	 		Multiple QueryString are used in framework
+	 		Rather in post ? = 0
+	 		Output.php?name=rk&gender=male&email=rk@gmail.com
+
+	 		? = Query Mark 
+	 		name,gender,email = key
+	 		rk = value
+	 		& = seperator
+
+	4.	In GET request only limited amount data cane be sent to the server.
+		But in post request more than 1024 character set can be supply.
+
+	5.	In GET Request File can not be uploaded
+		In POST request any file cane be uploaded infact infact a Movie of 5Gb
+		but server must allow In apache server Max_upload_limit = 2MB	
+		to change Max_upload_limit php.ini
+
+			enctype=multipart/form-data is important to be used with post method in case of file uploading.
+			Explanation: When ever a data is sent to the server
+			1. url
+			2. header:
+					content-type:application/json
+					https_client: off
+					ssl_peer_verify: true
+					....
+					..
+					..
+					.
+					cache-expiry:100ms
+					pragma:
+					We modify header for downloading Images
+					header("Content-Type:application/Raw-data");
+			3. body:
+					Formdata
+					Formencoded data
+					raw data / json data
+
+					How to send data in json format
+					data:json
+					content-type:application/json
+					Encoding: UTF-8
+
+
+					{
+						"NAME":"Rudresh",
+						"gender":"male",
+						"file":"usydguydgyysgdudgfugdfduhdbuvbuybsuycuycuyycsguyucyduycuycdyjfjfjfcgjufjgvvuvjuvjvgugvvgjuvgyuvgvucgydbbdcugbgubugbguugbgybuugybgybgbygyububfyuybuybgugybugybugybugybugybgubyugyb=="
+					}
+
+	6.	GET request are cachable(cach memory = 64kb)
+		POST request are not cachable
+
+	How many type are storage in your browser
+	1. Seccion Storage
+	2. Cache storage
+	3. Local Storage
+	4. Web storage
+	ctrl+shift+I>>application layer
+	hard refresh  and clear cahe:
+	ctrl+shift+i rigth click on reload empty cache only for chrome
+
+
+	<link href="mycss.css?version=1.1">
+	<link href="mycss.css?version=<?php echo time(); ?>">
+
+
+	7.	GET request can be BookMarked
+		POST request cannot be Bookmarked
+
+
+	8.	GET request do not have any additional security can be publically Access
+		But in post request some token has to be supplied and this token is called CSRF(Cross-Site Request Forgery) security
+
+Date : 05/01/2021
+
+	CSRF(Cross Site Request Forgery):-
+	==================================
+	Prevention has to be done in case post request only not recommended incase Ajax Request.
+
+	forgery attack server work for match data from database
+	1. Domain Address (IP Address)
+	2. Data
+	3. Timestamp
+	4. CSRF
+
+
+	Request handling in php:-
+	Here we respond according to the legal request only
+	and request can be found using $_SERVER['REQUEST_METHOD']
+
+	How many types of request:-
+	1. GET
+	2. Post
+	3. put
+	4. patch
+	5. delete
+	6. options
+	7. lock
+	8. head
+	...
+	..
+	.
+
+	Most widely used request are
+	1. GET : Show the record / record
+	2. Post : You want post or add some data
+	3. put : changing complete data or updating fully
+	4. patch : partially update patch change password is example of patch request 
+	5. delete : Destroyies the record/Response
+
+
+	http request with database:-
+
+	CRUD : 
+	C : Create data insert
+	R : Read/Retrieve select
+	U : update  data update
+	D : delete  data delete
+
+
+	Note: Http protocol version:
+	http/1.1
+	http/2.1
+
+	create => HTTP /1.1 POST 200 OK
+	read => HTTP /1.1 GET 200 OK
+	update => HTTP /1.1 PUT 200 OK
+		   => HTTP /1.1 PATCH 201 CREATED
+	delete => HTTP /1.1 DELETE 200 OK
+		   => HTTP /1.1 GET 404 NOT FOUND
+
+Date : 06/01/2021
+
+	Creating unique identity for forms for serverside :
+	Any form control either it is input type=box,radio,button,checkbox,date,time,file everything should that have a unique name this can be supplied by using name attribute.
+	<input type="text" name="something">
+	Note taht name attribute value becomes key ata the server sider 
+	if GET Request
+	print_r($GET);
+
+	Array([something]=> 10)
+	if post Request
+	Print_r([something]=> 10)
+
+	2. Name attribute should be uniqe and case Sensitive
+	3. If request is sent using GET then name attribute is accessible using $_GET
+	4. If request is sent using POST then name attribute is accessible using $_POST
+	5. if you do not want to care about method type you can go for $_REQUEST which is Independent of Method type
+
+	Super Global Variable in PHP:
+	Super global variables are used predefined in built special variables used to get the value from any scope
+
+	Scopes:
+	1. Local Scope
+	2. Global Scope
+	3. Client Scope
+	4. Server Side Scope
+
+	There are two types of super global variable
+	1. Mangled Variable : _  will be used as a prifix
+	$_POST
+	$_GET
+	$_SERVER
+	$_REQUEST
+
+	2. Unmangled Variable : they donot start from _ as a prifix
+	$GLOBALS
+
+	These superglobal variables are:
+
+	$GLOBALS
+	$_SERVER
+	$_GET
+	$_POST
+	$_FILES
+	$_COOKIE
+	$_SESSION
+	$_REQUEST
+	$_ENV
+
+	 =================================
+	|superglobal = unmangled + mangled|
+	 =================================
+
+	Note: Name Mangling
+	class Test{
+		public $name;//no any underscore for public
+		protected $__class;//double underscore for protected
+		private $_marks;//single underscore for private
+	}
+
+	There context are super means the can be access any where.
+
+	Super Gloabl variables in details:
+
+	1. $GLOBALS:
+		It convert any local variable to super global variable and this variable is formed such that it becomes umangled variable.
+
+	2. $_GET: To receive variable or formdata from GET REQUEST
+		can be receive if query is generated
+		Query string each variable will a key in $_GET
+		?name=ravi
+		$name =$_GET['name'];
+		$name =$_GET['calss'];
+		echo $name;
+		echo $class;
+
+		Invalid :
+		$name =$_POST['name' 9];
+		echo $name;//undefined Index name Notice Error
+  
+Date : 07/01/2021
+
+	3. $_POST : To receive variable or formdata from POST REQUEST
+	File name:-(test2.html)
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>calculator</title>
+	</head>
+	<body><center>
+		<div>
+		<h1 style="text-decoration: underline black;"></h1>
+		<form method="post" action="post.php" onsubmit="return validate();">
+	<p>Enter text: <input type="text" id="g" name="name" autofocus=""> </p>
+	<input type="submit" name="" value="Submit">
+	</form>
+	</div>
+	</center>
+	</body>
+	</html>
+	_____________________________
+	File name:-(post.php)
+
+	<?php
+	$name = $_POST['name'];
+	echo $name;
+	?>
+
+
+	4. $_REQUEST : To receive variable formdata with any REQUEST $_GET or $
+		$_Request : variable is independent of request type or it can handle both the request get and post<br>
+		$_REQUEST = $_GET + $_POST 
+					? [n>1]	?[n=0]
+		if ?n=1 get key1 $_GET => $_REQUEST
+		if ?n=0 post key1 $_POST => $_REQUEST
+
+		how to send both the request : Patch(update single data) Request or PUT(update multiple data) Request
+
+		<form action ="update.php?id=10"></form>
+		update <tablename> set name = '$name' where id ='$id'; [PATCH]
+										post 			GET
+		update <tablename> set name = '$name',class='$class',mobile='mobile' where id ='$id'; [PUT]
+
+		File Name:request.html
+
+		<!DOCTYPE html>
+	<html>
+	<head>
+		<title>POST</title>
+	</head>
+	<body><center>
+		<div>
+			
+		<h1>$_REQUEST as  super global variable for GET</h1>
+		<form method="get" action="request.php" onsubmit="return true">
+	<p>Enter text: <input type="text" id="g" name="name" autofocus=""> </p>
+	<input type="submit" name="btn" value="Submit">
+	</form>
+	</div>
+	</center>
+	</body>
+
+	</html>
+	__________________________
+	file name:request.php
+
+	<?php
+	echo "The request is ",$_SERVER['REQUEST_METHOD'],"<br>";
+	echo "The QUERy String ",$_SERVER['QUERY_STRING'],"<br>";
+	echo "The count of key = ",count($_GET);
+	echo 'The $_GET keys ';
+	print_r($_GET);
+	echo "<br>";
+	echo 'The $_REQUEST keys ';
+
+	print_r($_REQUEST);
+	// $name = $_REQUEST['name'];
+	// echo $name;
+	?>
+
+	================================
+	file name:-request2.html
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>POST</title>
+	</head>
+	<body><center>
+		<div>
+			
+		<h1>$_REQUEST as  super global variable for POST</h1>
+		<form method="post" action="rpost.php" onsubmit="return true">
+	<p>Enter text: <input type="text" id="g" name="name" autofocus=""> </p>
+	<input type="submit" name="btn" value="Submit">
+	</form>
+	</div>
+	</center>
+	</body>
+
+	</html>
+	__________________________
+	file name:- ropst.php
+
+	<?php
+	echo "The request is ",$_SERVER['REQUEST_METHOD'],"<br>";
+	echo "The QUERy String ",$_SERVER['QUERY_STRING'],"<br>";
+	echo 'The $_POST keys ';
+	print_r($_POST);
+	echo "<br>";
+	echo 'The $_REQUEST keys ';
+
+	print_r($_REQUEST);
+	// $name = $_REQUEST['name'];
+	// echo $name;
+	?>
+
+
+	How to generate PATCH REQUEST and PUT REQUEST:-
+		We know that if we want to update any data in the database then we have to send either put request or patch request.
+			fully update =>[Put] request
+			partial update =>[Patch] request
+
+		Query for PUT:
+		Database S6chema
+		---------------------------
+		Tablle  :  Student
+		---------------------------
+		id | name | class | marks
+		01 | ravi | 12	  | 00
+		02 | chavi| 10	  | -10
+		---------------------------
+
+		update student set marks = '100' where id='01'; Patch Request
+
+		Fully update => Fully changed in value of auxillary Column set.
+		___________________________________________________________________
+	   |Auxillary Column Set = total columns - (No. of PK or Composite key)|
+	    -------------------------------------------------------------------
+
+	   if n=3 request Put
+	   if n<3 rquest Patch
+
+	   inorder to sent both the request use ?query string and method = "post"
+	   ?query string keyname =which is unique and will not be changed.
+	   ?id=121
+
+	   post => whose value ca be changed name,class,marks
+
+
+	$_SERVER:-
+		It is the super global variable used to get the server configuration like hostname,host agent , server variables, query string, methods, type of request, types of headers, server signature,.... etc
+
+		how to print multi dimensional array
+		echo "<pre>";
+		echo print_r();
+		echo "</pre>";
+		exit;
+
+		important key name:
+		[DOCUMENT_ROOT] => T:\php_progs\super-global
+	    [REMOTE_ADDR] => ::1
+	    [REMOTE_PORT] => 64278
+	    [SERVER_PROTOCOL] => HTTP/1.1
+	    [REQUEST_URI] => /server.php
+	    [REQUEST_METHOD] => GET
+	    [SCRIPT_NAME] => /server.php
+	    [SCRIPT_FILENAME] => T:\php_progs\super-global\server.php
+	    [PHP_SELF] => /server.php
+	    [HTTP_HOST] => localhost:8000
+	    [HTTP_CONNECTION] => keep-alive
+	    [HTTP_CACHE_CONTROL] => max-age=0
+	    [HTTP_SEC_CH_UA] => "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"
+	    [HTTP_SEC_CH_UA_MOBILE] => ?0
+	    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+	    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+	    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	    [HTTP_SEC_FETCH_SITE] => none
+	    [HTTP_SEC_FETCH_MODE] => navigate
+	    [HTTP_SEC_FETCH_USER] => ?1
+	    [HTTP_SEC_FETCH_DEST] => document
+	    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+	    [HTTP_ACCEPT_LANGUAGE] => en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7
+	    [HTTP_COOKIE] => PHPSESSID=qp0rbv3ajrqbkgomp7s41v9mpp
+	    [REQUEST_TIME_FLOAT] => 1609993050.8135
+	    [REQUEST_TIME] => 1609993050
+
+date : 08/01/2021
+
+	What is Activity Tracking in Server?
+	Generally ther are two type of resources
+		1. Serverfull
+		2. Serverless
+
+	Serverfull: Serverfull resources acquires complete tracking of user and they response over the server few or mor resources can not be shared in if resources is accessed from server protocol medium.
+	PHP
+	Trackink: enable or  disable
+	1 => Enabled
+	0 => Disabled
+
+
+	Serverless: Serverless respurces acquires incomplete tracking of the user and they can resopnse over the server without direct intervention of server.
+	They are not tracked by any server in this case in serverless resources can access any type of data from any source.
+	HTML
+	Trackink disable
+	Explanation :
+		$_SERVER : complete array of server configuration and setting.
+		$_SERVER stores the meta_data for the server configuration and its Environment, etc.
+
+	How to check tracking enabled or disabled:
+	$_SERVER['HTTP_DNT'];
+	Any request : http/1.1 GET OK
+	DNT : Response
+
+	How to GET Query String from server:
+	$_SERVER['QUERY_STRING']
+
+	How to get remote ip of a client
+	$_SERVER['REMOTE_ADDR']
+
+	How to get complete url
+	$_SERVER['REQUEST_URI']
+
+	How to get current file name
+	$_SERVER['PHP_SELF']
+	$_SERVER['SCRIPT_NAME']
+
+
+	How to get method type
+	$_SERVER['REQUEST_METHOD']
+
+	How to get Server protocol
+	$_SERVER['SERVER_PROTOCOL']
+
+	HOw to get server host
+	$_SERVER['HTTP_HOST']
+
+	how to get root of project
+	$_SERVER['DOCUMENT_ROOT)']
+
+	HOow to get Port no
+	$_SERVER['SERVER_PORT']
+
+	6. $_FILES : This super global variable is used to handle file uploading in server.
+	Files can be of any type
+	1. Binary
+		Example: Media File, mp3, mp4, pdf, zipped or any other MIME type.
+	2. Non Binary
+		Example: All text format files are non Binary Files
+		.tmp
+		.log
+		.txt
+		.dat
+		.doc
+		.csv
+		.html
+		.xml
+
+
+	Uploading means:
+		Read from one source and write one another source
+		Read from one destination and write to another destination.
+
+
+	Copy and move
+	Copy: first create the file
+			read the from 1-file
+			write another 2-file
+			memory release of file pointer
+
+	In C Language:COPY
+	File* fp1;
+	File* fp2;
+	fp1=$File;
+	fp2=$File;
+	fp1=fopen("c:/somethng.txt",r);
+	fp2=fopen("d:/somethng.txt",w);
+
+	while($ch=fread(fp1)!=EOL){
+		fwrite(fp2,$ch)
+	}
+	fclose(fp1);
+	fclose(fp1);
+
+	Move:	first create the file
+			read the from 1-file
+			write another 2-file
+			memory release of 2-file pointer
+			fseek(-1)
+
+	Steps how to upload files on server:
+	Internal Working: 
+
+
+
+	whenever we try to upload any file then a upload request is generated and file pointer is intialised.
+	Who Intialised the file pointer : 
+	Inbuilt server is responsible for Intialising the file pointer
+	1. Apache
+	2. PHP CLI Server
+
+	By default file pointer has  source address of tmp folder located in server folder of any server
+	Apache : tmp root
+	php Inbuilt Server : php tmp folder
+
+	What is this tmp folder;
+		1. It is default folder where every file handling is performed by server like storing file based session by file name sess_....
+	 	2. Using any file with .tmp extension 
+
+	 	Such path is define inside php.ini file
+
+	 	Now the file which is to be uploaded from the browser required key parameters
+	 	1. file_uploads=on in ini setting of server
+	 	2. Ptah should be available to tmp folder
+	 		upload_tmp_dir= define the path
+	 	Note : in ini file ; means disable to enable directive removr semicolon(;)
+	 	in httpd.conf # means disabled to enable # remove hash(#)
+	 	3. File uploading in browser is now ready
+	 		steps for code
+	 		client side
+	 		<form method="post" enctype="multipart/form-data">
+	 			<input type="file" name="xyz...">
+	 			<input type="submit" name="btn">
+	 		</form>
+
+	 		server side code
+	 		print_r($_FILE);
+	 		it is a two dimentional array
+	 		name key : name of the file
+	 		 tmp_name : file address of tmp folder
+	 		error : it show the error if happened during upload
+	 		size : it give the total memory reserved by tmp file
+
+date : 09/01/2021
+	Validate File uploads
+	=====================
+		Loop hole:
+			Error is used to detect error but this error is related to processing or illegal error but not valid or used defined error.
+
+	$filename =$_FILES['keyname']['name'];
+	$error = $_FILES['keyname']['error']; #processing error
+
+	========================
+	State management in PHP:
+	========================
+	state mange means tracking user state(location path) where user migratetd.
+	TWO type of state : previous and forward state
+	How many ways we can handle state
+
+	1. Using url:
+		We maintain the state or current url of user using Query String.
+		state should be maintain from the page itself
+		make a key in url and note down the current page name or its url
+	<form action="valid-upload.php?/=<?php echo basename($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data">
+	or
+	<a href="target.php?/=<?php echo basename($_SERVER['PHP_SELF']);?>"></a>
+	then you can header(location) using keyname /
+	for example:-
+		header("location:{$_REQUEST['/']}");
+
+	Checking set and unset variable:
+	--------------------------------
+	isset: isset return true or false for weather if a variable is defined or not 
+	<?php
+	$x=10;
+	var_dump(isset($x));//bool(true)
+	?>	
+
+	unset: same reverse  of isset it destroys the defined variable or key.
+	<?php
+	$b='rudresh';
+	echo $b;
+	echo "<hr>";
+	var_dump(isset($b));//bool(true)
+	echo "<hr>";
+	unset($b);//destroy 
+	echo $b;//undefined index $b : notice error
+	echo "<hr>";
+	var_dump(isset($b));//bool (false)
+	?>
+
+	How to set default value to a undefined variable:
+
+	We are going to use ternary Operator for such logic
+
+	General synatx:
+	---------------
+	<expression>?:[true]:[false];
+	Loop hole with echo:
+		Since echo is a multi argument language construct it can not be used to as a part of evaluated expresion.
+		$a=echo('print');
+		echo $a;
+		Parse error: syntax error, unexpected token "echo" in C:\xamp\htdocs\php-class\st-and-unset-variable\ternary.php on line 13 
+
+	ternary perator:
+	if value is unsset then undefined index error will raise.
+	we need to handle that
+	There are two possible ways
+	1. Suppress operator (@)
+		(@) is used to hide notice or warning error
+	2. Using ternary to handle unset variable
+		ternary operator can be used to aasign a default value if they not defined
+
+	special care must be taken for GET variable
+
+
+	Difference b/w is_null, empty and isset:
+	Note:: empty($name) or $name=="" are same
+	Note:: In php NULL is not equal to blank
+	Note:: In php blank== empty=='' or ""
+
+	empty()0 : blank is not allowed isset() True $name=""
+	is_null() : variable is defined with value NULL $name=NULL isset() True
+	isset() : variable is defined
+
+	isset > empty() > is_null
+
+
+	2. Using Session:
+	3. Using File handling
+
+
+
+
+
+	Working with Session Super Global Variable.
+	$_SESSION: Is a super gloabl variable which can be accessed
+
+	====================================
+	(devlopment/testing /staging server)
+	====================================
+	live server =? public domain
+	producton =? public domain
+	testing server =? public domain
+	staging =? private domain
+	private =? private domain
+	devlopment =? private domain
+
+date: 10/01/2021
+
+	GIT
+
+	DevOps : It is  not a technology but a culture in IT for software, Modelling and Production according to SDLC.
+
+	SDLC:
+		Software Development Life Cycle
+
+	In SDLC there were several model proposed by different engineer and IT experts
+	1. Waterfall Model :-
+		-----
+			|Requirement Analysis or Study
+			-----
+				|Design
+				-----|Coding
+					 ----|Testing
+					 	-----|Maintaince
+					 		-----|Delivery
+					 			---------
+	Each phase must be complete with 100% Accuracy why because undo is no possible.
+					
+	2. ProtoType Model :
+				We prepare a ProtoType
+				Requirement full and final
+				Desiging full complete
+				Time line is very good
+
+	3. Spiral Model :
+				Each loop represents modularity and project is highly flexible
+				work load distributed
+
+	4. Evolution Model :
+				spiral + waterfall = MashUp
+
+	5. Scrum Model(Agile Model) :
+				Its follows WBS(work breakdown structure) Architecture : 
+				Team Work
+				1. Coding Team(collabes 5) 5 copies 5 Branches(Dev Environment)
+
+					Designer : 5
+					Coding : 5
+					Testing : 5
+
+				2. Operational Team(collabes 2)
+					Sales : 2
+					Instaling : 2
+					Delivery : 2
+					Client Handling : 2
+
+
+
+
+	If yiu are working in a distributed system there should be some central server where every developer can submit there project or code such type of machanism is version control Mechanism.
+	Small small of code Source or module is called Scrum
+
+	Tools avaliable in market is called as versin control softwares:
+	SVN : (Sub Version)
+	GIT  
+
+	Such Type of mechanis or culture running in IT Company Is DevOps
+	Developer + Operational 
+
+
+	GIT:-
+	=====
+		Stages of Git:
+			All these stages are at local system.
+			
+			Untracked	unmodified	modified 	Git
+
+	Your project is backuped at three levels
+	1. Cache(Staging)
+	2. .git folder
+	3. Remote server
+
+	"add" command to untracked to git(staging)
+	Working git Terminal :
+	ls : list out all the files
+	pwd : print working directory
+	ls -lart : show hidden files list
+	ctrl+ font up
+	ctrl- font small
+	arrow keys Command history
+	clear used to clear the screen
+
+	Important commands for working with .git repo:-
+	-----------------------------------------------
+
+	1. How to create or set up global signature
+	git config --global user.name ""
+	git config --global user.email ""
+
+	2. Create or Intialise .git repo
+	git init
+
+	3. How to cross check
+	ls -lart
+
+	4. How to create Resource
+	touch <filename.ext>
+	example:-
+	---------
+	touch index.html
+	touch about.html
+	touch contact.html
+
+	5. How to create folder
+	mkdir <folderName>
+
+	6. How to track level of your project
+	git status -s : for short description
+	git status : long  description
+
+	difference b/w git status and git status -s
+	git status -s : It should tracking activity of files
+	git status : branch name
+				 last commits
+				 Tracking levels of all files
+
+	7. How to add file to staging
+	single file:  git add <filename>
+	git add -A
+	Multiple : git add --all
+
+	If you want to track complete current directory.
+	git add .
+
+	How to disable tracking 
+	remove the file from staging you need to clear cache
+	git rm -- cached <filename>
+	Note: Each tracking must be commited other wise cached will conflict
+	then you need to force fully remove the file.
+
+	You can raise flag -f flagfully
+	git rm --cached <filename> -f
+
+	Commit story:-
+	every file must be commited
+	git commit -m "Message any valid"
+
+	Gives you intire log for the commited changes
+	git log
+
+	commited file is created by unique id of 40 random character bits
+
+	How to get back last commited result
+	git checkout <filename>
+
+	How to know current Branch
+	git branch
+
+	How to create new branch
+	git branch <branchname>
+	example: git branch ravi
+
+	show that branch
+	git branch
+
+	How to switch branch
+	git checkout branchname
+
+Date : 11/01/2021
+
+	Q:-
+	what is diffrence b/w git clone and git init:
+	Git init is used when we want to start the project scratch.
+	branch:master/ main
+
+	clone means making changes in existing  project then we need to clone it
+
+	clone: public repo
+	clone: private repo (ssh key: rsa key Ciper code)
+
+	clone is performed to make changes like maintanance, deploying new functionality or testing.
+
+	How clone url looks:
+	http://someclouds/downloads/myfiles.zip
+	https://github/rknirala/mycustom-project/myfiles.git
+			↓			↓		↓			  ↓
+			git url/author_id/url_project/.git repo
+
+
+	what is git repo:
+	Any project having .git folder initialised becomes a repository
+	public repo : url it is globally accessible
+	private repo : only can accessed by loginned user one having ssh key
+
+
+
+	How to manage tracking of all files other than few files:
+
+	git add --all
+	git add -A
+	git add .(include folder)
+	remove the files which you do not want track
+	git rm --cached <filename>
+
+
+	best ways is: 
+	to .getignore file
+
+	what is .gitignore file:
+		it is a special file which trackes untracked files and do not add them to staging.
+
+		touch .gitignore
+
+		Note : git do not track any files registered inside .gitignore file
+		If you want .gitignore file itself not to be tragged you can add .gitignore inside .gitignore but getignore will not be added in satging Area. then next time when you want to clone the project you wont be able to know which files to working under tracking and which file to ignore.
+
+
+	git labelling:-
+	.git*
+	.gitlock
+
+
+	git diff command
+	----------------
+	used to find out the diffrence b/w last commited code with the latest modified code.
+
+	git diff <filename>
+	for example:
+	git diff index.html
+
+	how to checkout last code from a file:
+	git diff <filename>
+	git diff index.html
+
+	how to checkout last code from a deleted file
+	file name is missing
+	checkout the branch 
+	git checkout <branch-name>
+	git checkout master
+	you will get deleted filename
+
+	git status 
+	deleted : filename
+	git checkout filename
+
+
+
+	How to auto add and commit to staging:
+	=======================================
+	git commit -a -m "Any message to the existing code..."
+	git status
+	you will no status tree is clean
+
+
+	How t check out full
+	git checkout -f
+
+	-f flag will revert back all the changes from the project of current branch
+
+	Q1: A empty folder can not be tracked?
+	Ans. : Minimum one file must exit
+
+	Q2: Checkout cannot be performed at one condition
+	Ans. : In case of git init
+	since there is no commit file checkoout  cannot be performed untill and unless initial commit.
+
+	Terminology
+	1. git repo : any project having .git folder will called as git repo.
+	2. master : it is main branch of your project(Main Developer).
+
+Date : 12/01/2021
+
+	How to work with GitHub or Any Remote repository---
+	----------------------------------------------------
+	There are millions of online server which allow VCS(Version Control System) Intregation 
+	VCS  here refers to version control system which means you have multiple developers working under agile model or scrum model
+	scrum or sprint model
+
+	each(scrum) sprint is commited by diffrent devloper as a collab
+	and each scrum is a part of a branch
+
+	GitHub is a popular online server mostly use for submitting or commits
+	Is GitHub only the possible way:
+	No, we have bit-keeper (Git older Server Repository), bitbucket, aws, GitLab.
+
+	GitHub Owned by Microsoft.
+	You can create two types of repositry:-
+	1. Public : Any one Using Internet Can access.
+		Clone : No permission is required in pull.
+		push: Requires Permission and credentials
+		collab: Requires Permission and credentials
+		forks: Requires Permission and credentials
+
+
+	2. Private : You are the owner with Single Access.
+		clone: Requires Permission of the Owne for pull and such type of request is called as pull request.
+		push: Requires Permission and credentials
+		collab: Requires Permission and credentials
+		forks: Requires Permission and credentials
+
+
+	How to create fisrt repo
+	========================
+	1. Login to GitHub account
+	2. Access code may be asked to login into your gmail and get the OTP send by GitHub
+		[May or May not be]
+	3. Create Repository on the right hand side
+		before you create a repo you should have
+		following  Things ready
+		1. owner ship type : public or private
+		2. Unique url for repo (repo-name)
+		3. RaedMe file (optional) : It is local Documentation
+		4. .gitignore file (optional) : Which files or folder to commit or not
+		5. (optional) : Licence
+		6. tag line or discription : Information about the project.
+
+		create the repository
+
+
+
+		How to switch branch
+		git checkout <branch-name>
+		head ->employee
+		Ownership is created master will never know that ravi branch has been created.
+
+		How to push the code  to server
+		1. Add the remote url
+		git remote add origin <url>
+		git remote add origin https://github.com/rudreshmzp/techpile
+		git remote add origin <https://github.com/owner_id/repo-name>
+
+		How to confirm Origin
+		git remote -v
+		git remote add origin https://github.com/rudreshmzp/repo-name(fetch)
+		git remote add origin https://github.com/rudreshmzp/repo-name(push)
+
+		for push 
+		git push <origin> <branch-name>
+		git push https://github.com/rudreshmzp/repo-name/master
+
+		you have any other branch
+		git push https://github.com/rudreshmzp/repo-name/rudra
+		git push <origin> rudra
+
+		
+
+
+		origin is variable name
+		git remote add url https://github.com/rudreshmzp/repo-name
+
+		push in the url
+		git push url master
+		git ask for the credential and push the entire with the branch.
+
+		How to clone the project
+		git clone <public-repo>
+		git clone <private-repo> <ssh key>
+
+		How to setup a New branch and switch to it 
+		git branch
+		master existed
+
+		Now create the new branch
+		git checkout -b <branch-name>
+		$ output : creating a new branch and switching
+
+date : 13/01/2021
+	Using QueryString for Notifications:
+	====================================
+		Single QueryString : ?keyname = value
+		multiple Query string : ?keyname =value & keyname2 =value2 & keyname=value3.......
+	when ever you work with Query string there are multiple cache related problems like autofilling
+
+	autocomplete = "off"
+	tag level : <input type="text" name="name" autocomplete="off">
+
+	Xss Filtering in PHP : cross site Scripting
+
+date : 17/01/2021
+
+	How to hide foldr or file from indexing in Apache:
+	By default out of security concern few files and folder in apache is restricted to appear in indexing
+	such files header.php and public_html  ..  etc in server configuration.
+
+	Such configuration can be modified using .htaccess
+
+	IndexIgnore *
+	where * is a wild card character for disabling all indexing
+
+	ignoring any folder 
+	IndexIgnore folder-name or filename
+	IndexIgnore *.php
+
+	How to protect Directory Access
+	Options -Indexes to disable indexing
+	Options +Indexes to enable indexing
+
+	How to modify configuration without using .htaccess file:-
+	==========================================================
+	We have  to use server configuration using virtual Host
+
+	Goto xampp/apache/conf/extra/httpdvhost.conf
+	<virtualhost *.portno>
+		DocumentRoot "Path/to /your files"
+		<Directory "abspath/to/file">
+			Deny from all
+		</Directory>
+	</virtualhost>
+
+
+	How to disable a folder from accessing but allow for indexing
+	<virtualhost *.portno>
+		DocumentRoot "Path/to /your files"
+		<Directory "abspath/to/file">
+			Option -Indexs
+		</Directory>
+	</virtualhost>
+
+
+	Regex in php:-
+	==============
+	We can use pregmatch function to check validity of regex in php
+	syntax:-
+	if(pregmatch(<expression-of-regex>,<subject>)){
+		//if matched
+	}else{
+		//if not matched
+	}
+
+
+	task 
+	implement form validation using regex and server side validation on target page
+	for following fieldser
+	1.Full name
+	tp trim space from left and right
+	2.Mobile number
+
+	Sanitisation in php:-
+	=====================
+	XSS Filtering : Preventing user or hacker from injecting any other script such that it do not enables php to execute.
+
+	XSS means Cross Site Scripting
+
+	some times you may require tags or some time may not require
+	for example:
+	<h1>Hello</h1> from text box when submitted generates Heading tag with Hello
+
+	Insuch case we need to remove tags
+	strip_tags() removes the tag
+
+	in some case entities are not required
+	htmlentities() prevents  from generating html entities
+
+	If you want to generate it
+	html_entities_decode
+
+	in some cases you may require tag for generating presentantion
+	htmlspecialchars() which automatically converts tags to special character set such that all the code is printed in raw format.
+
+	Make a user define function to perform XSS filtering
+
+	function sanitise($arg){
+		$arg = strip_tags($arg);
+		$arg = htmlentities($arg);
+		$arg = htmlspecialchars($arg);
+		$arg = trim($arg);
+		return $arg;
+	}
+
+	Write a program for small blog application where user can post its php codes based on topic
+	<?php
+	$title =strip_tags($_POST['title']);
+	$content =($_POST['content']);
+
+	echo "<h1>".htmlentities(trim($title))."</h1>";
+	echo "<hr>";
+	echo "<xmp>".$content."</xmp>";
+	echo htmlspecialchars($content);
+
+	?>
+
+	write a php code to take user information with following field:
+	1. Name
+	2. Mobile
+	3. Email
+	4. Gender
+	5. Address
+	6. Country
+
+	display two buttons first btn show preivew and second btn edit 
+
+
+	Global Autoloading :-
+	=====================
+
+	Some times you may require few files to be automatically loaded in a such a cse it becomes very hactics in that case why not to make your own autoloader and let autoloader and let autoloader include all the files anywhere.
+	make a file init.php
+	<?php
+
+	$autoload=['errors','functions'];
+	foreach($autoload as $key => $value){
+		include "{$value}.php";
+	}
+
+	?>
+
+	in root folder place .htaccess file
+	RewriteEngine On
+	php_value auto _prepend_file 'init.php'
+
+	Note : init.php must exist
+	File name can be Anything Whenever
+
+
+
+Date : 18/01/2021
+	How to get :
+	<form action="somepage" method="get||post">
+	<input type="text" name="aa"/></form>
+
+	how to set value value on input box
+	you can value attribute
+	$name = 'ravi';
+	I want to put this value by default in text box
+	1. <input type="text" name="name" value="ravi"/>
+	for dynamic 
+	1. <input type="text" name="name" value="<?php echo $name; ?>"/>
+	if amy error is raised it will be visible on the page 
+	in ctrl + u (view  psge source).
+
+	Multiple redirection error:
+	===========================
+	It is a error when request send by the header becomes recursive which leads to infinite looping and page donot respond
+	Such erroe is called redirection error.
+
+	If you have get request and header("location:<target>") is called to same page at the get request then such error is seen
+
+	for example:
+	input.php
+	header("location:input.php");
+
+	How to reset the form fields after form submit:
+	===============================================
+	 Generally for better response you can take user redirect from current page another page.
+	 
+	 but for resetting the form fields on the same page 
+	 multiple ways
+	 1. using header location:
+	 	here we can use header location and pass som e message with Query string and later on use it as a flash-data
+	step 1:
+
+	include 'error.php';
+	include 'function.php';
+
+	step 2:
+	$msg['register-success'] = '<span style="color:darkgreen">'$#10004;Registration done</span>;
+
+	step 3:
+	header("location:input.php?msg=register-success");
+
+	step 4:
+	<?php show_errors();?>
+
+	Case 2: 
+	alert using php
+	 echo '<script>window.alert("your message");window.location.href="input.php"</script>';
+
+	case 3:
+
+
+	Case 4:
+	 using pure javascript
+	 createa a common class-name
+	 class ="input-box"
+	 and generate script tag dynamically only when form is submitted 
+	 $submit = true;
+	 After body tag:
+	 <?php if($submit==true){?>
+		<script>
+			var classelement = document.getElementsByClassName('class_name');
+			for(var i=0;i<classelement.length;i++){
+				classelement[i].value="";
+			}
+		</script>
+	<?php }?>
+
+
+	how to get and set in select box
+	<select name="city">
+	<option value="mzp">mzp</option>
+	</select>
+	$city = $_POST['city'];
+	echo $city
+
+	Set:
+	You have make selected attribute dynamic
+	<select name="city">
+					<option value="Select" <?php if($city=='Select'){echo "selected";}?>>Select</option>
+					<option value="Delhi" <?php if($city=='Delhi'){echo "selected";}?>>Delhi</option>
+					<option value="Hbd" <?php if($city=='Hbd'){echo "selected";}?>>Hbd</option>
+					<option value="Ban" <?php if($city=='Ban'){echo "selected";}?>>Ban</option>
+					<option value="Noida" <?php if($city=='Noida'){echo "selected";}?>>Noida</option>
+	</select>
+
+	Working with session:-
+	======================	
+	Sessions are the tracking timestamp for any event.
+	Whenever the session is started a event timestamp is generated.
+	By default in php it exist till 1440 second (24 Minutes).
+	can it be modified yes How?
+
+	php.ini
+	session.gc_maxlifetime = 1440 if you modify this 
+
+
+Date : 21/01/2021
+
+Difference b/w  session_unset, session_destroy and unset($_SESSION):-
+
+session_unset:
+	STUDENT_ID t1 same time stamp is destroyed
+	or TEACHER_ID t2
+	or PHPSSID t3
+
+session_destroy:
+		Teacher => Timestamp teacher PHPSSID
+		student => Timestamp student PHPSSIDstudent
+
+	session_destroy : PHPSSID t1
+	or TEACHER_ID t2
+	or STUDENT_ID t3
+
+	when you use session_destroy All the session token with timestamp will be destroyed
+
+
+unset:
+	It only destroy session current token not the timestamp.
+
+When session_unset and session_destroy works same
+when session token is same
+
+Important topic of session:
+===========================
+
+1. session_token :
+Name of the token which is shared among browser and server.
+	it is the name of the cookie.
+	c=client
+	c=cookie
+	s=server
+	s=session
+	session token name is same as cookie name which is stored in browser
+	in server:
+	session_token = PHPSSID
+
+	in browser  or client:
+	coookie_name = PHPSSID
+
+2. session_timestamp : 
+		By default the session time out for a guven timestamp is 1440 second
+		But since timestamp is not sent to browser.
+		cookie will never expire rather replace same with the token name.
+
+		How to expire cookie:
+			since timestamp is a independent unit and time cannot be <0
+			hence timestamp cannot be destroy.
+
+			Then how to clear the cookie or expire the cookie:
+				How to set the Cookie
+				setCookie('user','name',time()); 
+
+				This logic will be useful in case of Remember me.
+
+	How to replace the existing Cookie
+		setCookie('user','new_value',time() -300);
+
+
+	How to expire Cookie
+		setCookie('user','',time()-300);
+
+3. session_save_type:
+	where server will store the file 
+	1. in filesystem :  c:/Xampp/tmp/  90% security (no tracking)
+	
+	combination of file system + database =100%
+
+	2. database(10% security)(tracking 100%)
+		tbl_session
+---------------------------------------------------------------------------------
+		id 	|Token_name	|created_on|expired_on	|session_id	|	IP_address|
+---------------------------------------------------------------------------------
+
+4. session_savepath :
+	By default session where in C:/xampp/tmp
+	one file is created with name
+	sess_<session_id>
+
+	How to trace this file or change the path of this file
+	
+	-------------------------------
+	to get path
+	ini_get('session.save_path');
+	-------------------------------
+
+	-------------------------------------------------
+	to set path
+	ini_set('session.save_path','C:/xamp/newfolder');
+	-------------------------------------------------
+	before
+	session_start();
+
+5. session_id :
+	It is a encrypted hash key with alphanumeric Id given to a user everytime a new timestamp created
+
+	How to get session_id :
+	session_id()
+	But if user can get your session id it can perform session Hijacking or session
+	fixation
+
+	How to prevent
+	After new time regenrate the session_id
+	session_regenerate_id()
+
+	example:
+	echo "sess_".session_regenerate_id();
+	exit;
+
+	What is session Hijacking:
+		Trying to imitate as a original user even without knowing credential and fooling server by showing session_id to remain un_caught.
+
+
+Date: 22/01/2021
+
+How session Works:-
+	Once users enters his/her username and password  such that it is authenticated from server and database end server is going to maintain the user state for tracking its activity.
+	This tracking will be done for the specific span of timestamp which bydefault is 1440 seconds
+	If user want to timeout or expire this tracking session before the timestamp time he/say may use to go for logout option and timestamp + token given to user will be expired.
+
+	Now question ... How server Identifies this user uniquely
+	step 1: Authenticate the user
+	step 2: Alot the encrypted unique session id with a timestamp to each user
+	step 3: The copy of token is saved in cookie
+	step 4: When ever the request for the asme url is called everytime before giving access to user server is going to match this token.
+
+	If given token in cookies is == to session token being store user is valid 
+	else server kicks him out.
+
+Date : 23/01/2020
+
+=================================
+Working with project Architecture:
+=================================
+htaccess inheritance:
+Multiple htaccess can be maintained in the sub directory or root directory
+priority of the chile htaccess is highest
+
+1 : rules are Inherited from parent  .htaccess
+2 : Child htacess rules are applied
+3 : Child rules override parent Rules 
+
+
+myproject
+	|
+	|blog-application
+	|		|
+			|web-apir
+			|web-app
+			|	|-->.htaccess [child]
+			| .htaccess[parent]
+
+			parent =>rules apply
+			child =>rules apply
+			child rules override parent rules
+
+
+
+Using Modular Approach:
+	General files are kept in root folder
+	web-app
+		|---->index.php
+		|---->contactus.php
+		|---->register.php
+		|---->login.php
+
+	Break the role in modules
+	make a folder user or student or teacher or admin
+
+	web-app
+		|---->index.php
+		|---->contactus.php
+		|---->register.php
+		|---->login.php
+		admin/
+		user/
+		teacher/
+		student/
+
+How to make your own package and load automatically:
+==========================================
+make a folder of any name add some file into it and go to 
+config/config.php
+$autoload['folder_name'] = array('file_name without extention','file_name without extention');
+
+Date : 24/01/2021
+
+InterOperability using Json or YML:
+==================================
+Communication b/w two independent languages.
+Using API's
+Mode of channel : Internet (WEB-API)
+data format : XML,JSON,YML (Highly Recommended)
+
+APP1(PHP)<----API---->APP2 (JAVA)
+language A <-----data> language B
+API: Application Programming Interface.
+
+to add password configuration in phpMyadmin
+goto xamp/phpmyadmin/config.inc.php
+
+/* Authentication type and info*/
+$cfg['Servers'][$i]['auth_type'] = 'cookie';#config changed to cookie
+
+
+Sample of API Code with API_KEY
+API_KEY has following names Auth_key,Secret_key, Auth_token,API_TOKEN,...etc.
+But Industry standard is based Upon JWT(Json Web Tokens)
+
+
+Data Representation using JSON:
+==============================
+JSON : JavaScript Object Notation
+It is common mode of data Transmission or Representation
+
+Few Terms in JSON
+-----------------
+JSON Data is Combination of key and value pair
+
+JSON Object
+{
+"key" : "value"
+}
+
+JSON Object By Multiple keys and value
+JSON DATa
+{
+"key" : "value",
+"name" : "ravi",
+"class" : 12,
+"marks" : null,
+"passed" : true
+}
+
+How to make multiple data in JSON object:
+-----------------------------------------
+JSON Array:
+{
+	
+	"Hobbies" : ["singing","dancing"]
+}
+
+student for ravi Using Json:
++++++++++++++++++++++++++++
+
+student :Ravi
+{
+"key" : "value",
+"name" : "ravi",
+"class" : 12,
+"marks" : null,
+"passed" : true,
+"Hobbies" : ["singing","dancing"],
+}--->0
+
+student : manas
+{
+"key" : "value",
+"name" : "ravi",
+"class" : 10,
+"marks" : 0,
+"passed" : false,
+"Hobbies" : ["singing","dancing"],
+}----->1
+
+Array of objects
+
+{
+	"data" :[
+		{
+			"key" : "value",
+			"name" : "ravi",
+			"class" : 10,
+			"marks" : 0,
+			"passed" : false,
+			"Hobbies" : ["singing","dancing"],
+		},
+		{
+			"key" : "value",
+			"name" : "ravi",
+			"class" : 10,
+			"marks" : 0,
+			"passed" : false,
+			"Hobbies" : ["singing","dancing"],
+		},
+
+	]
+
+}
+
+
+Serialise and deserialise
+
+How to check the response using JavaScript
+document. 
+
+PHP objects with Stdclass
+Serialization : Converting one type off objectto another  type ob object 
+php object converted to JSON object
+API encoding
+
+If you are using  API then we must set Content-Type using headers
+
+How to write json response to json file
+for that we have two ways 
+By request to json url
+http://www.rknirala.gov:8000/php-class/InterOperabilityy/objects.json
+
+1. Either create Objects.json file and write the data to the file and you can access that file fromn url
+
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9\-_]+).json$ objects.php
+
+How to create dynamically Json using php:
+Explanation  : using file handling
+
+Step 1: fopen the file
+fopen("filename","mode");
+mode =>r,r+,w,w+,a,a+
+
+
+
+date : 25/01/2021
+
++plus : extended
+without + :  Strict Mode
+
+r : read only No write Operation :Strict Mode
+r+ : read and write Operation : Write extended
+
+Step 2: Initialise the file pointer
+$fp = fopen("output.json","r");
+
+Step 3:
+check if $fp is Null
+if($fp==NULL){
+	die();
+	exit();
+}
+
+Debugging Functions:
+	This functions are used for debugging point of view
+
+1. die() : It terminates the execution of script at a perticular Point with any message
+2. exit() : Same as die(); The only diffrence is exit support 0-255 Index Numbers
+
+3. var_dump : It can dump every thing about a variable or variable  dumping
+	$arr = array(10,"20",true,[10,20,30],10.5);
+	var_dump($arr);
+	$arr is a Array
+array(5) { [0]=> int(10) [1]=> string(2) "20" [2]=> bool(true) [3]=> array(3) { [0]=> int(10) [1]=> int(20) [2]=> int(30) } [4]=> float(10.5) }
+
+var_dump is support multi argument
+var_dump($x,10,20,30);
+
+var_dump is not a language  Construct : paranthesis are mendatory
+var_dump$x;
+
+
+var_dump can be used to print objects
+
+class Test{
+	public $a=10;
+	public $b=30;
+	public $c="Apple";
+}
+$obj = new test();
+var_dump($obj);
+
+4. print_r:
+printr for  debugging means Printing in a Formated Way
+
+<?php
+echo "<pre style='background-color:black;color:white';font-family:rockwell;>";
+$arr =array(10,20,30);
+print_r($arr);
+echo "</pre>";
+?>
+
+Question 1:
+Diffrence b/w echo and var_dump
+1.	echo  cannot print array
+	var_dump cann print Array
+
+2.	echo can not print Boolean false
+	var_dump can print boolean false
+
+3.	echo is  language construct
+	var_dump is not a language construct but support argument under single parenthesis
+
+Question 2:
+Make a user defined function called prx() print and exit for debugging purpose it can print any type of DataType in a formattable Order
+
+function prx($arg){
+	echo "<pre>";
+	if(is_array($arg)){
+	print_r($arg);
+	}elseif(is_null($arg) or is_bool($arg) or is_object($arg)){
+	var_dump($arg);
+	}else{
+	echo $arg;
+	}
+	echo "</pre>";
+	exit;
+}
+
+function pr($arg){
+	echo "<pre>";
+	if(is_array($arg)){
+	print_r($arg);
+	}elseif(is_null($arg) or is_bool($arg) or is_object($arg)){
+	var_dump($arg);
+	}else{
+	echo $arg;
+	}
+	echo "</pre>";
+}
+
+
+After Checking for Null
+=======================
+You can perform read write Operation 
+read : fread()
+write : fwrite()
+
+Read
+fread($fp);
+
+write
+fwrite($fp,"Line of code");
+close the file
+fclose($fp);
+
+writing the data at once:
+file_put_contents("output.json", $json);
+
+Reading the data at once:
+$data=file_get_contents("output.json");
+
+#wap in PHP to read/Write the data at once  in a file for api
+Write:
+
+<?php
+
+$student = new StdClass();
+$student->name ="Rahul";
+$student->mobile ="7839179059";
+$student->email ="rk@gmail.com";
+
+//Encode it into Json
+header("Content-Type:application/json");
+$json=json_encode($student,JSON_PRETTY_PRINT);
+// Used to write complete data into a file
+file_put_contents("output.json", $json);
+?>
+
+Read:
+
+$data = file_get_contents("output.json");
+var_dump($data);
+
+
+
+
+Date : 27/01/2021
+
+Decoding from json string
+inorder to decode the entire String we can use json_decode() to Convert Json_STR to native PHP DtatType
+
+Syntax: 
+json_decode(<json_str>,<to array>[default= false]);
+Return Type : Object | Array | Key
+
+
+
+How to decode  the entire json string to array
+Syntax:
+$data=json_decode(<json_str>,true);
+echo gettype($data); //array
+
+Ilterating through Object
+
+foreach($json_array as $json_obj){
+	echo $json_obj->key_1;
+	echo $json_obj->key_2;
+	echo $json_obj->key_3;
+	echo $json_obj->key_4;
+	.............
+}
+
+
+Ilterating through Array
+
+foreach($json_array as $json_variable){
+	echo "$json_variable{['key_1']}";
+	echo "$json_variable{['key_2']}";
+	echo "$json_variable{['key_3']}";
+	echo "$json_variable{['key_4']}";
+	.............
+}
+
+
+Question: What is difference b/w json_encode and json_decode
+Answer : 
+1	json_encode: Converts PHP native Objects to json object string
+	json_code : Converts json_string to php native DataTypes which will be object if second argument kept as false and array if second argument kept true.
+
+Asyncronous programming in PHP:
+==============================
+Asyncronous means doing multiple task Parellely.
+Syncronous means doing task one after the other it will wait till the First task is completed.
+
+Why do we require Concept of Asyncronous Programming:
+
+It is because JS is event based and PHP is page load based(Response)
+if event occurs Response will wait
+Response will Occur then event will wait
+Deadlock condition will occurs
+That is why we need Asyncronous programming
+This can be done using concept of ajax
+
+
+Ajax:
+=====
+Ajax : Asyncronous JavaScript and XML Response : Content-Type : application/xml
+Ajaj : Asyncronous JavaScript and Json Resopnse : Content-Type : application/json
+Ajay : Asyncronous JavaScript and Yml Resopnse : Content-Type : application/yml
+
+
+how to acchieve: 
+================
+Vanilla .js or pure JavaScript
+var http=new XMLHttpRequest();
+	http.open("url");
+	http.send("url",true,"GET/POST");
+			   |	|		|
+			   |	|		|Method get or post
+			   |	|is Asyncronous
+			   |url wher to send data
+
+Using Jquery
+$.ajax({
+	url:"getdata.php",
+	datatype:"JSON|XML|YML|text",
+	type:"GET|POST",
+	success:function(response){
+		//js code
+		//code is key in json Object returned by PHP
+		if(response.code==200){
+			//js code data Binding
+		}else{
+			console.log(response);
+		}
+	},
+
+});
+
+Date : 28/01/2021
+
+extract($settings);
+
+How to JS and PHP Parallely:
+<script type="text/javascript" src="path/to/js.php"></script>
+
+How to js.php
+
+<?php
+header("Content-Type:text/javascript");
+?>
+var base_url ="<?php echo AJAX_PATH;?>";
+window.alert("hi");
+
+if you try to include any php file in a root folder
+then autoloader configuration must be required
+
+go to admin/ folder 
+copy  .htaccess  file 
+kepp in any Custom root folder you created. for example (php_js)
+
+Register the definition and path for php_js
+inside php_js
+	|---.htaccess
+	|---myjs.php
+
+goto config/config.php
+$modular['php_js']='php_js';
+
+Date : 29/01/2021
+
+Ambiguity in ajax Request:-
+Since each and every request is processed via serever timestamp for each request is calculated tracked by server Any request with same Identity will processed first which is arranged in Memory stack first.
+
+That is why each request must be sent Uniquely
+For example:
+for Email:
+
+http://localhost/myproject/blogapplication/web-app/ajax/check_email.php = valid request for http/1.1 OK
+
+for Mobile:
+http://localhost/myproject/blogapplication/web-app/ajax/check_mobile.php = valid request for http/1.1 OK
+
+
+	
+	email 			mobile 				  xyz
+	|				|					  |		
+	|				|					  |
+	|_______________|_____________________|
+				server
+
+
+
+
+How to hide extention using htaccess:-
+
+RewriteRule ^(regex_match)$ <resource_name>
+Note that query string is allowed in case of Rewrite Rules
+
+Magic Constants in PHP:-
+
+All the variable must be define with prefix $ and function with suffix () paranthesis.
+But Constants are define in UPPERCASE and with not prefix and suffix
+
+How to make constant in php-:
+
+define('Constant_name',value);
+
+how to use:
+echo CONSTANT_NAME';
+
+All constants are global can be Accessed Anywhere
+Scope of Constants : Global
+
+Write a program to define Your Own User defined Constants.
+
+example:
+define('GRAVITY',9.8);
+echo GRAVITY;
+
+function test(){
+	echo GRAVITY; //9.8
+}
+
+//calling of test
+test();//9.8
+
+define('GRAVITY',10); // Cannot be Reasigned
+
+Magic constant are predefine constant in php and capable to providing runtime values
+
+These magic constant have __ as prefix and __ as suffix
+
+1. __FILE__ : Give the entire path for a file
+
+example: file name header.php
+echo __FILE__;
+C:/xampp/htdocs/path/to/folder/layout/header.php
+
+2. __DIR__ : Give the entire path for a file parent folder
+
+example:
+echo __DIR__;
+C:/xampp/htdocs/path/to/folder/layout/
+
+3. __NAMESPACE__ : Give the name_space name
+4. __CLASS__ : Give the Current class name
+5. __LINE__ : give the line Number where execution is done
+6. __FUNCTION__ : Give the function of being Called
+7. __METHOD __ : Give the method name of a class
+8. __TRAIT__ : Give the Trait name (Multiple Inheritance Expection)
+
+__NAMESPACE__, __CLASS__, __METHOD__, __TRAIT__ 
+
+
+
+
+image/assets/icon/del.png
+setting path of asset
+dynamic id 
+
+
+
+Date : 31/01/2021
+
+for external css
+<base href="<?php APP_PATH;?>"/>
+
+Date: 11/02/2021
+How to take backup
+
+cd/
+wmic ** /f
+@echo off
+echo --loof --are
+
+windows R
+%temp%
+you will get the backup in folder with name
+window/iuedfyqwgtyaiuuhsgasv
+
+Output buffering:
+=================
+
+Output buffering means sending the data to the buffer memory before sending to it to the browser
+This is very Internal Function
+Source code
+		|
+		|----->php
+				|
+				|----->buffer memory(Output buffer) 4096 character allow by default php.ini can be modified 
+						|
+						|----->browser
+
+we know that in the Output the most and first thing sent to the browser is header but if you are rewrite Engine you will definetly modify some header
+
+in such case we need to clear to output buffer
+1. ob_start() :: Starts Output Buffering
+2. ob_end_flush() :: end the output buffering and sent the Browser
+
+Error :: Headers Already 
+
+
+
+
+
+Task :
+******
+Optmise Dashboard
+
+Menu bind
+in faq section
+add form
+question
+answer
+asked by
+status

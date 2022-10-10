@@ -1,0 +1,62 @@
+<!--
+name
+animation-fill-mode:backwards
+-->
+<html>
+<head>
+<style>
+#outer
+{
+height:750px;
+color:dodgerblue;
+text-align:center;
+line-height:750px;
+font-weight:bold;
+font-family:sans-serif;
+font-size:100px;
+text-shadow:4px 4px 2px yellow,8px 8px 4px green;
+animation-name:xyz;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+}
+#outer:hover
+{
+animation-play-state:paused;
+}
+@keyframes xyz
+{
+0%{
+background-image: url("1.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+25%{
+background-image: url("2.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+50%{
+background-image: url("3.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+75%{
+background-image: url("4.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+100%{
+background-image: url("5.gif");
+background-repeat:no-repeat;
+background-size:cover;
+}
+}
+</style>
+</head>
+<body>
+<div id="outer">
+Suraj Mishra
+</div>
+</body>
+</html>

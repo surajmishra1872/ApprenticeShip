@@ -1,0 +1,31 @@
+<html>
+<head>
+<style></style>
+<title>TECHPILE</title>
+</head>
+<body>
+<div id="box">
+<h1>THIS IS MY FIRST WEBPAGE</h1>
+<p>
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  
+</p>
+</div>
+<button onclick="demo()">PRINT</button>
+<script>
+/*var a=document.head.innerHTML
+//var a=document.all
+//console.log(a)
+//var x=document.body.innerHTML
+var x=document.URL
+alert(x)
+*/
+function demo()
+{
+var dv=document.getElementById("box").innerHTML
+document.body.innerHTML=dv
+window.print()
+}
+</script>
+</body>
+</html>

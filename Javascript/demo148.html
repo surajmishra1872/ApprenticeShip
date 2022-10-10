@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var obj1={name:"RAM",college:"FGIT",}
+var obj2={age:30,branch:"CS",};
+var obj3={...obj1,...obj2} //{name:"RAM",college:"FGIT,age:30,branch:"CS"}
+
+document.write(`Name is:${obj3.name}<br/> College is :${obj3.college} <br/> Age is:${obj3.age} <br/> Branch is:${obj3.branch}`);
+
+</script>  
+</body>
+</html>

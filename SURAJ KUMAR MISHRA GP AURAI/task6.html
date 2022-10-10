@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 700px;
+            float: left;
+            border: 10px solid gold;
+            margin-left: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="5.jpg" height="500px" width="500px" id="img1" />
+    <img src="11.jpg" height="500px" width="500px" id="img2" />
+    <script>
+        window.setInterval(() => {
+            var im1 = document.getElementById("img1")
+            var im2 = document.getElementById("img2")
+            var path1 = im1.src
+            var path2 = im2.src
+            im1.src = path2;
+            im2.src = path1;
+        }, 3000);
+    </script>
+</body>
+
+</html>

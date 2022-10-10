@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            min-height: 200px;
+            border: 5px solid purple;
+            line-height: 200px;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body onload="demo()">
+    <div id="dv1"></div>
+    <script>
+        function demo()
+        {
+            var arr=[2,6,8,9,1,5,7];
+            var m=arr.sort();
+            document.getElementById("dv1").innerText="Maximum Value is:"+m[arr.length-1];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,863 @@
+C Programming:Programming language is a medium to communication with the computer system.
+
+Why we need Programming: To solve complex calciulation fasty we need a programing language.
+
+What is programs: Programs are the set of instructions written in a arranged manner to solve a specific prolem.
+ Translator: Translator is a medium which is used to convert high level language in machine language or computer understandable code.
+
+
+Mainly two types of translator are used with computer programming.
+
+1. Compiler: Scan whole program ata a time and displays the list of errors in whole programming.
+
+2. Interpreter : Scans programs line by line . and next line will check only if previous lines are are erroe free.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+BAsic structure of C Programming:
+1. Documentation Section:
+		Comment: Comment are those lines of code that is not executable by compiler.
+		1. Single Line: //
+		2. Multi line: /*...........*/
+2. Linking Section:
+	Header files: Header files are the collection of pre-defined functions. whenever you need those functions in your program firstly you have to include the header file in the program.
+#include<stdio.h>
+		     #include<conio.h> 
+		     #include<string.h>
+		     #include<math.h>
+#-Pre-Processor directive
+Include: folder name
+stdio.h :header file.
+
+3. Global declaration Section
+4. Main function:
+		main()  // pre-define function
+5. Block of main:
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Input Output function:
+1.Keyword:  Keyword are some pre-define words that is used to perform any specific task.
+Total 32Keywords are define in C programming.
+if  do, while,int,char,float,double  etc.
+
+2.Variables:    
+variable is  atemporary storage area.
+a. Declaration of variable:
+data_type variable_name.
+
+
+2. Initialization of variables:
+a. Direct Input
+b.User Input.
+
+
+Output:
+
+Input function:
+scanf():
+syntax:
+scanf("format_specifier",variable_name_with_&);
+
+int:%d;
+float:%f
+double:%lf
+long double:%Lf
+char:%c
+long int:%ld
+
+
+int a;
+scanf("%d",&a)
+
+
+output function
+printf()
+
+
+printf("format_specifier",variable_name)
+
+example:
+
+
+Operator: Operators are the some special  symbols that are used to perform some specific task. Operators are always used with one or more operands.
+Operators are the some special  symbols that is pre defined in the program and used to perform a pre defined specific task.
+accordindg to the working of different operators, that are divided into 7 parts:
+
+1 Arthemetic Operator:
+		Arthemetic Operator are use to perfom arthmetical operations.
++:addtion 
+-:Substraction
+*:multiply
+/:division
+%:modular division
+eg.:
+void main()
+{
+int a,b;
+ 
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Relation Operator:
+		Relation Operator isUsed to define relation between  two oprands.It always returns value either true or false.
+<:greater than
+>:less than
+>=:greater than equal to
+<=:less than equal to
+==:equals to 
+!=:not equal to
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Logical Operator:
+		Logical operator is used to specify ralation between two or more relation.It alwas returns value either true or false.
+
+&& : Logical AND
+|| : Logical OR
+! : Logical not
+
+Logical AND:
+True && True :True
+True && False: False
+False && True:False
+False && False: False
+______________________________
+True || True: true
+True || False: True
+False || True:True
+False || False:False
+_________________
+! True: False
+!False: True	
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Assignment Operator:
+		Assignment operator is used to compare is used to right hand side value to the left hand side.
+=: is the assignment operator.
+
+int a=40,b;
+b=a;
+b==a;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Conditional Operator:
+		Conditional Opertaor is used as the optional part if-else statement.
+Syntax:
+	condition ?true_block: false_block;
+
+eg.: 
+       int a=20;
+       a>10?printf("a is greater than 10"):printf("a is not greater than 10");	
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Increment  & Decrement Operator:
+			Increment & decrement operator is an unary operator. It is used to increase and decrease value of a  variable from 1.
+
+++: increment operator
+--: decrement operator
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+7. Bitwise Operator:
+		Bitwise Operator is  on binary values.
+&: Bitwise AND
+|: Bitwise OR
+^: Exponential
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+04/11/2020
+					Control Statment
+
+1.Conditional Statment:
+		
+
+
+
+			Loop Statment		
+ if Statment:
+ 	simple if				
+	if-else
+	leader if
+	nested if
+	switch case
+
+Switch statment:
+	Switch statment is used when your have to execute diffrent statement  based on the diffrent single value of a variable.
+It is a optional part of else -if ladder statement.
+Switch statement only wirk with int or characters type value.
+syntax:
+switch(value/expression)
+{
+case value;
+//Statement;
+break;
+-
+-
+-
+default;
+.//statement;
+break;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------switch(val)
+{
+case 1:
+printf("hello")
+case 2:
+printf("hi");
+break;
+case 3:
+printf("okay");
+break;
+case 4:
+printf("hello");
+break;
+case 5:
+printf("hello");
+break;
+}
+
+Nested If:
+	if(condition)
+	{
+		if(csondition)
+		{
+		
+		}
+		else if()
+		{
+
+		}	
+	}
+---------------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+printf("enter three values to find greatest : ");
+scanf("%d%d%d",&a,&b,&c);
+if(a>b)
+{
+if(a>c)
+{
+printf(" a is greater");
+}
+}
+getch();
+}
+--------------------------------------------------------------------
+
+
+Iteration Statement /Looping Statement :
+			Looping statment is used  when we have to execute  a number of lines  multiple times.
+ 	till when, the given loop is is execute depends on the  given condition. 
+Iteration of loop is controlled in two way:
+1. Entry control
+	For Loop
+	While Loop
+2. Exit control
+	Do while  loop
+-------------------------------------------------------------------------
+Every loop mainly has three parts :
+1 Initialization:starting point
+2. Condition : Endingm Point
+3.Updation : Increment/decrement/steps in each iteration.
+----------------------------------------------------------------------------
+
+While loop:
+	While loop is an entry control loop. that means given condition with loop is checked before block of loop will execute. If given condition is true  then block of while will execute otherwise not.
+
+Syntax:
+initialization;
+while(condition)
+{
+//statement;
+//updation;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+int i;
+i=1;		//starting point
+while(i<=5)	//condition
+{
+printf("ok");	//updation
+i=i+1;
+}
+printf("");
+-----------------------
+//wap to print number from 1 to 20
+int i=1;
+while(i<=20)
+(
+printf("%d",i);
+i=i+1;
+)
+
+------------------------------------------------------------------------------------------------------------
+//wap t0 print table of 2
+#iunclude<stdio.h>
+#include<conio.h>
+void main()
+{
+int 2;
+while(i<=10)
+{
+printf("%d\n",i);
+i=i+1;
+}
+}
+-----------------------------------------------------------------------------------------------
+
+For Loop:
+	For loop  is also a entry control loop  that means condition ginven with loop  is checked  first and if the given condition is true then for loop  will execute.
+ For loop is easy to use.
+Syntax :
+	for (initilization; condition; updation)
+{
+//Statement;
+}
+--------------------------------------------------------------
+
+Wap to print numbers from 1 to 20.
+for(i=1;i<=20;i=i=i+1)
+{
+
+}
+------------------------------------
+WAP to print digits*10 of a three digit number.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,d;
+printf("Enter a three digit number : ");
+scanf("%d",num);
+for(i=1;i<=3;i++)
+{
+d=num%10;
+printf("%d\n",(d*10));
+num=num/10;
+}
+getch();
+}
+-----------------------------------------------------------
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,sum=0,i;
+print("Enter a number : ");
+scanf("%d",&num); //initilization
+for(i=num;i>0;i=i/10)
+{
+d=i%10;
+printf("%d  ",d);
+}
+getch();
+}
+
+---------------------------------------------------------------------------------------------
+Do while loop:
+		Do while is a exit control loop. In do while loop given condition is checked after the xecution of block of loop.
+ So, either the given condition is true  or false,  loop will execute minium time.
+syntax:
+	initialization;
+do
+{
+//statement ;
+//updation;
+}
+while (condition);
+-------------------------------------------------------------
+void main()
+{
+clrscr();
+do
+{
+printf("Hello world");
+i=i+1;
+}
+while(i<=20);
+getch();
+}
+--------------------------------------------
+Nested Loop:
+	Nested loop  a structure of programm when any of the loop is defined within the bock of another loop.
+for(initalization; condition; updation)// outer loop
+{
+for(initalization; condition; updation)//inner loop
+{
+//statement;
+}
+//statment;
+}
+-----------------------------------------------------
+
+
+Branching Statement :
+	Branching Statement is usedd to tranfer control from one statement according to the condition of program.
+three types of branching statement 
+1.Break
+2. Continue
+3. Goto
+---------------------------------------------
+Break Statement:
+	Break Statement can be used  with switch and in block any loop. Break keyword stops the  iteration of loop and transfer control out of loop. Syntax:
+	break;
+e.g.:
+	for(i=1;i<=5;i++)
+{
+printf("Hello");
+break;
+}
+
+Continue Statement:
+	Continue Statement is also used in the block of loop. When continue keywords is executed the it stops the current iteration and continue loop from next iteration.
+Syntax:
+continue;
+
+e.g.:
+for(i=1;i<=5;i++)
+{
+printf("Ok');
+if(i>3)
+continue;
+printf("Statement after continue");
+}
+
+---------------------------------------------------------------------------
+WAP to check prime or not
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num;
+clrscr();
+printf("enter 5 number :");
+for (i=1;i<=5;i++)
+{
+scanf("%d",&num);
+if(num<0)
+continue;
+p=p+1;
+}
+printf("Total Positive = %d",p)
+}
+
+-----------------------
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,i,count=0;
+clrscr();
+printf("Enter a Number :");
+for(i=1;1<=num;i++)
+{
+if (num%i==0)
+count=count+1;
+}
+if(count==2)
+printf(" Number is a perime ......");
+else
+{
+printf("Number is not a prime number")
+}
+getch();
+}
+---------------------------------------------------------------
+By using break Statement:
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,i,count=0,;
+clrscr();
+printf("Enter a Number :");
+scanf("%d",&m);
+for(i=2;1<=num;i++)
+{
+if(num%i==0)
+{
+count=1;
+break;
+}
+}
+if("count==0")
+{
+printf("number is a prime number");
+else if(count==1)
+printf("number is not a prime number");
+}
+getch();
+}
+----------------------------------------------------------------------------------
+Goto:
+       Goto is a keyword that is used to tranfer control from one statement to another statement of program.
+Where control will transfer it is identified by label defined with goto statement.
+Syntax:
+	label:
+//statement;
+goto label;
+---------------------------------------------------------------------------------
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int amt,op,wamt,camt;
+char=opt;
+printf("enter Total amout in ur bank :  ");
+scanf("%d",&amt);
+start:
+printf("enter 1 to withdraw amount 2 to credit : ");
+scanf("%d",&op);
+if(op==1)
+{
+printf("enter total amount you want to withdreaw : ");
+scanf("%d",&owamt);
+amt=(amt+wamt);
+printf("After withdraw, your remaing amount =%d ,amt");
+}
+if(op==2)
+{
+printf("enter total amount you want to credit: ");
+scanf("%d",&owamt);
+amt=(amt+camt);
+printf("After credityour remaing amount =%d ,amt");
+}
+else
+printf("No option is available : ");
+ fflush(stdin);
+printf("\y Enter y to continue or n  to exit");
+scanf("%c",opt);
+if(opt=='y')
+goto start;
+getch();
+}
+--------------------------------------------------------------------------------------------------------------------
+Nested Loop:
+	Nested Loopu
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5 
+------------------------------------------------------------------------------------------------------------------------
+void main()
+{
+int i,sp,st,j,k;
+for(i=1;i<=11;i++)
+{
+if(i<=6)
+{sp=6-i;
+st=i;
+}
+else
+{
+sp=i-6;
+st=12-i;
+}
+for(j=1;j<=sp;j++)
+{
+printf(" ");
+}
+for(k=1;k<=st;k++)
+{
+printf("* ");
+}
+printf("\n");
+}
+getch();
+}
+------------------------------------------------------------------------------------------------------
+Array :
+	Array  is the collection of homogeneous data type element. That means if in any program, you need to declare 10 variable of integer type then excepting declaring 10 variables you can  declare an array with size 10.
+Array is easy to use and handle.
+
+All values stored in array is stored sequentially in memory. And all values are stored on diffrent index of array.
+
+First Index of array is always 0 and last index of array is size-1.
+
+Types of array:
+One dimensional array
+Multi-dimensional array
+
+Syntax:
+	data_type  array_name[size];
+
+e.g.:
+	int ar[10];
+
+	in two dimensional:
+		int  ar[5][5];
+
+---------------------------------------------------------------------------------------------------------------------
+WAP to input 10 numbers and print square of all num:
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],i;
+printf("Enter 10 numbers :  ");
+for(i=0;i<=0;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<=9;i++)
+{
+
+-------------------------------------------------------------------------------------------
+WAP to 
+#include<stdio.h>
+#include<conio.h>
+{
+int a[5],i,num,temp[0];
+clrscr();
+printf("enter 5 element of array : ");
+for(i=0;i<=4;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("enter a number to search in array");
+scanf("%d",&num);
+for(i=1;i<=4;i++)
+{
+if(num==a[i])
+temp=1;
+}
+if(temp==0)
+{
+printf("Number found in array");
+}
+else
+{
+printf("Number not found in array");
+}
+getch();
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------
+<div id="Task">
+1.WAP to enter 10 elements of array and find greatest element of array
+2.WAP to enter 10 elements of array and find Second largest element in array
+3.WAP to enter 5 elements of array and sort array in Descending order.
+4.WAP to enter 5 elements of array and sort array in Ascending order.
+5.WAP to enter 10 elements of array and count occurrence  of each element in array.
+6.WAP to enter 10 elements of array and print array from last index to first.
+7.WAP to enter 10 elements of array and print sum of all elements.
+</div>
+#include<stdio.h>
+#include<conio.h>
+{
+int a[10];
+clrscr();
+printf("")
+getch();
+}
+
+UDF:
+syntax:
+	data_type function_name(arguments)
+{
+//statements
+}
+
+No return type and no argument.
+syntax:
+void add()
+{
+
+}
+Return type and no arguments
+syntax:
+int add()
+{
+
+}
+No return type with argument
+syntax:
+void add(int a, int b)
+{
+
+}
+return type with argument.
+syntax:
+int add(int a, int b)
+{
+
+}
+
+--------------------------------------------------
+#include<stdio.h>
+#include<conio.h>
+void add();
+void  main()
+{
+clrscr();
+add();
+getch();
+}
+void add()
+{
+int a,b,c;
+printf("Enter two numbers : ");
+scanf("%d%d",&a,&b);
+c=a+b;
+printf("Output is :  %d",c);
+}
+++++++++++++++++++++++++++++++++++++
+
+#include<stdio.h>
+#include<conio.h>
+int add();
+void  main()
+{
+clrscr();
+add();
+getch();
+}
+int add()
+{
+return
+int a,b,c;
+printf("Enter two numbers : ");
+scanf("%d%d",&a,&b);
+c=a+b;
+//printf("Output is :  %d",c);
+return c;
+}
+++++++++++++++++++++++++++++++++++++
+---------------------------------------------------
+String:-
+	String is the collection  of characters. String  data type is directly not supported in C Programmig. You have to declare array of characters whenever you need to store a string type value.
+syntax:
+	char string_name[size];
+-----------------------------------------------------------------------
+char name[50];
+name="Rudresh";
+
+printf("%s",name);
+printf("%c",name[1]);
+for(i=0;name[i]!='\0';i++)
+{
+
+}
+------------------------
+First character of string is stored on 0th index of array. ANd after last index of string automatic null character('\0') is stored that indicates ending of string.
+
+
+strlen(); strlen()  is used to count length of string. and returns integer value. 
+syntax:
+int length=strlen(string);
+
+strcmp();  strcmp() is compare two string character by character and returns 0 if all characters is identical.
+syntax:
+int val=strcmp(string_1,string_2);
+s1="abc";
+s2="abC";
+int val=strcmp(s1,s2);
+returns
+
+strncmp();compare one string to another till the n length of second string. Works same as strcmp().
+syntax:
+int val=strncmp(string_1,string_2,len);
+s1="abc";
+s2="abC";
+int val=strcmp(s1,s2);
+
+strcpy(); is used to copy one string to another.
+syntax:
+strcpy(string_2,string_1);
+strncpy(); is used to copy one string till n length to another string.
+syntax:
+strncpy(string_2,string_1,len);
+
+strrev(); is used to reverse one string.
+strrev(string_1);
+ 
+strupr(); is used to convert all characterof a string to uppercase.
+strupr(string_1);
+
+strlwr();is used to convert all characterof a string to lowercase.
+strlwr(string_1);
+
+strcat(): that is concatnate two string one after another.
+
+Note: 
+	All above given functions are present in <string.h> header file.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Structure :
+	Structure is a user-defined data type. That is the collection of diffrent data type. 
+syntax:
+struct book
+{
+int ----;
+float---;
+char author[100]---;
+};
+--------------------------------
+e.g.:-
+
+#include<stdio.h>
+#include<conio.h>
+struct book
+{
+int pages;
+float price;
+char author[100];
+};
+void main()
+{
+struct book b;
+clrscr();
+printf("Enter Pages of First book");
+scanf("%d",&b.pages);
+fflush(stdin);
+printf("Enter Author name");
+gets(b.author);
+getch();
+}
+ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Union : Union is also is user define data type . that can store diffrent type of element. But it initialize only one memory space which size is equal to the size of largest element of union. It can store only one value at a time.
+Syntax:
+union union_name
+{
+data_type element1;
+data_type element2;
+-
+-
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+oswap
+
+
+

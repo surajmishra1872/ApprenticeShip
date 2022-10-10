@@ -1,0 +1,43 @@
+<!--
+name
+animation-fill-mode:backwards
+-->
+<html>
+<head>
+<style>
+#outer
+{
+height:750px;
+background:red;
+color:white;
+text-align:center;
+line-height:750px;
+font-weight:bold;
+font-family:impact;
+font-size:100px;
+text-shadow:4px 4px 2px yellow,8px 8px 4px green;
+animation-name:abc;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+}
+@keyframes abc
+{
+from{
+background:navy;
+color:white;
+}
+to{
+background:yellow;
+color:red;
+text-shadow:50px 50px 2px black,-50px -50px 4px aqua;
+}
+}
+</style>
+</head>
+<body>
+<div id="outer">
+Techpile Technology
+</div>
+</body>
+</html>

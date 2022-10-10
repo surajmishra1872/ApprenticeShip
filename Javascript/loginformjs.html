@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 200px;
+            border: 2px solid gold;
+            font-size: 25px;
+        }
+        button{
+            background-color: green;
+            color: white;
+            width: 70px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+        }
+        </style>
+</head> 
+<body >
+    <center>
+    <fieldset style="width: 350px;margin: 150px auto;">
+        <legend>LOGIN FORM</legend>
+        User Name:<br/><br/><input type="text" id="txt1"><br/><br/>
+        Password:<br/><br/><input type="password" id="txt2"><br/><br/>
+        <button onclick="demo()">LOGIN</button>
+    </fieldset>
+    </center>
+    <script>
+        function demo()
+        {
+            var user="SURAJ12"
+            var passwd="SURAJ@123"
+            var u=document.getElementById("txt1").value;
+            var p=document.getElementById("txt2").value;
+            if(user==u && passwd==p)
+            {
+                alert("Your are rendering to demo63 page.");
+                window.location="demo63.html"
+            }
+            else
+            {
+                alert("Invalid user Name or Password");
+            }
+        }
+    </script>
+</body>
+</html>

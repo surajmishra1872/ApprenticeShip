@@ -1,0 +1,258 @@
+Date:12/02/2021
+
+PHP Security:
+=============
+In a small scale application traffic and no of request are very less will never intrest a hacker to perform any attack on your application.
+
+but on Enterprise Application(s)
+
+Now consider a banking application which process the millions of request per/second in that case that site very very prone to hackers
+
+If your application has millions of request per second or per minutes congrats you are in the vision of hacker.
+Your Application must be prevented by common Attacks.
+1. Common Skill set
+	1. XSS Attack
+	2. CSRF Attack
+	3. SQL Injection
+	4. de-hashing :: decrypting the hash
+		hash: alpha numeric bit for any data and this has unique.
+	5. Brute-force Attack
+	6. session-hijacking
+	7. click-jacking
+
+2. Forensic Tool [Paid Tools]
+
+
+XSS Attack :: 
+	Hacker will inject some piece of code like html,javascript,php script,python  geenerally scripting language and it will start executing the script such attack can be used to manupulate the behaviour of Application.
+
+	XSS Filtering or prevention :: 
+		Accsess filtering can be done by santizing the Input function
+		WAP to make sanitise function
+
+
+Session-hijacking:
+	In this attack hacker will try to steal the session of a user and pretend to be real user and pretend to be real user.
+	Is called session fixation(fixing)
+
+	prevention:
+	session_regenerateid()
+	new session will be created.
+
+	in all get request session id will reamian as soon as some post request fired try to regenerate the session
+
+Brute-force Attack ::
+	Problem : if captcha is not used hacker can use a script por bot can the tabs for example 100 tabs
+	and submit the same username and passsword (or different) at a single reqest in case server cannot respond to each request
+
+	request 100/second
+	response 1/second
+	hence server will collapse
+
+	Prevention :: Use the captcha
+	what will happen :: it will generate new captcha for each request which need to solved nd then for is submit.
+
+Captcha:
+Completly Automated Turing Test(program) to tell computers and humans Apart
+
+Types of captcha
+
+1. Text captch : Text captcha can be copied and pasted
+2. maths captcha : Text cannot be copied bot can solve the simple expression
+3. image captcha : 
+4. puzzle captcha :: google recaptcha v2,v3
+
+Captcha can be easy to every complex
+we can be made by increasing Font,Mixing different Colors,Shades and jumbeled words
+It is recommended to go for Alpha Numeric string set
+
+
+For alpha numeric string we have to make pre define formate
+for example:
+fd45af
+
+write a function to give alpha numeric 
+
+
+1. Download the Captcha Font
+and make sure the font is of .ttf extension(true type font)
+
+2. place the font in the same directory where captcha is load
+
+3. Make a file called captcha.php
+
+Note: Image in php are generated using gd library
+Graphic Driver library and is pre-installed in php package
+
+How to check
+open php_info
+or open cmd 
+php -m
+
+gd library may be uninstalled may not be on so make sure you uncomment the GD Library Extension in php.ini
+;extention=gd2 # remove the ";"
+
+Now we need the cocept of Computer Graphics of vector form and roster form
+Refer to following diagram
+
+
+Date : 14/02/2021
+
+Encryption in PHP:
+==================
+In Cryptology Encryption is term in which real data is preserved in different format such that they are distinct(different)
+from the real data.
+
+Encryption Two types:
+1. One way Encryption (Only Encryption Possibel)
+2. Two way Encryption (Encryption and Descryption both are possible)
+
+One way Encryption :: Only you can encode the data but cannot decode the data
+
+How to Validate
+---------------
+There encrypted Mechanism remains the same = hash will be diffrent but the way of generating the hash will be same The properties of hash Remains Constant
+
+for example:
+in Md5 bit size of hash is 32 bit only
+
+Md5 is a One way Encryption Algorithm
+||
+||
+Message digest version 5
+
+Where to use Md5:
+****************
+We use Md5 where hash is important but data is not important 
+1. Password matching
+2. CSRf Protection
+
+Note :: Md5 in Actual Algorithm generate 128 bit character sequencs or signature or finger print
+but in PHP it generates 32 bit character 
+
+
+Salting : Adding some signature or extra token.
+
+Using md5 in data encryption
+
+Date : 15/02/2021
+Other Important function for Encryption:
+****************************************
+sha1() :: Used to generate hash under sha Algorithm
+crypt() :: Used to generate hash for standard cryptology Algorithm
+
+These are same as md5 because they follow one way encryption technique
+we may use primary Encrypted hash using either by md5,shal,crypt.
+One thing is most common in above funvtion is that there hash remains constant
+
+Interview Question:
+*******************
+Differentitate b/w  md5 sha1 and crypt:-
+---------------------------------------
+md5:
+sha1:
+crypt: It is satndard algorithm for Blowfish cryptology (XOR+Binary Addition)
+private key and public key both are encrypted + both have random size
+hash may differ from 8/16/32 bit
+
+crypt() is a simplest version of Blowfish algorithm.
+
+crypt() can be use two version-
+1. With Salting : Hash will be 13 bit and hash will be constant.
+2. Without Salting : hash will 34 bit and random.
+
+How to verify the hash generated by crypt
+by using
+Note :: PHP standard algorithm is Blowfish algorithm.
+In php 7 we have standard function to deal with Blowfish Algorithm.
+password_hash() :: Random Hash using blowfish Algorithm
+	1. PASSWORD_BCRYPT :: By default Blowfish Algorithm+
+	2. PASSWORD_DEFAULT 
+	3. PASSWORD_ARGON2I 
+	4. PASSWORD_ARGON2ID 
+
+Hash will always be random
+
+How to verify
+--------------
+password_verify() :: It takes two Argument 1st :: password and 2nd ::hash this function will automatically verify the validity of hash.
+
+Two way encryption :
+____________________
+
+In two way Encryption encoding and decoding both is possible
+here we are intrested in data rather that hash.
+here hash is just for encryption purpose or security.
+
+1. base64_encode
+2. base64_decode
+
+How two way encryption works:
+Data 	|	Middle ware 	|	Target
+Client 							Server
+ data
+ |1234
+ |-->	QwmnuRsusD= <---hash
+ One way Encodeing			|one way decoding
+ 								data (1234)
+
+Note :: There is no Such Function which is very secure in two way Encryption Hash Constant
+
+base64_encode = data input Output hash -->Hash Constant
+base64_decode = hash input data --> Hash Constant
+
+SQL Injection:-
+--------------
+we know that sub queries are most at highest priority and will be executed first we try to inject such expression in the from field such that it becomes the part of sql query then database Engine will try to execute that query and some malpractises can be performed at database end.
+Such type of Technique is called SQL Injection.
+
+;Drop table test --
+
+How to prevent SQL injection
+1. mysqli you have to use 
+mysqli_real_escape_string($email)
+2. PDO(PHP Database Object) It is pure Object Oriented
+3. Prepared Statement
+4. Stored procedures
+
+
+
+CSRF:
+=====
+Stands Cross site request forgery is used to  validate weather the request has processed from the same domain or same server.
+
+CSRF is not mendatory in case GET request
+But you are using Any Request other than GET
+POST, DELETE, PUT, PATCH, OPTIONS.......
+each request must contain CSRF prevention.
+
+
+
+
+
+
+
+
+
+
+Crud 5 times Copy
+*****************
+setting
+dbconnect
+insert
+show
+edit
+delete
+update
+
+captcha code 5 times
+********************
+text captcha
+math captcha
+image captcha
+	1. matrix
+	2. alpha
+	3. image captcha
+	4. form
+	5. ajax
+0

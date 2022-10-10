@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-left: 100px;
+        }
+        div{
+            border: 2px solid orange;
+            min-height: 300px;
+            width: 400px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dv1"></div>
+    <button onclick="demo()">Click Here</button>
+    <script>
+        var demo=()=>
+        { 
+            var num=0;
+            for(var i=1;i<=1000;i++)
+            {
+                num+=i+"<br/>";
+            }
+            document.querySelector("div").innerHTML=num;
+        }
+    </script>
+</body>
+
+</html>

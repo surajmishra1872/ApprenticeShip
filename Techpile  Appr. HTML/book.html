@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Book Mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            background: radial-gradient(white, transparent, orange);
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #book {
+            position: relative;
+            height: 400px;
+            width: 320px;
+            background: #fff;
+            transform: rotate(35deg) skewY(-25deg);
+            transform-style: preserve-3d;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #book:before {
+            content: '';
+            position: absolute;
+            right: -39px;
+            top: 34px;
+            height: 400px;
+            width: 39px;
+            background: repeating-linear-gradient(90deg, #ddd 3%, #999 9%);
+            transform: skewY(60deg);
+            border-left: 2px solid rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        #book:after {
+            content: '';
+            position: absolute;
+            bottom: -68px;
+            left: 18px;
+            height: 64px;
+            width: 318px;
+            background: repeating-linear-gradient(to top, rgb(209, 209, 209) 1%, #fff 2%);
+            transform: skewX(30deg);
+            border-top: 2px solid rgba(0, 0, 0, 0.5);
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            border-left: 2px solid rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .top {
+            position: relative;
+            height: 360px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 50px;
+        }
+
+        .top::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #333;
+            z-index: -1;
+        }
+
+        .top::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 25px;
+            background: orange;
+            border-right: 1px solid #333;
+        }
+
+        .top h2 {
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 36px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        .top h2 span {
+            color: orange;
+        }
+
+        .top p {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 10px;
+            color: #eee;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .top img {
+            margin-top: -20px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .bottom {
+            height: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background: #000;
+            border-top: 1.5px solid orange;
+            align-items: center;
+        }
+
+        .bottom p {
+            color: orange;
+            font-family: sans-serif;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottom p span {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="book">
+            <div class="top">
+                <h2>Responsive Web Design with <br><span>HTML5 & CSS3</span></h2>
+                <p>Develop future-proof responsive websites using the latest HTML5 and CSS3 techniques.</p>
+                <br><br>
+                <img src="Images/HTMLCSS.png">
+                <p style="font-size: 12px; color:#111; font-family: cursive; color:orange; text-align: center;">Code
+                    your prosperous career.</p>
+            </div>
+            <div class="bottom">
+                <p>Written by - <span>Er. Rahul Soni Sir</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

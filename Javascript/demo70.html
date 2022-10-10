@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<input type="number" onkeypress="demo()" placeholder="Enter Your Mobile No..." id="txt"/><b id="msg">MESSAGE</b><br/>
+<button>CHECK</button>
+<script>
+
+function demo()
+{
+var msg=document.getElementById("msg")
+var i=document.getElementById("txt")//9999999999
+var v=i.value;
+if((v.charAt(0)=="9" || v.charAt(0)=="8" ||v.charAt(0)=="7" || v.charAt(0)=="6") && v.length==9)
+{
+msg.innerText="Valid Mobile Number";
+msg.style.color="green";
+i.style.border="2px solid green";
+}
+else
+{
+msg.innerText="Invalid Mobile Number";
+msg.style.color="red";
+i.style.border="2px solid red";
+}
+}
+</script>
+</body>
+</html>

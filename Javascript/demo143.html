@@ -1,0 +1,21 @@
+<html>
+<head></heaD>
+<body>
+<script>
+"use strict"
+var demo=(...x)=>
+{
+var sum=0;
+for(var a of x)
+{
+sum=sum+a
+}
+document.write(`Sum of Number is ${sum}<br/>`)
+}
+demo(10,30)
+demo(10,30,40,50)// x=[10,30,40,50]
+demo(10,30,40,50,70)
+</script>
+</body>
+</html>
+

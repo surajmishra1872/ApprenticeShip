@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            border: 2px solid purple;
+        }
+        select{
+            width:150px;
+            height: 50px;
+            font-size: 40px;
+        }
+        p{
+            font-size: 30px;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <input type="text" id="txt1" onkeyup="demo()"><br />
+    <script>
+        function demo() {
+            var a = document.getElementById("txt1");
+            var arr = (a.value).split(" ");
+            var ch=0;
+            document.getElementById("p1").innerText="Number of Words is:"+arr.length;
+            for(var i=0;i<=arr.length-1;i++)
+            {
+               ch+=arr[i].length;  
+            }
+            document.getElementById("p2").innerText="Number of character is:"+ch;
+           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+function demo(...a)//...a rest operator 
+{
+alert(a)
+}
+demo(10);
+demo(10,20);
+demo(10,20,50);
+demo("RAM",10,20,50);
+demo("RAM",10,20,50,70);
+
+function demo1(x,y,...a)//...a rest operator 
+{
+alert(x)//10
+alert(y)//20
+alert(a)//[30,"RAM"]
+}
+
+demo1(10,20,30,"RAM")
+
+
+

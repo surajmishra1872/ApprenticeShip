@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var demo=(y,...x)=> //...x is rest operation here
+{
+document.write(`Number:${y}`);
+for(var a of x)
+{
+document.write(`Name is:${a}<br/>`)    
+}
+}
+var arr=["RAM","SHYAM","MOHAN","JOHN"];
+demo(10,...arr);//spread operator
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<p id="p1"></p>
+<script>
+var p=document.getElementById("p1")
+var arr=["HTML","CSS","JAVASCRIPT","JQUERY"]
+var myColor=["red","green","yellow","aqua","navy"]
+arr=arr.reverse()
+var res="<select>";
+for(var i=0;i<arr.length;i++)
+{
+res=res+"<option style='background:"+myColor[i]+";color:"+myColor[i+1]+";'>"+arr[i]+"</option>"
+}
+res+="</select>"
+p.innerHTML=res;
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

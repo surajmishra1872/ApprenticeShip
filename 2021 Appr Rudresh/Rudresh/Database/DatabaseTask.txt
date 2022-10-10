@@ -1,0 +1,104 @@
+Rudresh Kumar Upadhyay
+
+create table student
+(
+    roll_no int primary key auto_increment,
+    name varchar(100),
+    fname varchar(100),
+    branch int,
+    total_feem int
+);
+create table fee
+(
+    sn int primary key auto_increment,
+    roll_no int,
+    pfee int,
+    status varchar(10)
+);
+create table teachers
+(
+emp_id int primary key auto_increment,
+name varchar(100),
+designation varchar(100)
+);
+create table branch
+(
+branch_id int primary key auto_increment,
+name varchar(100),
+emp_id int
+);
+alter table student change total_feem total_fee int;
+alter table student add foreign key(branch) references branch(branch_id);
+alter table fee add foreign key(roll_no) references student(roll_no);
+alter table teachers add work_branch varchar(200);
+alter table teachers modify work_branch int;
+alter table teachers add foreign key(work_branch) references branch(branch_id);
+alter table branch add foreign key(emp_id) references teachers(emp_id);
+
+
+Answer 1:-
+insert into branch(name) values('CS&E'),('Elex'),('IT');
+
+Answer 2:-
+insert into student values(101,'Aman','Suresh',1,4000);
+insert into student(name,fname,branch,total_fee) 
+values('Betu','Surya',1,5000),
+('binu','anish',2,6000),('sita','vritant',2,7000),
+('divya','vipul',2,3000),
+('preeti','vinit',3,5000),('suresh','rohit',3,5000),
+('mohan','kalu',3,1000),('mukesh','shyam',3,2500);
+
+
+Answer 3:-
+insert into teachers values(1001,'Rajesh','CS_HOD',1);
+
+insert into teachers(name,designation,work_branch) 
+values('Rakesh','TeacherCS',1),
+('Pratik','HODElex',2),('Sanjay','TeacherElex',2),('Kamlesh','HODIT',3),
+('Rajendra','TeacherIT',3);
+
+Answer 4:-
+update table_name set column_name=value where <condition>;
+update branch set emp_id=1001 where branch_id=1;
+update branch set emp_id=1003 where branch_id=2;
+update branch set emp_id=1006 where branch_id=3;
+
+Answer 5:-
+insert into fee(roll_no,pfee) values(102,4000),
+(103,3000),
+(104,2500),
+(105,2000),
+(106,1500),
+(107,1800);
+
+Answer 6:-
+alter table branch change name branch_name varchar(200);
+
+
+select student.name,student.fname,branch.branch_name,student.total_fee from
+student join branch on student.branch=branch.branch_id;
+
+Answer 7:-
+
+select teachers.emp_id,teachers.name,teachers.designation,branch.branch_name
+from teachers join branch on teachers.emp_id=branch.emp_id;
+
+Answer 8:-
+
+select student.name,teachers.name,branch.branch_name from
+student join teachers join branch on student.branch=branch.branch_id=teachers.emp_id;
+
+Answer 9:-
+select student.name,student.total_fee,fee.pfee from student left join fee on 
+student.roll_no=fee.roll_no;
+
+Answer 10:-
+select student.name,student.total_fee,fee.pfee from student left join fee on 
+student.roll_no=fee.roll_no where fee.pfee>2500;
+
+Answer 11:-
+select student.name,student.total_fee,fee.pfee from student join branch on 
+student.branch=branch.branch_id 
+join fee on 
+fee.roll_no=student.roll_no
+where branch.branch_name='CS&E' and fee.pfee>2500;

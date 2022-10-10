@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            border: 2px solid purple;
+        }
+
+        select {
+            width: 250px;
+            height: 40px;
+            font-size: 25px;
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <b id="b1"></b><br/>
+    <input type="text" id="txt1"><br />
+    <button onclick="demo()">Click Here</button>
+    <p id="p1"></p>
+    <script>
+        function demo() {
+            var a = document.getElementById("txt1");
+            var arr = (a.value).split(" ");
+            var p = document.getElementById("p1")
+            var res = "<select onchange='demo1(this)'>";
+            for (var i = 0; i < arr.length; i++) {
+                res = res + "<option>" + arr[i].toUpperCase() + "</option>"
+            }
+            res += "</select>"
+            p.innerHTML = res;
+        }
+        function demo1(x) {
+            document.getElementById("b1").innerText = x.value;
+        }
+    </script>
+</body>
+
+</html>

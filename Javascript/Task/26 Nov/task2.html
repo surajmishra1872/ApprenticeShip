@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 300px;
+            height:30px;
+            margin-top: 20px;
+        }
+        button{
+            width:200px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  id="txt1" placeholder="Employee ID"/><br/>
+    <input type="text"  id="txt2" placeholder="Employee Name"/><br/>
+    <input type="text"  id="txt3" placeholder="Employee Salary"/><br/>
+    <input type="text"  id="txt4" placeholder="Employee Address"/><br/>
+    <input type="text"  id="txt5" placeholder="Employee Mobile No."/><br/>
+    <input type="email"  id="txt6" placeholder="Employee Email Id"/><br/>
+    <button onclick="demo()">Click Here</button><br/>
+    <p id="p0"></p>
+    <h1 id="name1"></h1>
+    <p id="p1"></p>
+    <h1 id="name2"></h1>
+    <p id="p2"></p>
+    <h1 id="name3"></h1>
+    <p id="p3"></p>
+    <h1 id="name4"></h1>
+    <p id="p4"></p>
+    <h1 id="name5"></h1>
+    <p id="p5"></p>
+    <h1 id="name6"></h1>
+    <p id="p6"> </p>
+
+    <script>
+        function demo()
+        {
+        var a1=document.getElementById("txt1").value
+        var a2=document.getElementById("txt2").value
+        var a3=document.getElementById("txt3").value
+        var a4=document.getElementById("txt4").value
+        var a5=document.getElementById("txt5").value
+        var a6=document.getElementById("txt6").value
+        document.getElementById("name1").innerText="Employee ID:"+a1;
+        document.getElementById("name2").innerText="Employee Name:"+a2;
+        document.getElementById("name3").innerText="Employee Salary:"+a3;
+        document.getElementById("name4").innerText="Employee Address:"+a4;
+        document.getElementById("name5").innerText="Employee Mobile No.:"+a5;
+        document.getElementById("name6").innerText="Employee Email:"+a6;
+
+        var b1=document.getElementById("p1").innerText="========================================="
+        var b2=document.getElementById("p2").innerText="========================================="
+        var b3=document.getElementById("p3").innerText="========================================="
+        var b4=document.getElementById("p4").innerText="========================================="
+        var b5=document.getElementById("p5").innerText="========================================="
+        var b6=document.getElementById("p6").innerText="========================================="
+        var b7=document.getElementById("p0").innerText="========================================="
+        }
+    </script>
+</body>
+</html>

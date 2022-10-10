@@ -1,0 +1,558 @@
+Introduction  to object oriented Design Pattern:
+===============================================
+
+Design Pattern:
+This means Programming paradigm (Approach of Programming ) or Methodology
+Till now you would have used piece of code in repeated Manner.
+
+In order to resolve the DRY(Donot Repeat Yourself) approach 
+Hence we introduced concept of Functions.
+
+Types of approaches
+1. Monolythic : Code in repeated Fashion (Repeated Approach) 
+All code will be written in single File itself
+
+No one uses this is Industry
+Procedural Approach
+
+
+2. Polylithic : All code distributed in multiple files apaproach
+	1. Functional Approach:
+	2. Object Oriented Approach 
+	3. Design Pattern
+		There are total design pattern
+		for example:
+		1. Singleton Pattern
+		2. Observer Pattern
+		3. Adapter Pattern
+		4. Factory Pattern
+		5. Fascade Pattern
+
+
+
+Functional Approach :
+
+We devide the piece of code into blocks of functions.
+1. Security (Because function does not private,public,protected[Access Modifier])
+2. Context : Global or Local context problem arises with version 
+3. Undefined Variable Errors (Donot have Garbage Collector)
+4. Top to bottom approach
+
+Object Oriented Approach
+------------------------
+
+It is a programing methodology or programming Paradigm
+it is a software devlopment Mechanism with Additional Advantages
+like
+1. Security By using Access Modifier like public,protected, private
+2. Context : Static or non static
+		static  : object cannot be made
+		non static : object can be made
+		1. local
+		2. global
+			public
+			private
+			protected
+			blank modifier (default) : Note that there is no keyword for this.
+
+			for example:
+			1. public modifier
+					functions: public function function_name();
+					variables: public variable name 
+
+			2. private modifier
+					functions: private function function_name();
+					variables: private variable name 
+
+			3. protected modifier
+					functions: protected function function_name();
+					variables: protected variable name 
+
+			4. default modifier	
+					function : function	 function_name();
+					default variables :
+					var <variablename>
+
+					Context Rules : same as public
+
+
+3. Garbage Collector
+if you do not initialise the variable
+it will be by defaut Null
+
+In Procedural	
+$x;
+echo $X; //undefined Variable $x;
+
+
+In Oops
+public $x;
+private $x;
+var $x;
+protected $x;
+
+echo $this->x //NULL
+
+real time example
+-----------------
+
+consider a model
+
+User_model
+----------
+class User_model{
+	private $tablename = $db['prefix'].'users';
+}
+
+User_model
+----------
+class User_model{
+	private $tablename = 'tbl_users';
+}
+
+4. Bottom to Top approach
+
+if you use Procedural Approach 
+==============================
+
+$x;
+echo $x;  undefined index in line No.1
+
+Object oriented
+class Test{
+public $x;			←←←←←←←←←←←←←←←←←←←←←←←←←←←←↰
+echo $this->x;									↑	
+}												↑
+												↑
+// No output 									↑		
+												↑		
+As soon as we make object						↑
+$obj = new Test(); //Instantiate <---Bottom→→→→
+
+OOPL:
+-----
+
+Any programming	 language which follows oops concept or patterns are said to be oopl(s)
+
+example to object Oriented Pattern 
+**********************************
+
+class Test{
+	public $x; //variables inside class instance variable
+	public $y; //variables inside class instance variable
+	 
+	//function inside class = method
+	public function add($x,$y){
+
+			echo $x; //local  variable
+			echo $y; //local  variable
+		echo $this->x + $this->y; //instance
+
+}
+
+}
+
+<!---->
+Basic terminology;
+******************
+1. instance variable : class level elements or variables
+		1. All the variables defined inside class but outside the method
+		2. All the variables wrapped inside class 
+		3. all the  variables encaptulated(covered) inside a class
+
+2. Local variables:
+		1. Any variable outside the class
+		2. any variable inside the class but inside the method
+
+3. Method  :
+		1. All functions defined inside class
+		2. All functions wrapped inside class
+		3. all functions encaptulated inside the class
+
+
+class = variable + functions()
+or
+class = instance variable + methods()
+or
+multplying by wrapping Both side
+
+wrapping(class) =wrapping(variable) + wrapping(functions())
+wrapping(class) = wrapping(instance variable) + wrapping(methods())
+ 
+ but wrapping = encapsulation
+encapsulation(class) =wrapping(variable) + wrapping(functions())
+encapsulation(class) = wrapping(instance variable) + wrapping(methods())
+
+or in general
+class is a enscaptulated version of variables and functions
+variable defines properties
+functions defines behaviour	
+
+
+class = collection of properties + behaviour
+	  = collection of states(attributes) + behaviour(actions())
+
+for example
+
+class Student{
+	public $name;
+	public $roll;
+	public $class;
+
+	public function scoreMarks(){
+		}
+	public function sayName(){
+		}
+	public function willstudy(){
+		}
+
+}
+
+Question : 
+You have table student 
+student 
+id |name 	| class		|marks|passed
+convert the same Database schema using object oriented Approach.
+
+Class Student{
+	public $id;
+	public $name;
+	public $class;
+	public $marks;
+	public $passed;
+
+	public function student_id(){
+		return $this->id;
+		}
+	public function student_name(){
+		return $this->name;
+		}
+	public function student_class(){
+		return $this->class;
+		}
+	public function student_marks(){
+		return $this->marks;
+		}
+	public function student_passed(){
+		return $this->passed;
+		}
+	public function student(){
+
+	echo $this->id;
+	echo $this->name;
+	echo $this->marks;
+	echo $this->class;
+	echo $this->passed;
+}
+
+}
+
+This is Typical Example of student_model
+
+how to create data
+******************
+
+Consider 3 records 
+
+1001 | Ravi  |100 | 12th | yes → → → → →R1
+1002 | Cahman|98  | 10th | no → → → → →R2
+1003 | manas |10  | 8th  | yes → → → → →R3
+
+
+Data = collection of Records or Rows
+Each Row Represents a unique identity
+For example
+Each Unique Identity is a Entity
+So each Entity Must be represented in a diagram called a Entity Diagram
+
+Each Parameter like class,marks,passed,name is inter-related to Ravi
+Each Entity is Inter-related
+And Diagram Representation These Inter relation Among Entity is called  Er Diagram
+
+student Table = Student Class
+		name column = name variable
+		marks column = marks variable
+		rollno column = rollno variable
+		id column = id variable
+		
+insert = add student method
+update = delete student method
+select = get student method
+
+Rows   = object
+Entity = Entity
+
+Object is a real Existing entity
+
+List of student
+
+1001 | Ravi  |100 | 12th | yes → → → → →R1
+1002 | Cahman|98  | 10th | no → → → → →R2
+1003 | manas |10  | 8th  | yes → → → → →R3
+
+student1=new Student();
+student1->add_student(1001,"Ravi","12th","100","yes");
+
+Dynamic:
+
+$student = array(
+
+array('id'=>'1001','name'=>'ravi','class'=>'12th','marks'=>'100','passed'=>'yes'),
+array('id'=>'1002','name'=>'Chaman','class'=>'10th','marks'=>'98','passed'=>'yes'),
+array('id'=>'1003','name'=>'Manas','class'=>'8th','marks'=>'10','passed'=>'no'),
+
+);
+$i=1;
+foreach($student as $student){
+	$student_obj.$i = new Student();
+	$student_obj.$i->add_student($student['id'],$student['name'],$student['class'],$student['marks'],$student['passed']);
+	$i++;
+}
+
+Date : 02/02/2021
+
+Class in general:
+Class is a blueprint of object 
+class is a collection of multiple objects having same instance
+class is a template of a object
+class is collection of Data Member (variable) and Member function (methods)
+
+Language Fundamental for a class and objects
+============================================
+
+under naming convention few convention are mendatory ubder langage Fundamental.
+
+1. Class name must be Capitalised
+	class test --> invalid
+	class TEST --> invalid
+	class Test --> Valid 
+
+2. File name  containing or One or single class must be Captialised
+	Student.class.php Class File name must be capitalised
+	Another approach
+
+	Root Project
+		|
+		|classes
+			|--> student.php --> This is class but invalid File name
+			|--> Student.php --> This is valid file name
+
+	class Student{
+
+	} 
+
+3. Class name can be Alpha Numeric but not numeric Alpha
+	Class Test123  valid
+	Class 123Test  Invalid
+
+4. spaces are not Allowed in Class but for space seperated class name _ is recommended
+	Class Student model{
+
+	}
+	This is Invalid because of space.
+
+	Butspace can be ignored usind _
+
+	Class Student_model{
+
+	}
+
+5. In case of objects Naming convention remains same
+but you can use either lower or uppercase or block Letter 
+since objects followed by $ so they are like a special variable
+hence naming convention of objects remains same as of variables
+
+
+Date: 17/02/2021
+
+Instanceof Operator is used to check weather a Object is Instant of given Class
+
+
+$this:
+	$this refers to  current scope of object.
+	Hence $this is called as Super Refrence Object
+	$this can only used inside class scope Only
+
+
+Getters:
+	Methods used to get the values from instance variables
+		getters:something() may not return or echo
+Setters:
+	Methods used to set the values of instance variables
+		setters:something()
+
+
+Date : 18/02/2021
+
+Constructor and Destructor:
+Constructor:
+	1. These are just like class methods but they donot return Anything . 
+	2. Constructor are called at Runtime as soon as class is Intiantiated
+	3. Constructor is a type of setter which is used to Initialised the data Member of a class no matter weather they are private, protected or public.
+	4. Constructor are same as className with method as a Signature.
+
+__construct is a magic function
+
+
+Destructor:
+	1. These is method which is called as soon as the execution of class is done.
+	2. Destructor is used to delete the objects at run time if require.
+	3. Destructor and Constructor both are independent pf signature level.
+	4. Destructor will only run After each has been completed.
+__destruct is a magic function
+
+
+Signature Level:
+	Sequence at which you define a Method is called Signature level.
+	By default Signature level of Constructor is-1
+	And By Default Signature Level of Destructor is-n
+
+
+Data Member of empty class:
+	Any DataMember Associated with $this becomes a Part of Context
+	Hence its scope will remains Global and will becomes hidden data Member.
+
+
+
+
+Types of Constructor in PHP:
+Constructor are two types:
+=========================
+1. Parameterised Constructor = class will be Parameterised
+
+	$obj = new Classname(); Parenthesis is Mendatory
+	In Parameterised Constructor we pass Arguments
+
+2. Non Parameterised Constructor:
+	$obj = new Classname; Parenthesis is not Mendatory 
+
+	In non Parameterised Constructor we do Any task without parameters
+	you can utilise(used) the parameter but not supply
+
+
+Date : 19/02/2021
+
+Non parameterised:
+
+formal Arguments must be passed to make constructor to be parameterised
+
+
+
+Application of parameterised constructor:
+	It is used to Initialised the data member
+	Load some confugration................
+
+Method Chaining:
+	Method Chaining is a concept of chaining the attributes and Methods together with a Single Object.
+	If your class does not support method chaining then it lead to null object.
+	Exception:
+		can not call to methodname() to null object.
+
+multi-level-class:
+	A php script with multiple declared class is called Multi level class
+
+
+Context :
+	There are two types of context
+	1. Static Context
+	2. Non-Static Context
+
+	Class  : Properties + Method
+	How to define Class in terms These Two Context.
+
+	Static Context: 
+		class :  static properties + static Methods
+		Using object not allowed 
+		This means Current Also cannot be used. ($this not allowed)
+	Non-Static Context;
+		Class : normal properties + normal Method
+
+	How to declear Static Context:
+	==============================
+		use static keyword
+
+		eg:
+		properties
+		<access-modifier> Static $<property-name>
+		
+		public static $x;
+
+
+		Methods:
+		<access-modifier> Static function <function-name>(){
+
+		}
+		Class with static context and non Static Context is possible
+		Static Context will Class rather than object
+		Non-Static Context will use Object rather than class.
+
+Question : Using static context and non static context derive the class which can be used to connect to any database at run time
+
+
+Steps to make user account Privalage to database:
++==========================++++++++++++++++++++++
+goto phpmyadmin
+goto server option without selecting Any Database
+create user
+with following credentials
+username
+any hostname
+any password
+repeat password
+
+Manage privalege
+create datbase with same username and grant all privaleges.
+Now database will be created.
+
+
+
+Date : 21/02/2021
+Inheritance:
+Introduction to Inheritance:
+============================
+Inheritance means Code reusebility
+In Inheritance One class can consume or use the benefits of his/her parent classes without actually being self Implement.
+
+Inheritance means (wirast mey milna ) in simple Terms
+That means I(child) can access all properties and functionality of parent and grand parent.
+
+Important Points To be kept in mind.
+1. Inheritance can be applied in multi level class only
+2. Minimum level of classes shoud 2 or more.
+3. In order to use Inheritance extends keyword has to be used.
+4. Inheritance terminology may change but concept will same.
+
+Inheritance Terminology:
+***********************
+First Level class
+Master Class,Base Class, Parent Class, Super Class, Inherited Class.....
+
+Second Level Class
+------------------
+Child Class, Inheriting Class, Sub Class,........etc.
+
+Advantage of Inheritance:
+*************************
+1. Some Concept like data Abstraction Completly deals wit Inheritance.
+2. Some concept like Run time Polymorphism(Method Over-riding) is only possible at Inheritance.
+3. Code Reusebility.
+4. Implements DRY-Approach
+
+Types of Inheritance:
+_____________________
+1. single level Inheritance
+2. multi level Inheritance
+3. Hybrid Inheritance
+4. Herierichal Inheritance
+5. multiple Inheritance
+
+PHP with Inheritance types:
+***************************
+Inheritance Types	Support or Not-Support
+Single 				Yes
+multi-level 		Yes
+hybrid  			Yes
+Herierichal 		Yes
+Multiple 			Php does not support Multiple Inheritance But possible using Interface and traits.
+
+

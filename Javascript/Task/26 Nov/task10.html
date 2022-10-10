@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            border: 2px solid gold;
+            font-family: 'Lucida Sans';
+            font-size: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="id1" cols="50" rows="10">Hello Bhai log Kaise ho aap log</textarea>
+    <textarea id="id2" cols="50" rows="10">Aur Kya chal rha hai ? Fog chal rha hai----!</textarea>
+    <script>
+        function demo() {
+            var a = document.getElementById("id1");
+            var b = document.getElementById("id2");
+            var txt1 = a.value;
+            var txt2 = b.value;
+            a.value = txt2;
+            b.value = txt1;
+        }
+        window.setTimeout(demo, 5000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+												Database
+SQL(Structured Query Language):
+	Structured query language provides  aproper syntax to create and manipulate in databse.
+Databse: Database is the collection of logically related data. It is the collection of multiple tables.
+
+Tables: Tables is the collection of row and columns.Rows are known as tuples and columns are known as records/fields in database.
+Tables is divided into two parts:
+1. Schema/Structured of table
+2. Record of table
+
+Based on the working of commands, SQL queries are diveded into four diffrent partS:
+1. DDL : Data Definition Language: Queries taht perform operations on the schema og table, are DDL queries.
+	a. create: Create command is used to create new database or tables.
+	to create database:
+		create database database_name;
+
+	to create  table
+		create table table_name
+		(
+		column_name data_type(size),
+		column_name1 data_type(size)
+		);
+
+		
+	b. alter:
+			 Alter command is used to modify definition of column. That means if you want to change in schema of exiting table you can use alter command.
+
+			 1. Add a new column:
+			 		alter table table_name add column_name definition;
+			 2. Delete a existing column:
+			 		alter table table_name drop column_name;
+			 3. To change or modify a existing column:
+			 		alter table table_name alter old_column new_column definition;
+				 		
+				 		To make change in definition of a exitsting column
+							alter table table_name modify column_name  modified _definition;
+						To make change in name and definition of a exitsting column
+							alter table table_name old_column_name new_column_name definition;
+	c. drop:
+			Drop command is used to remove table from database.
+			 syntax:
+			 	drop table table_name;
+	d. truncate:----------------------------------------
+			syntax:
+				truncate table table_name;
+------------------------------------------------------------------------------------------------------------------------------
+e.g.:-
+
+
+create table employee
+(
+    roll_no int,
+    name varchar(200),
+    email varchar(300),
+    joining_date date,
+    salary int
+);
+
+Add a column:(first,after and last keyword use in this command)
+ 	alter table employee add designation varchar(100);
+
+Delete a column:
+	alter table employee drop designation1;
+
+Change/Modify:
+	alter table employee modify joining_date varchar(200);
+	alter table employee change roll_no emp_no int;
+
+ 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+2. DML : Data Manipulation Language
+	a. insert: Insert is use dto create new records in table or add a new record in table.
+		syntax:
+			insert into table_name values(value_1,value_2,value_3,value_4);
+	b. select: select command is used to retrieve data save in database.  You can select data in different from by using select command.
+	syntax:
+		select * from table_name
+		select * from table_name where<condition>
+		select column_name_1,column_name_2,column_name_3 where <condition>; 
+		condition 
+		>
+		<
+		>=
+		<=
+		=
+		and:  
+		or
+		in
+		between
+		is null
+		is not null
+		like: 
+
+
+	c. update:update command is used to update pre-inserted recrds of table.
+	syntax
+		update table_name set column_name=value where <condition>;
+
+	d. delete:Delete command is used to remove a record from a table.
+	syntax: 
+		delete from table_name where <condition>;
+
+	Joining:
+			 Joining is used to select data from diffrent tables based on a common field.
+			 1. Inner Join:
+			 		Inner join is used to select common records from both tables. Inner join will return only value that matches in both tables. 
+			 			select employee.emp_id,employee.last_name,employee.branch_id,branch.branch_id,branch.branch_name
+			 			from employee join branch on  b=branch.branch_id;
+
+
+			 2. Left Join:
+			 		Left join is used when you want to select all records from first table only common record from second table that matches to first table.
+			 			select employee.emp_id,employee.last_name,employee.branch_id,branch.branch_id,branch.branch_name
+			 			from employee left join branch on employee.branch_id=branch.branch_id;
+
+
+			 3. Right join:
+			 		Right join selects all value from second table and common records from first table that matches to second table.
+			 			select employee.emp_id,employee.last_name,employee.branch_id,branch.branch_id,branch.branch_name
+			 			from employee right join branch on employee.branch_id=branch.branch_id;
+
+
+			 4. Full/outer join:
+			 		Full outer join returns all the records from first and second table. And returns null at the place of colum which not matches to each other.
+
+			 	
+
+
+
+
+select e.first_name,e.salary,b.branch_name
+from employee e,branch b where e.branch_=b.branch_id
+
+
+select work_with.total_sales,client.client_name from work_with left join client on
+work_with.client_id=client.client_id;
+
+-----------------------------------------------------------------------------------------------------------------
+e.g.:
+
+insert into employee values(1,'Rahul','rahul@gmail.com','2000-12-12',20000,'SE');
+to insert value into specific column: 
+		insert into employee(emp_no,name,email,salary) values(1,'Rahul','rahul@gmail.com',20000);
+
+		insert into employee(emp_no,name,email,salary) values(1,'Rahul','rahul@gmail.com',20000),values(2,'rudresh','rudresh@gmail.com',2000);
+
+select command:
+ select from employee;  
+ select * from employee;
+ select name,email from employee;
+
+
+-----------------------------------------------------------------------------------------------------------------
+3. DCL : Data Control Language
+	a. grant:
+
+	b. revoke
+	c. rename
+4. TCL : Transaction Control Language
+	a. commit
+	b. rollback
+	c. savepoint
+
+---------------------------------------------------------------------------------
+
+	create table employee
+(
+emp_id int primary key,
+first_name varchar(100),
+last_name varchar(100),
+birth_date date,
+sex varchar(10),
+salary int,
+super_id int,
+branch_id int,
+foreign key(branch_id) references branch(branch_id) on delete set null,
+foreign key(super_id) references branch_supplier(super_id) on delete set null
+);
+create table branch
+(
+branch_id int primary key,
+branch_name varchar(100),
+mgr_start_date date
+);
+create table branch_supplier
+(
+branch_id int,
+super_id int primary key,
+sup_name varchar(100),
+supply_type varchar(200)
+);
+insert into branch values(3,'Stamford','1998-02-13');
+select * from branch;
+insert into branch_supplier values(2,100,'Stamford','hhgh');
+insert into branch_supplier values(2,101,'abc','hh');
+insert into branch_supplier values(3,102,'sde','gg');
+insert into branch_supplier values(3,103,'abc','kk');
+select * from branch_supplier;
+
+select * from employee;
+insert into employee (emp_id,first_name,last_name,birth_date,sex,salary,super_id,branch_id) values(1001,'rud','upd','2000-08-02','male',25000,'');
+
+
+---------------------------------------------
+
+5to apply condition on selected data by group by clause, having is used. 
+syntax:
+	select count (sex),sex, from employee group sex having  sex is not NULL
+
+
+	select sum(qpfee) from student  group by name having status='True'
+
+-----------------------------------------
+Inner Query:
+			
+
+select * from branch where branch_id in (select distintict branch_id from employee where branch_id is not null)
+on delete set null:
+
+college:
+
+	student:
+		roll no
+		name
+		fname
+		branch-foreign key
+		total fee
+		insert 10 data
+	fee:
+		sn pk ai
+		roll no fk
+		pfee int
+		status:true/false;
+
+	teachers
+		emp_id
+		name
+		designation
+		work_branch fk int
+
+	branch:
+		branch_id
+		name varchar(200)
+		mgr_id fk(teacher:emp_id);
+
+		insert 3 branches with null employee id;
+		
+
+
+
+
+
+
+
+
+
+
+create table student
+(
+    roll_no int primary key auto_increment,
+    name varchar(100),
+    fname varchar(100),
+    branch int,
+    total_feem int
+);
+create table fee
+(
+    sn int primary key auto_increment,
+    roll_no int,
+    pfee int,
+    status varchar(10)
+);
+create table teachers
+(
+emp_id int primary key auto_increment,
+name varchar(100),
+designation varchar(100)
+);
+create table branch
+(
+branch_id int primary key auto_increment,
+name varchar(100),
+emp_id int
+);
+alter table student change total_feem total_fee int;
+alter table student add foreign key(branch) references branch(branch_id);
+alter table fee add foreign key(roll_no) references student(roll_no);
+alter table teachers add work_branch varchar(200);
+alter table teachers modify work_branch int;
+oalter table teachers add foreign key(work_branch) references branch(branch_id);
+alter table branch add foreign key(emp_id) references teachers(emp_id);
+
+
+Answer 1:-
+insert into branch(name) values('CS&E'),('Elex'),('IT');
+
+Answer 2:-
+insert into student values(101,'Aman','Suresh',1,4000);
+insert into student(name,fname,branch,total_fee) 
+values('Betu','Surya',1,5000),
+('binu','anish',2,6000),('sita','vritant',2,7000),
+('divya','vipul',2,3000),
+('preeti','vinit',3,5000),('suresh','rohit',3,5000),
+('mohan','kalu',3,1000),('mukesh','shyam',3,2500);
+
+
+Answer 3:-
+insert into teachers values(1001,'Rajesh','CS_HOD',1);
+
+insert into teachers(name,designation,work_branch) 
+values('Rakesh','TeacherCS',1),
+('Pratik','HODElex',2),('Sanjay','TeacherElex',2),('Kamlesh','HODIT',3),
+('Rajendra','TeacherIT',3);
+
+Answer 4:-
+update table_name set column_name=value where <condition>;
+update branch set emp_id=1001 where branch_id=1;
+update branch set emp_id=1003 where branch_id=2;
+update branch set emp_id=1006 where branch_id=3;
+
+Answer 5:-
+insert into fee(roll_no,pfee) values(102,4000),
+(103,3000),
+(104,2500),
+(105,2000),
+(106,1500),
+(107,1800);
+
+Answer 6:-
+
+
+
+
+
+----------------------------------------------------------------
+
+Stored:
+
+
+1.Trigger:-
+		Trigger is a important concept of sql. It is used to defined some operations that you want to perform in database automatic before/after any query executes.
+
+			semicolon(;) is used to seprate diffrent  statement of database. But a stored procedure query collection can have more than one queries ended with semicolon. So we have to change use of semicolon by using delimeter.
+
+			step 1 :
+			$$ , \\
+			delimiter $$
+
+			step 2:
+			create trigger trigger_name before/after operation_name on table_name
+			for each row beign
+
+			step 3:
+			delimiter ;
+			------------------------------------------------------------------------------------------------
+
+
+
+			delimiter //
+			create trigger tr1 before insert on employee
+			for each row begin
+			insert into newtable values(new.salary);
+			end //
+
+
+			delimiter ;
+
+
+			------------------------------------------------------------------------------------------------
+
+
+			delimiter $$
+			create trigger t1 before insert on employee
+			for each row begin
+			if new.sex='m' then
+			insert into newtable value('a new employee added');
+			else if new.sex='f' then
+			insert into newtable values('a female employee added');
+			else
+			insert into newtable values('a other employee added');
+			end if;
+			end $$
+disintic
+
+
+
+
+create table newtable
+
+
+
+
+hello
+
+

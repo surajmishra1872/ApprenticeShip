@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="frm" onsubmit="return demo()">
+        Pincode<br/>
+        <input type="text" id="text1" name="pin"/><p></p>
+        <input type="submit" value="save"/>
+        <p></p>
+    </form>
+    <script>
+        var demo=()=>
+        {
+            var a=document.forms['frm']['pin']
+            //alert(isNaN(a.value))
+            if(a.value.length!=6)
+            {
+                a.style.border="2px solid balck";
+                document.querySelector("p").innerText="Please Enter Valid Pincode.";
+                document.querySelector("p").style.color="red";
+                return false; 
+            }
+        }
+    </script>
+</body>
+</html>

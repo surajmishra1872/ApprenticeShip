@@ -1,0 +1,49 @@
+<!--
+name
+animation-fill-mode:backwards
+-->
+<html>
+<head>
+<style>
+#outer
+{
+height:750px;
+background:red;
+color:white;
+text-align:center;
+line-height:750px;
+font-weight:bold;
+font-family:sans-serif;
+font-size:100px;
+text-shadow:4px 4px 2px yellow,8px 8px 4px green;
+animation-name:xyz;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+#outer:hover
+{
+animation-play-state:paused;
+}
+@keyframes xyz
+{
+0%{
+background-color:green;
+color:red;
+}
+50%{
+background-color:red;
+}
+100%{
+background-color:black;
+}
+
+}
+</style>
+</head>
+<body>
+<div id="outer">
+Techpile Technology
+</div>
+</body>
+</html>

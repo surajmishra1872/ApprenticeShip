@@ -1,0 +1,61 @@
+<html>
+<heaD>
+<style>
+#box
+{
+height:500px;
+width:1200px;
+border:10px solid red;
+background:url('img/1.jpg');
+background-size:cover;
+}
+#inner
+{
+height:500px;
+width:1200px;
+background:rgba(0,0,0,.5);
+font-size:50px;
+color:white;
+line-height:500px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>SLIDER</h1>
+<div id="box" onmouseover="demo2()" onmouseleave="demo1()">
+<div id="inner">
+WELCOME TO THE WOLRD OF JS
+</div>
+</div>
+</center>
+<script>
+var arr=["2.jpg","3.jpg","4.jpg","5.jpg"] ;
+var txt=["TEXT1","TEXT2","TEXT3","TEXT4"]
+var color=["rgba(234,12,23,.6)","rgba(4,112,223,.8)","rgba(172,222,72,.8)","rgba(128,0,255,.5)"]
+ var i=0;
+ function slider()
+ {
+ var dv1=document.getElementById("box");
+ var dv2=document.getElementById("inner");
+ dv1.style.background="url('img/"+arr[i]+"')";
+ dv1.style.backgroundSize="cover";
+ dv2.innerText=txt[i];
+ dv2.style.background=color[i]
+ i++;
+if(i==arr.length)
+i=0;
+ }
+ function demo1()
+ {
+ x=window.setInterval(slider,2000);
+ }
+ function demo2()
+ {
+ window.clearInterval(x)
+ }
+</script>
+<button onclick="demo1()">START</button>
+<button onclick="demo2()">STOP</button>
+</body>
+</html>

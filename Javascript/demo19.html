@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: red;
+            color: yellow;
+            border: 2px solid green;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Welcome to the world of java script.</h1>
+    <h1 id="h2">Welcome to techpile technology</h1>
+    <button onclick="swaptext()"> Swap Text</button>
+    <script>
+     function swaptext()
+     {
+        var head1=document.getElementById("h1")
+        var head2=document.getElementById("h2")
+        var txt1=head1.innerText;
+        var txt2=head2.innerText;
+        head1.innerText=txt2;
+        head2.innerText=txt1;
+     }
+    </script>
+</body>
+</html>

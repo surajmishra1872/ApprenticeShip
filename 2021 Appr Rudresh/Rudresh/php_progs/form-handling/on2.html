@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Example</h1>
+<form action="output.php" onsubmit="return validate();">
+<input type="text" name="" value="" placeholder="" id="name">
+<input type="submit" name="" value="Submit">
+</form>
+</body>
+<script>
+	function $(elemetn_id)
+	{
+		return document.getElementById(elemetn_id);
+	}
+	function validate() {
+		//alert("hello");
+		var input_element=$('name');
+		// alert(input_element);
+		var name= input_element.value;
+		if(name=="")
+		{
+			alert('name is required');
+			return false;
+		}
+		return true;
+	}
+</script>
+</html>

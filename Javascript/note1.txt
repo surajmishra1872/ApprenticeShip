@@ -1,0 +1,267 @@
+sort
+----
+=>sort function is used to sort element of given array.
+
+Syntax
+--------
+<script>
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+var arr1=[20,30,10,5,50]
+document.write(arr.sort())
+document.write(arr1.sort())
+</script>
+
+slice()
+-------
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+=>slice function is used to return a part of array on the basis of start index and end index.
+=>Negative index is ecceptable here.
+=>slice method does not change original array.
+Syntax
+--------
+arrayName.slice(startIndex,endIndex)// it return element of array from startIndex to endIndex-1;
+
+Exa:
+-----
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+arr.slice(1,3)//MOHAN,GOLU
+arr.slice(2)//"GOLU","RAVAN"
+arr.slice(-2)//"GOLU","RAVAN"
+arr.slice(-3,-1)//"GOLU","RAVAN"
+
+
+splice()
+--------
+splice function is used to add/remove element of given array.
+=>splice method change original array.
+Syntax
+---------
+arrayName.splice(StartIndex,no of item to delete,Items to add)
+
+Exa:
+-----
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+arr.splice(1,1,"SHYAM")//"RAM","SHYAM","GOLU","RAVAN"
+arr.splice(0,3,"HTML","PHP")//
+arr.splice(0,0,"HTML","PHP")//"HTML","PHP","RAM","MOHAN","GOLU","RAVAN"
+
+pop()
+-----
+=>pop function is used to remove last element of array and return removed element.
+
+Syntax
+--------
+ArrayName.pop() // Last element 
+<script>
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+alert(arr.pop())//RAVAN
+</script
+
+push
+------
+=>push function is used to add element at the last position of array and return length of updated array.
+Syntax
+-------
+arrayName.push(item)
+Exa:
+-----
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+alert(arr.push("SOHAN"))//5
+
+
+includes()
+-------------
+=>includes function is used to check given element present in array or not.
+=>if given element present in array then it retruns true otherwise retruns false.
+
+Syntax
+=======
+Case 1:
+arrayName.includes(item)
+
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+alert(arr.includes("ram".toUpperCase()))//true
+
+Case 2
+--------
+arrayName.includes(item,startIndex)
+Exa:
+-----
+<script>
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+alert(arr.includes("ram",2)//false
+alert(arr.includes("RAM",2)//false
+</script>
+
+join()
+------
+=>join function is used to join element of array on the basis separator.
+
+Syntax
+---------
+arrayName.join(separator)
+Exa:
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+arr.join("||")
+RAM||MOHAN||GOLU||RAVAN
+arr.join("  ")
+RAM MOHAN GOLU RAVAN
+arr.join("*")
+RAM*MOHAN*GOLU*RAVAN
+
+forEach()
+------------
+=>forEach method is used to call function for every element present in array.
+
+Syntax
+---------
+arrayName.forEach(currentValue,Index,arrayName)
+
+index and arrayName (optional)
+
+Exa:
+------
+var arr=["RAM","MOHAN","GOLU","RAVAN"]
+
+arr.forEach(demo)
+
+function demo(value)
+{
+alert(value)
+}
+
+indexOf
+lastIndexOf
+join()
+split
+trim
+charAt()
+--------
+=>charAt function is used to return character at specified index in a given string.
+
+Syntax
+-------
+stringName.charAt(index);
+-------------
+var str="ABC"
+
+alert(str.charAt(2))//C
+alert(str.charCodeAt(2))//67
+
+charCodeAt()
+---------------
+charCodeAt function is used to return unicode value of given character at specified index.
+
+Syntax
+--------
+stringName.charCodeAt(index)//
+
+Exa:
+-------
+var str="ABC"
+alert(str.charCodeAt(2))//67
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+str="TECHPILE TECHNOLOGY"
+str.lastIndexOf("T")//9
+str.charAt('2')//C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

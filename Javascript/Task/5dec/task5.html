@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<style>
+img
+{
+height:500px;
+width:700px;
+border:10px solid purple;
+padding:10px;
+border-radius:5px;
+}
+</style>
+<body><center>
+<h1>IMAGE SLINDER</h1>
+<img src="C:\Users\ASUS\Desktop\WALLPAPER\HD Wallpapers/(128).jpg" id="img1"/>
+</center>
+<script>
+var arr=["god.jpg","god1.jpg","god2.jpg","god3.jpg"]
+var i=0
+function slider()
+{
+var im=document.getElementById("img1")
+im.src=arr[i]
+i++;
+if(i==arr.length)
+i=0;
+}
+window.setInterval(slider,1000)
+</script>
+</body>
+</html>

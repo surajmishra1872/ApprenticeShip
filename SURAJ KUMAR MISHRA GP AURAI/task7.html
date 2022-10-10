@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        div{
+            width:300px;
+            border: 3px solid purple;
+            height: 50px;
+            margin-top: 5px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv1">Hello From Div 1</div>
+    <div id="dv2">Hello From Div 2</div>
+    <div id="dv3">Hello From Div 3</div>
+    <div id="dv4">Hello From Div 4</div>
+    <div id="dv5">Hello From Div 5</div>
+    <div id="dv6">Hello From Div 6</div>
+    <div id="dv7">Hello From Div 7</div>
+    <div id="dv8">Hello From Div 8</div>
+    <div id="dv9">Hello From Div 9</div>
+    <div id="dv10">Hello From Div 10</div>
+    <button onclick="demo()">Click Here</button>
+    <script>
+        function demo()
+        {
+        for(var i=0;i<=9;i++)
+        {
+            var a=document.getElementsByTagName("div")[i].innerText;
+            alert(a);
+        }
+    }
+    </script>
+</body>
+</html>

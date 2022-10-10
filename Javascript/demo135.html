@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="fun1()" onclick="fun2()">CLICK ME</button>
+<script>
+var fun1=()=>
+{
+alert("I AM FROM FUN1")
+}
+var fun2=()=>
+{
+alert("I AM FROM FUN2")
+}
+var fun3=()=>
+{
+alert("I AM FROM FUN3")
+}
+document.querySelector("button").addEventListener("click",fun1)
+document.querySelector("button").addEventListener("click",fun2)
+document.querySelector("button").addEventListener("click",fun3)
+</script>
+</body>
+</html>

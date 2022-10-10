@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+body{
+background:url("sunset.jpg");
+background-size:cover;
+}
+#login{
+min-height:300px;
+width:450px;
+padding:30px;
+box-sizing:borderbox;
+margin:200px auto;
+color:white;
+//background:rgba(0,0,0,.6);
+font-weight:bold;
+font-size:22px;
+border:5px solid white;
+//backdrop-filter:blur(10px);
+//backdrop-filter:brightness(50%);
+//backdrop-filter:contrast(200%);
+//backdrop-filter:invert(80%);
+}
+#login:hover
+{
+//backdrop-filter:invert(80%);
+//backdrop-filter:hue-rotate(80deg);
+//backdrop-filter:sepia(100%);
+//backdrop-filter:saturate(50%);
+//backdrop-filter:grayscale(200%);
+backdrop-filter:opacity(40%);
+//backdrop-filter:drop-shadow(10px 10px 10px black);
+transition:all ease 1s;
+}
+.txt
+{
+width:100%;
+height:40px;
+margin-bottom:5px;
+}
+.btn{
+width:100%;
+height:40px;
+margin-bottom:5px;
+background:orange;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="login">
+<h2>LOGIN <b style="color:white;">HERE</b></h2><br/>
+Username<br><input type="text" placeholder="Enter User Name" class="txt"/><br/>
+Password<br><input type="password" placeholder="Enter User Name" class="txt"/><br/>
+<input type="submit" class="btn"/>
+</div>
+</body>
+</html>

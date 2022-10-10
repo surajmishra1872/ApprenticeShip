@@ -1,0 +1,132 @@
+entries()
+----------
+=>entries function is used to return array iterator object with key/value pares.
+Syntax
+-------
+var arr=["HTML","CSS","JS","JQUERY","BOOTSTRAP"];
+var i=arr.entries()// 
+for (var a of i)
+{
+alert(a)
+}
+0,HTML
+1,CSS
+2,JS
+3,JQUERY
+4,BOOTSTRAP
+
+
+values()
+----------
+=>values function is used to retun array iterator object with array items.
+-----------
+Syntax
+-------
+var arr=["HTML","CSS","JS","JQUERY","BOOTSTRAP"];
+var i=arr.values()// 
+for (var a of i)
+{
+alert(a)
+}
+HTML
+CSS
+JS
+JQUERY
+BOOTSTRAP
+
+indexOf
+lastIndexOf
+charAt()
+charCodeAt()
+spilt()
+trim()
+toUpperCase()
+toLowerCase()
+endswith()
+startswith()
+includes()
+slice()
+substr()
+substring()
+concat()
+join()
+
+
+var arr=["Techpile","Technology","PVT","LTD"]
+
+arr.join("||")
+
+var a="Techpile || Technology || PVT || LTD."
+a.split("T")
+
+
+includes
+-----------
+=>includes function is used to check whether given string present in given sentence or not.
+=>it returns true if given string present in sentence otherwise returns false.
+Case1
+--------
+Syntax
+-------
+var str="TECHPILE TECHNOLOGY"
+alert(str.includes("Tech"))//false
+alert(str.includes("TECH"))//true
+
+Case2
+--------
+Syntax
+--------
+alert(str.includes("TECH",10))//false
+
+replace
+----------
+=>replace function is used to replace old string with new string.
+=>by Default replace function replaced first matches string.
+Case1.
+---------
+Syntax
+--------
+stringName.replace("oldString","newString")
+var str="techpile technology pvt ltd."
+
+Exa:
+-------
+<script>
+var str="techpile technology pvt ltd."
+alert(str.replace("tech","TECH"));
+</script>
+
+Case2
+------
+Replace to globle
+<script>
+var str="techpile technology pvt ltd."
+alert(str.replace(/tech/g,"TECH"));
+</script>
+
+startswith
+-------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

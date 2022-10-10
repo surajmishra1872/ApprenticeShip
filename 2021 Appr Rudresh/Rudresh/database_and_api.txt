@@ -1,0 +1,608 @@
+Date : 07/02/2021
+
+PDBC :
+Generaly if you want to store data like username, email, password we make varaible but if there are 100's of recored we cannot do anything with variable then we requires array.
+
+Bur this Data Storage Mechanism only remains in Stack Memory.
+or
+Even if it is stored in heap data is not permanent what I mean is.
+Till the php virtual Machine is on and script is Executing the data Remains and As soon Script is terminates PHP Virtual machine comes to Halt(Pause or Terminate state) and data at primary Memory flush Out that means data is destroyed.
+ 
+>Note : PHP Virtual  Machine PHP Interpreter.
+
+In order to make data parmanent we must use parmanent storage Machanism:
+1. File System Machanism : Data written into a file is called Fiele Based Storage
+	Most Common Feature of Any Framework is to store the exception and data in logs file.
+
+	In Apache or Xampp we have error.log
+	
+
+	In order to store the data in log files we need to use file handling
+
+	Write a program to make a Logger 
+	Let us make a function write_log($msg): 
+
+	Advantage : 
+	___________
+	To Log  those request and output which which are implicity called or hit.
+	For example:
+	Otp Email Services,SMS Services.
+
+	Do our System or Apache 
+	php.log
+
+	#Which login technique is used by Server for Authentication
+	Session Logging :: Logging a session data into a file
+
+2. Database Mechanism : Data written to a tables in rows and columns
+	AMP stack provides Concept of PDBC (PHP Database Connection)
+	php can be connected with any database
+	Oracle
+	mysql
+	sybase
+	db2
+	infomix
+	mongodb
+	mariadb
+	......
+
+	When To use :
+	when data is In Lacs and Crores. 
+
+	php is comforatble  with mysql only
+	but it can match with any database
+
+	it is Apple to Apple Comparision
+	for example
+		Ram Sita 
+		Krishna Radha
+		JAVA Oracle
+		Php mysql(past)
+		php mariadb
+
+3. DataWare Houses
+4. BigData
+5. Data Structures
+
+
+Working  MariaDb or Mysql database:
+
+Here Our database is Mysql but owned Mariadb
+
+there are two types of database
+1. Logical Database : Oracle is a Logical Database (Write to memory)
+2. Physical Database : mysql or Mariadb is Physical Database(Write the data in form files)
+
+What is proof
+==============
+goto c:/xampp/mysql/data
+						|
+						| Here you will get al the data of the database
+
+Database logging : Writting the database related stuff into file system
+
+Database name : foldername
+tablename : tbl_tablename.ibd or * .ibd
+columns_schema : *.frm
+
+How many Tables you can store or How many .ibd files can be made.
+4billions approx
+
+How many *.frm files or columns can be stored in a table
+4096 Max
+
+how many ways you can use mysql database
+1. using heidi SQL
+2. Using MYSQL GUI Tool (Mysql Workbench)
+3. Using mysql terminal (console or cmd)
+4. Using Webbrowser (PHPMYADMIN)
+
+
+Working with mysql console:
+***************************
+
+mysql> Console or Query
+mariaDB> Commands or Query
+
+1. Connect to mysql
+goto the Root location
+c:/xampp/mysql/bin/
+
+command to connect
+Every database has a super user
+mysql super user = root
+yoy need to connect Root
+
+Syntax:-
+	mysql -u <username> -p <password>
+
+	how to connect by hidden
+	mysql -u <username>
+	Enter Password:
+By default password is blank
+hit enter
+
+mysql -u root
+Enter password : <Hit enter>
+
+Never Ever Set the Mysql path to ENV_VARIABLES
+it can be access to by Any Third Party service
+
+Write a Kernal program to execute the Mysql from temperory Environment
+Kernal Promming can be done using CMD
+
+@echo off
+set /p name=Enter the Username:
+set path c:/xampp/mysql/bin/
+mysql.exe -u %name% -p
+pause
+
+write the to any with extension mysql.cmd
+
+
+How to show all the database
+****************************
+MariaDB [(none)]> show databases;
+		|
+		| Current database name
+
+
+Mysql Comments
+--comment line--
+
+Create the database
+MariaDB [(none)]> create database <dbname>;
+					|
+					|Create command is used to create database object
+
+Database object
+1. sequenence
+2. trigger
+3. cursor
+4. view
+5. database
+6. table
+7. user
+8. privaleges
+9. schemas
+10. rights
+11. permission
+12. temperory table
+
+select/use your database:
+	use database;
+
+Since databse is a collection of tables related entities
+for example:
+database can contain views(virtual Table), Schema, (Tables)
+
+There is a table inside a database what is its name is dual table
+dual table = it is a dummy table which has only record no schema(structure) this table is generated at runtime for calculation part 
+#Describe <tablename>
+You wil get the schema
+desc dual; 
+ERROR 1064 (42000): You have an error in your SQL syntax;
+
+
+#performing calculation using dual
+MariaDB [logs_db]> select 100+10+100 as total_salary from dual;
++--------------+
+| total_salary |
++--------------+
+|          210 |
++--------------+
+1 row in set (0.000 sec)
+
+
+
+show the table schema
+show tables;
+
+if no table is there
+Empty set
+
+Data Structure of a table 
+Array : dataType(ENUM, SET)
+Variables :
+DataTypes
+hash
+btree
+btree+
+stack 
+queue
+index
+set = Rows or Records
+tuple = this data structure when you insert multiple records in a table.
+
+Creating the Tables
+*******************
+Syntax :
+create table tbl_logs(
+id int(11) not null primary key auto_increment,
+name varchar(255) not null,
+action varchar(255)
+);
+
+
+How to see table schema:
+describe <tablename>;
+desc <tablename>;
+
+
+created table query:
+show create table <tablename>
+
+
+Insert data into table:
+
+insert in specific columns
+insert into <tablename>(			//into is no mendatary
+fieldname-1,
+fieldname-2,
+fieldname-3
+) values(
+'value1',
+'value2',
+'value3',
+);
+
+
+select max(id)+1 as id from tbl_logs as old_logs)
+
+Date : 09/02/2021
+
+Make using core php make a slug builder just like wordpress 
+where you can create post, edit post ,delete post 
+each time you create the post tilte should become post url in slug format
+
+
+
+Following are the steps to perform crud operation Using database connection:
+
+Step 1:
+	Create the database connection:
+
+	mysqli_connect($host,$user,$pass,$dbname);
+	return $connection_str or $connection Object
+
+	$con = mysqli_connect($host,$user,$pass,$dbname);
+	$con = mysqli_pconnect($host,$user,$pass,$dbname);
+				  |
+				  |
+				  p means : persistant connection (permanant connection)
+	Note : I here means Improved version
+
+	dbconnect.php
+	since connection is made only once
+
+	$host = '127.0.0.1' or 'lpocalhost';
+	$user ='root';
+	$pass = '';
+	$dbname = ''; no error
+	$dbname = 'dbname';
+	database name is correct then ok if
+	wrong Exception will be raised
+
+Step 2: Check if connection is made or not
+
+	method 1: 
+	Via Exceptional handling:
+
+	try{
+	$con = mysqli_connect($host,$user,$pass,$dbname);
+	echo 'connection created';
+	}catch(Exception $e){
+		if(!$con){
+			die("connection Error".mysqli_error($con));
+		}
+	}
+
+
+	method 2:
+	Via Conditional Handling:
+	if($con){
+		echo 'Created Connection';
+	}else{
+		echo "Connection Error".mysqli_error($con);
+		exit;
+	}
+
+	method 3:
+	Via 
+	$con = mysqli_connect($host,$user,$pass,$dbname) or
+	die('Connection Error');
+
+Step 3:
+	prepare the query and fire the query 
+
+Step 4:
+	Justify the Type of Query
+	if it is writable or readable
+
+	if query is readable return type will be  result set
+	select = result Set
+
+	if query is writable
+	return type no of affected rows
+	minimum Affected Row 1
+	1 => true
+	if($check==true){
+		echo "Insert ok";	#insert
+		echo "Update ok";	#update
+		echo "Delete ok";	#delete
+	}else{
+		echo 'Insert|Delete|Update Error';
+	}
+
+Preparing the query:
+
+$sql = "INSERT OR UPDATE OR SELECT OR DELETE QUERY";
+
+Fire the Query:
+
+1. writable
+		insert,delete,update,alter,create,drop,truncate.......
+
+		mysqli_query($con,$sql,)
+						|	|
+						|	|
+						|	|sql
+						|--->connection Object
+		return type : true|false
+
+		Syntax:
+		$check = mysqli_query($con,$sql,);
+
+2. readable
+	select,joins,projection,selection,transaction
+		mysqli_query($con,$sql)
+						|	|
+						|	|
+						|	|sql
+						|--->connection Object
+		return type : Result set :: Multi-Dimentional Array or N records.
+
+		Syntax:
+		$result = mysqli_query($con,$sql);
+
+Note: 
+$sql = "Query 1;";
+$sql.= "Query 2;";
+$sql.= "Query 3;";
+$sql.= "Query n;";
+
+mysqli_query($con,$sql);
+
+
+
+1. mysqli_num_rows()
+2. mysqli_fetch_assoc()
+3. mysqli_fetch_array()
+4. mysqli_fetch_field()
+5. mysqli_fetch_row()
+
+
+All these function will used during write Operation
+writable operation
+
+update or delete
+6. mysqli_affected_rows():: no of affected rows in case delete and update.
+	
+	-1 0 1	min one Affected =>True
+	-1 0 (n) max n affected => true
+	true
+	|
+	|--->when query is failed
+
+	$check_count = mysqli_affected_rows($con);
+
+	if($check_count>0){
+
+	}
+
+
+
+insert
+7. mysqli_insert_id()
+		gives the id of last inserted Record
+
+select max(id) from any_table
+
+postermartam of Result set Function
+********************************
+
+
+1. mysqli_num_rows()
+2. mysqli_fetch_assoc()
+3. mysqli_fetch_array()
+4. mysqli_fetch_field()
+5. mysqli_fetrch_row()
+
+
+This result is also called Resource and denoted by #n
+where n=1,2,3,4,5,6,7,8............
+
+$con :: is responsible for profiling
+SQL Query
+Explain <Any-Query>
+
+In oredr to check the unique wheather a record exist or not
+we use count $count > 0 record exist
+
+Select Query::
+mysqli_num_rows($result_set);
+
+
+
+
+update tbl_logs set name Abd where(select name from tbl_logs where id=1 ) 
+
+Important Transactional queries
+*******************************
+
+Any Task or event Achieved by running multiple Queries is called as Trancaction.
+
+Some Example of Transaction are
+1. Balance Transfer :: Transaction
+
+ac1			ac2
+
+$update_for_ac1 = "UPDATE QUERY...";
+if(mysqli_query($con,$update_for_ac1)){
+	$affected_count = mysqli_affected_rows($con);
+	if($affected_count>0){
+		echo "Balance Debited";
+
+		$update_for_ac2 ="Query Second..";
+		if(mysqli_query($con,$update_for_ac2)){
+			$affected_count2 = mysqli_affected_rows($con);
+			if($affected_count2>0){
+				echo "Balance Debited";
+
+				//
+				$select_sql = "Select from ac2";
+				$result_set = mysqli_query($con,$select_sql);
+				$count = mysqli_num_rows($result_set);
+				if($count2>0){
+					echo "creadited";
+				}
+		}
+
+	}else{
+		echo 'Not inserted';
+		write_log('Not inserted'.mysqli_error($con));
+	}
+}
+
+
+
+Alter |Drop |Create Query: 
+
+if(mysqli_query($con,$sql)){
+	echo 'Query Executed';
+}else{
+	echo 'Query Not Executed'.mysqli_error($con);
+}
+
+Q1. if record exist update and if not insert
+make a upsert function
+
+Q2. select the record then update the record.
+
+Q3. select table 2 if exist delete from table2
+and move to table1
+
+
+
+
+Working with Readable Queries
+*****************************
+Check the state of query if state of auery is readble this means query is select
+weather it is projection OR selection
+
+Projection means :: No where clause
+Selection means :: With where clause
+
+Working with projection:
+************************
+Projection :: result set will be n
+count of result set = num_rows
+
+According to programming ther are two types of loop
+1. entry control loop
+		for :: limit must be known
+		while :: No limit is known
+		foreach :: No limit is known
+
+2. exit control	loop
+		do while
+
+Here we can use while or foreach:
+
+Working with selection
+**********************
+0:1:n
+| | |
+| | |-->n records
+| |-->1 record
+|-->>Null
+
+selection :: where clause will be added
+syntax:
+select <column-set> from <tablename> where <column> <condition> <value>
+or <column-2> <condition> <value2> or|and...........
+
+condition can be 
+equal to =
+not equal to != , <>
+greater than >
+less than >
+greater than or equal to >=
+less than or equal to >=
+
+column to vlaue comparison
+left to right comparison
+
+to check if it is NULL
+select email from tbl_user where email ='';			#invalid Query
+select email from tbl_user where email is NULL;		#valid Query
+
+
+to check if it is not null
+==========================
+select email from tbl_user where email is not NULL;		#valid Query
+
+Selection of specific record
+----------------------------
+Clause<condition> is directly to <uniquess> only and operation
+
+narrowing result set : and 
+widening result	set : or
+
+
+select email,password,mobile ferom tbl_user where email='$email' and password='$password' and moile='$mobile';
+
+if():
+
+type conversion from database to server datatype
+-------------------------------------------------
+Php			database
+into		sql
+array
+bool
+
+
+array		result set(resource)
+Object
+
+Date : 11/02/2021
+creating the slug page:
+
+1. Add the header to the table <th>view post</th>
+go to tbody and <td><a href="posts.php?slug=<?php $row['slug'];?>"></a></td>
+
+2. Make the page posts.php
+and get the slug variable
+
+$slug = $_GET['slug'];
+
+we need to make preety url so we use htaccess
+and write the rule for query string of get request
+
+RewriteRule ^(posts)/([a-z0-9\-]+)$ posts.php?slug=$2 [QSA]
+
+Now change the url in show .php
+<a href="posts/<?php echo $row['slug']?>"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            min-height: 300px;
+            width: 300px;
+            position: absolute;
+            top: -328px;
+            transition: all ease 1s;
+        
+        }
+        #outer:hover{
+            top: 0px;
+            transition: all ease 1s;
+        }
+       #top{
+           min-height: 250px;
+           width: 300px;
+           padding: 10px 25px;
+           border-radius: 10px 10px 0px 0px;
+           box-sizing: border-box;
+           background:linear-gradient(45deg,purple,skyblue);
+        }
+        #bottom {
+           height: 30px;
+           width: 300px;
+           text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: impact;
+           box-sizing: border-box;
+           border-top: 2px solid blue;
+           border-radius: 0px 0px 10px 10px;
+           padding: 5px;
+           background:green;
+       }
+       .inpt{
+           height: 35px;
+           width: 100%;
+           padding: 5px;
+           border-radius: 5px;
+        }
+        .btn{
+            height: 38px;
+            width: 100%;
+            color: white;
+            background: blue;
+            font-size: 20px;
+            border-radius: 5px;
+        
+            font-weight: bold;
+        }
+        
+            
+    
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="top">
+            <form action="">
+                <h2>LOGIN FORM</h2>
+                Username <br><input type="text" placeholder="Enter mobile number or password" class="inpt"><br>
+                Password <br> <input type="password"placeholder="Password" class="inpt"> <br>
+                <a href="#">Forgot password</a>
+                <input type="submit" value="LOGIN" class="btn"><br>
+                <p>Not a User?<a href="#">Signup now</a></p>
+            </form>
+        </div>
+        <div id="bottom">
+        LOGIN
+        </div>
+    </div>
+</body>
+</html>

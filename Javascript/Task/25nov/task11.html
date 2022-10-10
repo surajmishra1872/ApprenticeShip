@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+                width: 500px;
+                height: 300px;
+                background-color: blue;
+        }
+        #btn1{
+            height:100px;
+            width: 200px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+        #btn2{
+            height:100px;
+            width: 200px;
+            background-color:green;
+            color: white;
+            font-size: 20px;
+        }
+        #btn3{
+            height:100px;
+            width: 200px;
+            background-color:yellow;
+            color:black;
+            font-size: 20px;
+        }
+        #btn4{
+            height:100px;
+            width: 200px;
+            background-color:black;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="id1"></div>
+    <button onclick="red()" id="btn1" onclick="red()">Red</button>
+    <button onclick="green()" id="btn2" onclick="green()">green</button>
+    <button onclick="yellow()" id="btn3" onclcik="yellow()">yellow</button>
+    <button onclick="black()" id="btn4" onclick="black()">black</button>
+    <script>
+        function red()
+        {
+        var a=document.getElementById("id1")
+        a.style.background="red";
+        }
+        function green()
+        {
+        var a=document.getElementById("id1")
+        a.style.background="green";
+        }
+        function yellow()
+        {
+        var a=document.getElementById("id1")
+        a.style.background="yellow";
+        }
+        function black()
+        {
+        var a=document.getElementById("id1")
+        a.style.background="black";
+        }
+    </script>
+</body>
+</html>

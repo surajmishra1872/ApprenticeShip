@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 270px;
+            border-radius: 10px;
+            float: left;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body onload="demo()">
+    <div id="dv1" style="background-color: red;"></div>
+    <div id="dv2" style="background-color: greenyellow;"></div>
+    <div id="dv3" style="background-color: rgb(255, 115, 0);"></div>
+    <div id="dv4" style="background-color: aqua;"></div>
+    <div id="dv5" style="background-color: black;"></div>
+    <div id="dv6" style="background-color: blue;"></div>
+    <div id="dv7" style="background-color: gold;"></div>
+    <div id="dv8" style="background-color:dodgerblue ;"></div>
+    <div id="dv9" style="background-color: rgb(186, 12, 221);"></div>
+    <div id="dv10" style="background-color: rgb(255, 9, 173);"></div>
+    <script>
+        function demo()
+        {
+        var a1=document.getElementById("dv1")
+        var a2=document.getElementById("dv2")
+        var a3=document.getElementById("dv3")
+        var a4=document.getElementById("dv4")
+        var a5=document.getElementById("dv5")
+        var a6=document.getElementById("dv6")
+        var a7=document.getElementById("dv7")
+        var a8=document.getElementById("dv8")
+        var a9=document.getElementById("dv9")
+        var a10=document.getElementById("dv10")
+
+        var b1=a1.style.backgroundColor
+        var b2=a2.style.backgroundColor
+        var b3=a3.style.backgroundColor
+        var b4=a4.style.backgroundColor
+        var b5=a5.style.backgroundColor
+        var b6=a6.style.backgroundColor
+        var b7=a7.style.backgroundColor
+        var b8=a8.style.backgroundColor
+        var b9=a9.style.backgroundColor
+        var b10=a10.style.backgroundColor
+
+        a1.style.backgroundColor=b5
+        a2.style.backgroundColor=b9
+        a3.style.backgroundColor=b1
+        a4.style.backgroundColor=b6
+        a5.style.backgroundColor=b8
+        a6.style.backgroundColor=b2
+        a7.style.backgroundColor=b4
+        a8.style.backgroundColor=b10
+        a9.style.backgroundColor=b7
+        a10.style.backgroundColor=b3
+    }
+    window.setInterval(demo,1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            line-height: 400px;
+            font-size: 50px;    
+            border: 10px solid;
+            float: left;
+            transition: all ease 2s;
+        }
+        .a{
+            transform: rotate(-45deg);
+            color: green;
+            background-color: aqua;
+            transition: all ease 2s;
+        }
+        .b{
+            transform: rotate(45deg);
+            color: white;
+            background-color: maroon;
+            transition: all ease 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="box1">Techpile</div>
+    <div id="box2">Technology</div><br/>
+    <button onclick="demo1()">ADD</button>
+    <button onclick="demo2()">REMOVE</button>
+    <button onclick="demo3()">TOGGAL</button>
+    <button onclick="demo4()">IS CONTAINS</button>
+</center>
+    <script>
+        function demo1()
+        {
+            document.querySelector("#box1").classList.add('a')
+            document.querySelector("#box2").classList.add('b')
+        }
+        function demo2()
+        {
+            document.querySelector("#box1").classList.remove('a')
+            document.querySelector("#box2").classList.remove('b')
+        }
+        function demo3()
+        {
+            document.querySelector("#box1").classList.toggle('a')
+            document.querySelector("#box2").classList.toggle('b')
+        }
+        function demo4()
+        {
+           var f= document.querySelector("#box1").classList.contains('a')
+        alert(f);
+        }
+    </script>
+</body>
+</html>

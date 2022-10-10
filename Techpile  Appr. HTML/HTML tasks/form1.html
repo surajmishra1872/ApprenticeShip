@@ -1,0 +1,34 @@
+<!--
+get:
+
+1.Less Secure
+2.File Upload is not possible
+3.used for small form
+4.get url maximum size is 2048 character
+
+Post:
+1.More Secure
+2.File Upload is possible
+3.Used for big form
+4.No url length limit
+
+enctype="multipart/form-data"
+for uploading multiple file data
+
+text kai liye text/plain
+
+-->
+
+<html>
+<body>
+<form action="#" method="post" enctype="multipart/form-data"><!-- by default method value is get get url maximum size id 248-->
+Name:<br/><input type="text" name="name"/><br/>
+Father's Name:<br/><input type="text" name="fname"/><br/>
+DOB:<br/><input type="date" name="date"/><br/>
+Password:<br/><input type="password" name="passwd"/><br/>
+<input type="submit" value="save"/>
+<input type="reset" value="Clear All"/>
+<input type="button" value=" Dummy Button"/>
+</form>
+<body>
+</html>

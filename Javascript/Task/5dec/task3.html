@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="dv"></div>
+    <p id="p1"> </p>
+    <script>
+        var p = document.getElementById("p1")
+        var arr=["html","css","python"]
+        var res = "<select>"
+        for (var i = 0 ;i<arr.length;i++)
+        {
+            res = res+"<option>"+arr[i]+"</option>"
+        }
+        res +="</select>"
+        p.innerHTML=res;
+        document.getElementById("dv").innerText=p.innerText
+    </script>
+</body>
+</html>

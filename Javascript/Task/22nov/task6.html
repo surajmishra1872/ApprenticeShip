@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bplate=window.prompt("How much plate of birayani:","Enter plates of biryani")
+        var bprice=window.prompt("How much price of birayani:","Enter price of biryani")
+        var coffe=window.prompt("How much mug of cofee:","Enter mug of cofee")
+        var cprice=window.prompt("How much price of cofee:","Enter price of cofee")
+        alert("biryani amount is:"+(bplate*bprice))
+        alert("Coffe amount is:"+(coffe*cprice))
+        alert("GST amount is:"+((bplate*bprice+coffe*cprice)*18)/100)
+        alert("Total amount is:"+(((bplate*bprice)+(coffe*cprice))+((bplate*bprice+coffe*cprice)*18)/100))
+    </script>
+</body>
+</html>

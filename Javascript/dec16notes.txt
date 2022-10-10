@@ -1,0 +1,88 @@
+math object:-
+**************
+
+sqrt()
+------
+=>sqrt() is used to return square root value of given number.
+=>negative value is not accepatable here.
+=>if we are try to provide negative value then it returns NaN(Not a Number).
+
+Syntax-
+--------
+Math.sqrt(number);
+Exa:-
+------
+
+document.write(Math.sqrt(16))//4
+document.write(Math.sqrt(-16))//NaN
+
+PI:-
+document.write(Math.PI)//3.14
+
+cbrt()
+---------
+=>cbrt function is used to return cube root value of given number.
+=>Negative Value is Acceptable here.
+
+Syntax-
+-------
+Math.cbrt(number);
+
+
+Exa.
+-----
+
+document.write(Math.cbrt(27))// 3
+document.write(Math.cbrt(-27))// -3
+
+
+pow():-
+--------
+=> pow function is used calculate power value wrt x power y.
+=> x=Base value
+=> x=power value
+
+Syntax-
+------
+Math.pow(x,y);
+Exa:
+document.write(Math.pow(2,4))//16
+
+min-
+------
+min function is used to return minimum value of given numbers.
+
+Syntax-
+---------
+Math.min(number1,number2,.......NumberN)
+Exa:
+document.write(Math.min(10,20,30,4));//4
+
+max-
+-------
+=> max function is used to return maximum value of given numbers.
+
+Syntax-
+-----------
+Math.max(num1,num2,.......numN);
+
+Exa:-
+
+document.write(Math.max(10,20,40,50))//50
+
+log()-
+-----
+log function is used to return logrithm value of given number wrt to base.
+
+Syntax-
+Math.log(Number);
+Exa.
+----
+document.write(Math.log(10))//1
+
+cbrt()-cbrt() function is used for qube root of value.
+------
+
+
+
+

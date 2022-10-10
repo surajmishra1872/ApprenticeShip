@@ -1,0 +1,29 @@
+set /p name="Enter name"
+echo %name%
+
+
+
+Date:31/12/2020
+
+Comment Line:
+// single line
+/**/ multiline comment
+
+Regex
+/[a-z]+/ Non Length Based Regex
+/^[a-z]{}$/ Length based Regex
+
+// Unparsed Token
+
+Email Valiodation:-
+var pattern= /^[a-zA-Z0-9\.\-_]+@[a-z0-9A-Z]{5,}\.[a-zA-Z]{3,}$/
+
+
+date : 04/01/2021
+old enctype=xwww-urlencode/data2.1
+
+
+TASK:
+1. area of circle according to given  radius
+2. permeter of triangle for side a and b and c (a+b+c)/2
+3. calculator according to button [+],[-],[/],[*]

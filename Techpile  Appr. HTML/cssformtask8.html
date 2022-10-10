@@ -1,0 +1,79 @@
+<head>
+<style>
+#outer{
+min-height: 500px;
+width: 300px;
+position: absolute;
+top:-450px;
+left:650px;
+transition: all ease 2s;
+box-sizing: border-box;
+}
+#outer:hover{
+top: 0px;
+transition: all ease 2s;
+}
+#top{
+min-height:450px;
+width: 300px;
+padding: 10px 25px;
+border-radius: 5px 5px 0px 0px;
+box-sizing: border-box;
+background:linear-gradient(30deg,aqua,purple);
+color:white; 
+font-family:arial;
+}
+#bottom{
+box-sizing: border-box;
+height: 50px;
+width: 300px;
+text-align: center;
+color: white;
+font-size: 30px;
+font-weight: bold;
+border-radius: 0px 0px 5px 5px;
+padding: 10px;
+background:#ff9a00;
+font-family:arial;
+}
+.txt{
+height: 35px;
+width: 100%;
+margin-bottom:15px;
+border-radius: 5px;
+}
+.btn{
+height: 30px;
+width: 100%;
+color: white;
+background:#ff9a00;
+font-size: 20px;
+border-radius: 5px;
+font-weight: bold; 
+margin-top:15px; 
+}
+a{
+color:white;
+}   
+p{
+text-align:center;
+}   
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="top">
+<form action="">
+<h1>Login Here</h1>
+Username <br><input type="text" placeholder="Enter mobile number or password" class="txt"><br>
+Password <br> <input type="password"placeholder="Password" class="txt"> <br/><br/>
+<a href="#">Forgot password</a>
+<input type="submit"  class="btn"><br>
+<p>Not a User?<a href="#">Signup now</a></p>
+</form>
+</div>
+<div id="bottom">Login
+</div>
+</div>
+</body>
+</html>

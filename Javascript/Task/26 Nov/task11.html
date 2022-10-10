@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        input {
+            width: 350px;
+            height: 30px;
+            font-size: 25px;
+            border: 2px solid gold;
+        }
+
+        button {
+            color: white;
+            width: 200px;
+            height: 40px;
+            background-color: green;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    Enter Your Text:<br />
+    <input type="text" id="id1" /><br /><br />
+    <button onclick="demo()">Show Result</button>
+    <h2 id="id2"></h2>
+    <script>
+        function demo() {
+            var a = document.getElementById("id1").value
+            if (a.length <= 2) {
+                document.getElementById("id2").innerText = "Invalid Inputted String"
+            }
+            else {
+                document.getElementById("id2").innerText = a.charAt(0) + a.charAt(a.length - 1)
+            }
+        }
+    </script>
+</body>
+
+</html>

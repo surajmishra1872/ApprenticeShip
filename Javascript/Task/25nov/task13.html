@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        input {
+            width: 350px;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        button {
+            color:
+                white;
+            width: 400px;
+            height: 30px;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        div {
+            min-height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    Enter Number For Table:<br />
+    <input type="text" id="id1" /><br /><br />
+    <button onclick="demo1()">See Table Using For Loop</button>
+    <button onclick="demo2()">See Table Using while Loop</button>
+    <br /><br />
+    <div id="dv"></div>
+    <script>
+        function demo1() {
+            var a = parseInt(document.getElementById("id1").value)
+            let text = "";
+
+            for (let i = 1; i <= 10; i++) 
+            { 
+                document.getElementById("dv").innerHTML = text+=a+"X"+i+"="+a*i+"<br/>"
+            }
+        }
+        function demo2() {
+            var a = parseInt(document.getElementById("id1").value)
+            let text = "";
+            let i=1
+            while(i<=10) 
+            { 
+                document.getElementById("dv").innerHTML = text+=a+"X"+i+"="+a*i+"<br/>"
+                i++
+            }
+        }
+    </script>
+</body>
+
+</html>

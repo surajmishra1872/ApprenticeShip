@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            
+        }
+        th,td{
+            background-color: #96D4D4;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+<script>
+    var studentInfo=[
+        {name:"Ram",college:"IET Lucknow", Age:21, branch:"EE"},
+        {name:"Suraj",college:"GP Aurai", Age:20, branch:"IT"},
+        {name:"Kishan",college:"REC Rewa", Age:24, branch:"ME"},
+        {name:"Virat",college:"IMS Noida", Age:22, branch:"WC"},//......> trailing comma 
+    ]
+/*document.write(`Name:${studentInfo[0].name}<br/> College:${studentInfo[0].college}<br/>Age:${studentInfo[0].Age}<br/>
+Branch:${studentInfo[0].branch}<br/>`)*/
+
+var res="<table style='width:500px;'><tr><th>NAME</th><th>COLLEGE NAME</th><th>AGE</th><th>BRANCH</th></tr>";
+    for(var i=0;i<=studentInfo.length-1;i++)
+    {
+        res+="<tr><td>"+studentInfo[i].name+"</td><td>"+studentInfo[i].college+"</td><td>"+studentInfo[i].Age+"</td><td>"
+            +studentInfo[i].branch+"</td><tr>";
+    }
+    res+="</table>";
+    document.write(res);
+    </script>
+
+</body>
+</html>

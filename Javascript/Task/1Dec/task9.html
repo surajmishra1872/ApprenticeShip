@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:300px;
+            font-size: 20px;
+            height: 300px;
+            border: 5px solid gold;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center><div id="p1"></div></center>
+    <script>
+        
+        var temp="";
+        var arr=["RAM","SHYAM","SITA","MITA","SURAJ","KUMAR","MISHRA","SHARMA","ROHIT","VIRAT"]
+        for(var i=0;i<=arr.length-1;i++)
+        {
+           temp=temp+arr[i]+"<br/>"
+        }
+        document.getElementById("p1").innerHTML=temp;
+      
+    </script>
+</body>
+</html>

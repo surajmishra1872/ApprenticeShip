@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return demo()">
+        <input type="file" id="fu"/>
+        <p></p>
+        <input type="submit" value="SAVE"/>
+    </form>
+    <script>
+        var demo=()=>
+        {
+            var a=document.querySelector("#fu");
+            var msg=document.querySelector("p");
+            //alert(a.value)
+            var arr=a.value.split('.');
+            var ext=arr.pop().toLowerCase();
+            
+            //var ext=a.value.substring(a.value.lastindexOf('.')+1).toLowerCase();
+            //alert(ext);
+            if(ext!="jpg" && ext!="jpeg" && ext!="png")
+            {
+                msg.innerText="Please Enter Valid File";
+                msg.style.color="red";
+                return false;
+            }
+           
+        }
+    </script>
+</body>
+</html>

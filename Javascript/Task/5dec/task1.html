@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+            height: 400px;
+            width: 900px;
+            border: 10px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>image slidar</h1>
+    <img src="img/dd.jpg" id="img1">
+    <br><br>
+    <button onclick="start()">Start</button> &nbsp; <button onclick="stop()">Stop</button>
+</center>
+<script>
+    var arr =["ab.jpg","cc.jpg","images.jpg","m.jpg"]
+    var i =0
+    function slid()
+    {
+        var im = document.getElementById("img1")
+        im.src="img/"+arr[i]
+        i++
+        if (i==arr.length)
+        {
+            i=0
+        }
+    }
+    function start(){
+        a = setInterval(slid,1000)
+    }
+    function stop()
+    {
+        clearInterval(a)
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+How to set username of git user
+git config --global user.name suraj 
+
+How to set useremail of git user
+git config --global user.email surajmishra1872@gmail.com
+
+
+git init: used for starting initialization
+
+ls -lart: used for show hidden files
+
+git status : used for get status tracked or untracked
+
+
+
+
+  

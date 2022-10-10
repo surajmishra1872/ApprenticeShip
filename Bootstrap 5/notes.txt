@@ -1,0 +1,168 @@
+
+Bootstrap:- 
+---------
+Bootstrap is used to create responsive website and application.
+Bootstrap was developed by mark Otto and Jakon Thornton at twitter.
+
+Bootstrap was released in 2011(v1)
+latest version of bootstrap in bootstrap 5.
+bootstrap provides predefined classes.
+bootstrap is used to faster and easier web development.
+to use bootstrap firstly we have to link library of bootstrap.
+you can download library of bootstrap from getBootstrap.com
+it include HTML ,CSS and javascript.
+
+Colors Class:
+
+1.Primary
+2.Danger
+3.Success
+4.Dark
+5.Light
+6.Info
+7.Secondry
+8.Warning
+
+
+Background:-
+
+1.bg-Primary
+2.bg-Danger
+3.bg-Success
+4.bg-Dark
+5.bg-Light
+6.bg-Info
+7.bg-Secondry
+8.bg-Warning
+
+
+Padding:-
+
+p => top left right bottom {range [0-5]}
+syntax : p-4  
+pt=> padding top
+ps=> padding start | padding left
+pe=> padding end | padding right
+pb=> padding bottom
+px=> padding left and padding right
+py=> padding top and padding bottom
+
+margin :-
+
+
+width:-
+
+w-25 || width 25%
+w-50 || width 50%
+w-75 || width 75%
+w-100|| width 100% 
+
+font-size:-
+
+fs || font-size(1-6)
+
+font-weights:-
+
+fw-bold
+fw-bolder
+fw-light
+fw-lighter
+fw-normal
+
+font-style:-
+
+fst-italic  || italic || font-style
+fst-normal  || 
+
+text-uppercase
+text-lowercase
+text-center
+text-end
+
+Border:-
+
+border-top
+border-bottom
+border-start
+border-end
+border-warning
+border-0 (0-5) || width
+
+border-radius:-
+
+rounded
+rounded-top
+rounded-bottom
+rounded-start
+rounded-end
+rounded-circle
+rounded-pill
+
+Bootstrap Button:-
+
+btn btn-danger
+btn btn-secondry
+btn btn-primary
+btn btn-warning
+btn btn-success
+btn btn-dark
+btn btn-light
+btn btn-info
+
+button outline:-
+
+btn btn-outline-danger
+btn btn-outline-secondry
+btn btn-outline-primary
+btn btn-outline-warning
+btn btn-outline-success
+btn btn-outline-dark
+btn btn-outline-light
+btn btn-outline-info
+
+Breaking Point:-
+
+sm- Small Screen <=572px
+md=> medium Screen  <=768px
+lg=> large screen <=992px
+xl=> extra large  <=1200px
+xxl=> extra extra large <=1400px
+----------------------------------------------------
+
+justify-content-start
+justify-content-end
+jistify-content-center
+jistify-content-between
+jistify-content-around
+jistify-content-evenly
+------------------------------------------------------------
+alerts:-
+
+
+alert alert-success
+alert alert-danger
+alert alert-warning
+------------------------------------------------------------
+
+<ul class="list-group">
+<li class="list-group-item">HTML</li>
+<li class="list-group-item">CSS</li>
+<li class="list-group-item">JS</li>
+</ul>
+
+--------------------------------------------------------------
+float-start
+float-end
+float-center
+--------------------------------------------------------------
+background Opacity
+
+bg-opacity-10
+bg-opacity-25
+bg-opacity-50
+bg-opacity-75
+---------------------------------------------------------------
+
+
+bootsnip
+

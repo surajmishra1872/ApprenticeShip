@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+           height: 150px;
+           width: 150px;
+           color: white;
+           font-size: 25px;
+           text-align: center;
+           line-height: 150px;
+           float: left;
+           border: 3px solid black;
+           margin-left: 1px;
+       } 
+    </style>
+</head>
+<body onload="demo()">
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        function demo()
+        {
+            var chr="0123456789abcdef";
+            var color="#";
+            var color1="#";
+            var color2="#";
+            var color3="#";
+            for(var i=0;i<6;i++)
+            {
+                var rindex=Math.floor(Math.random()*chr.length);//0 to 15
+                var rindex1=Math.floor(Math.random()*chr.length);//0 to 15
+                var rindex2=Math.floor(Math.random()*chr.length);//0 to 15
+                var rindex3=Math.floor(Math.random()*chr.length);//0 to 15
+
+                color+=chr.charAt(rindex);
+                color1+=chr.charAt(rindex1);
+                color2+=chr.charAt(rindex2);
+                color3+=chr.charAt(rindex3);
+            }
+            document.querySelectorAll("div")[0].style.background=color;
+            document.querySelectorAll("div")[0].innerText=color;
+            document.querySelectorAll("div")[1].style.background=color1;
+            document.querySelectorAll("div")[1].innerText=color1;
+            document.querySelectorAll("div")[2].style.background=color2;
+            document.querySelectorAll("div")[2].innerText=color2;
+            document.querySelectorAll("div")[3].style.background=color3;
+            document.querySelectorAll("div")[3].innerText=color3;
+        }
+        window.setInterval(demo,2000);
+    </script>
+</body>
+</html>

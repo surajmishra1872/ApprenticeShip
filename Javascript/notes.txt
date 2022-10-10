@@ -1,0 +1,39 @@
+function with Parameter
+-----------------------
+
+Parameter
+---------
+=>Parameter inputs to the function,if a function contains parameter,then at the time of calling compulsory we have to provide value to that parameter.
+
+Syntax
+-------
+function FunctionName(Parameter1,parameter2,...parameterN)
+{
+line1
+line2
+.
+.
+.lineN
+}
+
+Exa:
+function add(x,y)
+{
+print(x+y)
+}
+
+add(10,30)
+
+Function with return Statement
+-------------------------------
+return
+-------
+return statement is used to return output to the caller function after execution of business logic.
+
+Exa:
+
+
+
+
+
+

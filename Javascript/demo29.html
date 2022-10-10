@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            height: 700px;
+            width: 1500px;
+            border:5px solid gold;
+            margin: 0px auto;
+        }
+        .row{
+            height: 350px;
+            width: 1500px;
+            
+        }
+        .col{
+            height: 300px;
+            width: 450px;
+            float: left;
+            background-color: purple;
+            margin: 25px;
+        }
+        .col img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        #modal{
+            width: 100%;
+            height: 800px;
+            background-color: rgb(0, 0, 0,.5);
+            position: fixed;
+            top: 0px;
+            display: none;
+        }
+        #inner{
+            min-height: 500px;
+            width: 700px;
+            background: white;
+            border-radius: 5px;
+            border: 5px solid gold;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        #inner img{
+            height: 50%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>IMAGE GALLERY</h1></center>
+    <div id="outer">
+
+    <div class="row">
+        <div class="col" ><img src="img/1.jpg" onclick="demo(this)"></div>
+        <div class="col"><img src="img/2.jpg" onclick="demo(this)"></div>
+        <div class="col"><img src="img/3.jpg" onclick="demo(this)"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"><img src="img/4.jpg" onclick="demo(this)"></div>
+        <div class="col"><img src="img/5.jpg" onclick="demo(this)"></div>
+        <div class="col"><img src="img/6.jpg" onclick="demo(this)"></div>
+    </div>
+    </div>
+    <!--start modal-->
+    <div id="modal">
+        <div id="inner">
+            <center><h1>IMAGE GALLERY <a href="demo29.html" style="color: red;float: right;text-decoration: none;"><i class="fa fa-close" style="font-size:40px;color:red"></i></a></h1></center>
+            <img src="img/7.jpg" id="modalimg">
+        </div>
+    </div>
+    <!--end modal-->
+    <script>
+        function demo(x)
+        {
+            var m=document.getElementById("modal")
+            var mimg=document.getElementById("modalimg")
+            m.style.display="block"
+            mimg.src=x.src
+        }
+    </script>
+</body>
+</html>

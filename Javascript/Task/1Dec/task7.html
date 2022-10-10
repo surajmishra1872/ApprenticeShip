@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 400px;
+            height: 40px;
+            font-size: 25px;
+            margin: 50px auto;
+        }
+        button{
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            padding-top: 10px;
+            
+        }
+        div{
+            width: 400px;
+            height: 40px;
+            border: 2px solid black;
+            margin-top:20px ;
+            font-size: 20px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Mishra's Electricity Bill Machine</h1><hr>
+    <input type="text"  id="txt" placeholder="Enter Your Electricity Unit"><br/>
+    <button onclick="demo()">Show Bill</button>
+    <div id="dv"></div>
+</center>
+<script>
+    function demo()
+    {
+    var a=parseFloat(document.getElementById("txt").value);
+ 
+    var b=document.getElementById("dv");
+    b.innerText="Electricity Bill is:"+(a*7.0).toFixed(2);
+    }
+</script>
+</body>
+</html>

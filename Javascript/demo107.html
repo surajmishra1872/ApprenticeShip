@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,th,td{
+           border: 2px solid black;
+           
+       }
+       select{
+           width: 200px;
+           font-size: 25px;
+       }
+   </style>
+<script>
+   var studentInfo=[
+       {name:"Ram",college:"IET Lucknow", Age:21, branch:"EE"},
+       {name:"Suraj",college:"GP Aurai", Age:20, branch:"IT"},
+       {name:"Kishan",college:"REC Rewa", Age:24, branch:"ME"},
+       {name:"Virat",college:"IMS Noida", Age:22, branch:"WC"},//......> trailing comma 
+   ]
+   document.write("Orderd List");
+   var res="<ol>";
+    for(var i=0;i<=studentInfo.length-1;i++)
+    {
+        res+="<li>"+studentInfo[i].name+"</li>";
+    }
+    res+="</ul><br/>";
+    document.write(res);
+    document.write("Unorderd List");
+    var res="<ul>";
+    for(var i=0;i<=studentInfo.length-1;i++)
+    {
+        res+="<li>"+studentInfo[i].college+"</li>";
+    }
+    res+="</ul>";
+    document.write(res);
+
+    document.write("<br/><br/>Drop Down List<br/>");
+    var res="<select>";
+    for(var i=0;i<=studentInfo.length-1;i++)
+    {
+        res+="<option>"+studentInfo[i].branch+"</option>";
+    }
+    res+="</select>";
+    document.write(res);
+
+   </script>
+</body>
+</html>

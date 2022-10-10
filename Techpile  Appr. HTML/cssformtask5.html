@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+*{
+font-family:arial;
+}
+#outer{
+height:700px;
+background-image:url("building.jpg");
+background-size:cover;
+box-sizing:border-box;
+border:1px solid white;
+font-family:arial;
+color:white;
+}
+#inner
+{
+width:50%;
+margin:50px auto;
+background:rgba(0, 0, 0,.7);
+height:500px;
+border-radius:10px;
+box-shadow:0px 0px 10px black;
+box-sizing:border-box;
+box-shadow:0px 0px 10px white;
+}
+
+#left{
+width:50%;
+height:500px;
+box-sizing:border-box;
+float:left;
+margin:30px auto;
+padding:20px;
+}
+#right{
+width:50%;
+height:500px;
+box-sizing:border-box;
+float:right;
+margin:30px auto;
+padding:20px;
+}
+
+.txt{
+width:80%;
+height:40px;
+margin:15px auto;
+border-radius:5px;
+
+}
+.btn{
+width:81%;
+font-size:30px;
+color:white;
+background:#fe5722;
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<center><h1>Room Booking Enquiry Form</h1></center>
+<div id="inner">
+<div id="left">
+Your Name<br/><input type="text" placeholder="Name" class="txt"/><br/>
+Your Email<br/><input type="email" placeholder="Email" class="txt"/><br/>
+Your Enquiry Type:<br/>
+<select class="txt">
+<option>Trial</option>
+<option>Luxery</option>
+</select><br/>
+Accommodation Enquiry:<br/>
+<select class="txt">
+<option>AC</option>
+<option>NON AC</option>
+</select><br/>
+Date Of Arrival:<br/>
+<input type="date" class="txt"/><br/>
+</div>
+<div id="right">
+Number Of Persons<br/><input type="numer" placeholder="1" class="txt"/><br/>
+Number Of Days<br/><input type="numer" placeholder="1" class="txt"/><br/>
+Customer Enquiry<br/><textarea rows="10" cols="38"></textarea><br/><br/>
+<input type="submit" class="btn" value="Register"/>
+</div>
+</div>
+</div>
+</body>
+</html>

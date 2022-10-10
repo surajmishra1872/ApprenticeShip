@@ -1,0 +1,331 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+//slider code
+var img=["sislider1.jpg","sislider2.jpg","sislider3.jpg","sislider4.jpg"];
+var i=0;
+function slide()
+{
+//alert("hiii");
+var div=document.getElementById("slider");
+div.style.backgroundImage="url('images/"+img[i]+"')";
+i++;
+if(img.length==i)
+{
+i=0;
+}
+window.setTimeout("slide()",4000);
+}
+</script>
+<style>
+*{
+font-family:arial;
+}
+#outer{
+width:1500px;
+height:4000px;
+background:green;
+box-sizing:border-box;
+}
+#top{
+height:40px;
+background:black;
+line-height:40px;
+}
+#top ul{
+list-style-type:none;
+}
+#top ul li{
+float:left;
+margin-left:40px;
+color:white;
+}
+#middle{
+background:white;
+height:100px;
+}
+#mleft{
+width:600px;
+float:left;
+height:100px;
+background-image:url("silogo.png");
+background-repeat:no-repeat;
+background-position:center;
+}
+#mright{
+width:900px;
+float:right;
+height:100px;
+}
+#mright ul{
+list-style:none;
+}
+#mright ul li{
+float:left;
+margin-left:40px;
+}
+#menu{
+height:50px;
+background:black;
+margin-top:-16px;
+padding-left:100px;
+box-sizing:border-box;
+}
+#menu ul{
+list-style-type:none;
+}
+#menu ul li{
+color:white;
+height:50px;
+text-align:center;
+line-height:50px;
+float:left;
+margin-left:20px;
+}
+#menu ul li a{
+text-decoration:none;
+color:white;
+}
+#menu ul li:hover{
+background-color:#f18b37;
+color:white;
+}
+#slider{
+height:350px;
+}
+#sliderd{
+height:50px;
+background:#f18b37;
+}
+#ab{
+height:120px;
+background:white;
+text-align:center;
+padding-top:28px;
+}
+span{
+border-bottom:5px solid #f18b37;
+}
+#boxmenu{
+width:1500px;
+box-sizing:border-box;
+height:200px;
+margin-left:100px;
+}
+.box{
+width:260px;
+height:150px;
+float:left;
+border-left:1px solid white;
+background:#f18b37;
+color:white;
+font-size:20px;
+box-sizing:border-box;
+padding-left:20px;
+padding-top:40px;
+}
+#lr{
+width:1500px;
+height:50px;
+}
+.l{
+width:170px;
+background:#f37e48;
+height:50px;
+color:white;
+float:left;
+margin-left:5px;
+transform: translate(1110px, -70px);
+line-height:50px;
+text-align:center;
+}
+#rstext{
+width:1500px;
+height:80px;
+background:white;
+text-align:center;
+line-height:80px;
+transform: translate(0px, -69px);
+box-sizing:border-box;
+font-size:20px;
+font-weight:bold;
+}
+#rstext1{
+width:1500px;
+height:80px;
+background:white;
+text-align:center;
+line-height:80px;
+transform: translate(-100px,0px);
+box-sizing:border-box;
+font-size:20px;
+font-weight:bold;
+}
+#line{
+border-bottom:4px solid #f18b37;
+width:80px;
+transform: translate(710px, -22px);
+}
+#rbox{
+width:1500px;
+box-sizing:border-box;
+height:200px;
+margin-left:100px;
+transform: translate(0px, -55px);
+}
+.rbox1{
+width:420px;
+height:400px;
+margin-left:10px;
+background:white;
+float:left;
+text-align:justify;
+box-sizing:border-box;
+color:#646464;
+line-height:25px;
+border:1px solid black;
+}
+.rbox1 h3{
+padding-left:20px;
+padding-right:20px;
+}
+.rbox1 p{
+padding-left:20px;
+padding-right:20px;
+}
+#hed{
+width:1300px;
+height:400px;
+background:white;
+box-sizing:border-box;
+margin-right:300px;
+}
+.hedbox
+{
+width:110px;
+height:150px;
+border:1px solid black;
+float:left;
+margin-left:20px;
+margin-top:24px;
+text-align:justify;
+box-sizing:border-box;
+}
+.hedboxt
+{
+width:110px;
+height:150px;
+float:right;
+margin-left:20px;
+margin-top:24px;
+text-align:justify;
+box-sizing:border-box;
+}
+
+</style>
+</head>
+<body onload="slide()">
+<div id="outer">
+<div id="top">
+<ul>
+<li>Student Login/Apply</li>
+<li>Institute Login</li>
+<li>Channel</li>
+<li>Contest</li>
+<li>NEWSFEED</li>
+<li style="margin-right:80px;">New Institute Registration</li>
+<li><i class="fa fa-facebook" style="font-size:20px;margin-right:-80px;line-height:40px;"></i></li>
+<li><i class="fa fa-twitter" style="font-size:20px;margin-right:-80px;"></i></li>
+<li><i class="fa fa-instagram" style="font-size:20px;margin-right:-80px;"></i></li>
+<li><input type="search"/></li>
+</ul>
+</div>
+<div id="middle">
+<div id="mleft">
+</div>
+<div id="mright">
+<ul>
+<li style="padding-top:13px;">
+<i class='fa fa-phone-square' style='font-size:20px;color:#f18b37'></i>
+FOR ANY SUPPORT DIAL OUR<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOLL FREE +91 120-6565065
+</li>
+<li style="padding-top:13px;">
+<i class="fa fa-envelope" style="font-size:20px;color:#f18b37"></i>
+EMAIL US ON<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;help.studyinindia@gov.in
+</li>
+<li>
+<img src="moelogo.png">
+</li>
+</ul>
+</div>
+</div>
+<div id="menu">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">WHY INDIA</a></li>
+<li><a href="#">PLAN YOUR STUDIES</a></li>
+<li><a href="#">BUDHHISM</a></li>
+<li><a href="#">SCHOLARSHIPS AND WAIVERS</a></li>
+<li><a href="#">PLAN YOUR STAY</a></li>
+<li><a href="#">PRAGATII</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">CONTACT</a></li>
+<li><a href="#">ABOUT</a></li>
+</ul>
+</div>
+<div id="slider">
+</div>
+<div id="sliderd">
+</div>
+<div id="ab">
+study in india
+<h1>5 Step <span>to Study</span> in India</h1>
+</div>
+<div id="boxmenu">
+<div class="box">REGISTER<br/>HERE<br/><i class="fa fa-arrow-circle-o-right" style="font-size:40px;"></i></div>
+<div class="box">PLAN YOUR<br/>BUDGET<br/><i class="fa fa-arrow-circle-o-right" style="font-size:40px;"></i></div>
+<div class="box">SUBMIT <br/>APPLICATION<br/><i class="fa fa-arrow-circle-o-right" style="font-size:40px;"></i></div>
+<div class="box">CHECK<br/> RESULT<br/><i class="fa fa-arrow-circle-o-right" style="font-size:40px;"></i></div>
+<div class="box">PLAN FOR<br/> DEPARTURE<br/><i class="fa fa-arrow-circle-o-right" style="font-size:40px;"></i></div>
+</div>
+<div id="lr">
+<div class="l">Student Login</div>
+<div class="l">Register Now</div>
+</div>
+<div id="rstext">
+Your Reasons to be Here<div id="line"></div>
+</div>
+<div id="rbox">
+<div class="rbox1">
+<img src="rs1.jpg" width="100%"/>
+<h3>WHY INDIA?</h3>
+<p>whether your passion is the constructs of technology or the basis of traditional medicine-india is a land where may fields, old and new, find representation.</p>
+<input type="button" width="100px" style="background:#f28530;color:white;float:right;border-radius:50px;margin-right:20px;" value="Read More"/>
+</div>
+<div class="rbox1">
+<img src="rs2.jpg" width="100%"/>
+<h3>SEE WHAT PEOPLE ARE SAYING</h3>
+<p>Gain access to premier colleges in the country via yor 'Study in India' account Sign up and fill the Student registration from below.</p>
+<input type="button" width="100px" style="background:#f28530;color:white;float:right;border-radius:50px;margin-right:20px;" value="Read More"/>
+</div>
+<div class="rbox1">
+<img src="rs3.jpg" width="100%"/>
+<h3>PARTICIPATING INSTITUTIONS AND COURSES</h3>
+<p>Locate and interact with partner institutes across the country</p>
+<input type="button" width="100px" style="background:#f28530;color:white;float:right;border-radius:50px;margin-right:20px;" value="Read More"/>
+</div>
+<div id="number">
+<img src="number.png" style="width:100%;margin-left:-100px;margin-top:20px;"/>
+</div>
+<div id="rstext1">
+Towards Higher Education<div id="line"></div>
+</div>
+<div id="hed">
+
+</div>
+</div>
+</body>
+</html>

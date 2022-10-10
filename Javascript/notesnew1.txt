@@ -1,0 +1,7 @@
+function demo(name,...x)
+{
+
+}
+var arr=[10,30,50,60]//...arr=10,30,50,60
+demo("RAM",...arr)//spread operator
+

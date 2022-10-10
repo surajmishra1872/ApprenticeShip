@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            margin-left: 100px;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            border: 1px solid gold;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="txt1"/>
+    <button onclick="demo()">Click Here</button><br/>
+    <p></p>
+    <script>
+        function demo()
+        {
+            var sum=0;
+        var a=document.getElementById("txt1").value;
+        for(var i=1;i<=a;i++)
+        {
+            sum+=i;
+        }
+        document.querySelector("p").innerText="Sum of Numbers from  1 to Given Range is: "+sum;
+        }
+    </script>
+</body>
+</html>

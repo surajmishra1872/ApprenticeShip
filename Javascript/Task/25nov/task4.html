@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            border: 5px solid gold;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: greenyellow;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="id1">Hello from div 1<sup>st</sup></div>
+    <div id="id2">Hello from div 2<sup>nd</sup></div>
+    <div id="id3">Hello from div 3<sup>rd</sup></div>
+    <div id="id4">Hello from div 4<sup>th</sup></div>
+    <div id="id5">Hello from div 5<sup>th</sup></div>
+    <div id="id6">Hello from div 6<sup>th</sup></div>
+    <button onclick="swap()">Swap Value</button>
+    </center>
+    <script>
+        function swap()
+        {
+        var a=document.getElementById("id1")
+        var b=document.getElementById("id2")
+        var c=document.getElementById("id3")
+        var d=document.getElementById("id4")
+        var e=document.getElementById("id5")
+        var f=document.getElementById("id6")
+        var t1=a.innerText
+        var t2=b.innerText
+        var t3=c.innerText
+        var t4=d.innerText
+        var t5=e.innerText
+        var t6=f.innerText
+        a.innerText=t6
+        b.innerText=t5
+        c.innerText=t4
+        d.innerText=t3
+        e.innerText=t2
+        f.innerText=t1
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+#parent
+{
+width:1000px;
+height:700px;
+}
+#outer
+{
+width:800px;
+height:500px;
+background:#2f3542;
+border:150px solid green;
+}
+#left
+{
+width:400px;
+height:523px;
+background:#2f3542;
+float:left;
+}
+#right
+{
+width:400px;
+height:500px;
+float:right;
+background:#2f3542;
+}
+input,select{
+width:300px;
+height:40px;
+}
+body{
+color:white;
+font-size:20px;
+}
+h1{
+background:black;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<center>
+<div id="parent">
+<div id="outer">
+<h1>Room Booking Enquiry FORM</h1>
+<div id="left">
+Your Name:<br/>
+<input type="text"/><br/>
+Your Email:<br/>
+<input type="email"/><br/>
+Your Enquiry Type:<br/>
+<select>
+<option>Trial</option>
+<option>Luxery</option>
+</select><br/>
+Afordable Room Type:<br/>
+<select>
+<option>AC</option>
+<option>NON AC</option>
+</select><br/>
+Date Of Arrival:<br/>
+<input type="date"/><br/>
+</div><br/>
+<div id="right">
+Other Member Name:<br/>
+<input type="text"/><br/>
+Drink Prefrence:<br/>
+<select>
+<option>Alcohal</option>
+<option>Cold Drink</option>
+</select><br/>
+Comment Enquiry:<br/>
+<textarea placeholder="Your Comment" rows="5" cols="40"></textarea>
+<br/><br/><br/>
+<input type="submit" style="width:150px; background:yellow;color:white;font-weight:bold;"/>
+</div>
+</div>
+
+</div>
+</center>
+</body>
+</html>

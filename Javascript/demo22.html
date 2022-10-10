@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="zoom.jpg" height="500px" width="700px" id="img1"/>
+    <img src="abc.jpg" height="500px" width="700px" id="img2"/>
+    <img src="1.jpg" height="500px" width="700px" id="img3"/>
+    <img src="1.gif" height="500px"width="700px"  id="img4"/>
+    <br/><br/><button onclick="demo()">Print Image Path</button>
+    <script>
+function demo()
+{
+    var im1=document.getElementById("img1")
+    var im2=document.getElementById("img2")
+    var im3=document.getElementById("img3")
+    var im4=document.getElementById("img4")
+    var path1=im1.src
+    var path2=im2.src
+    var path3=im3.src
+    var path4=im4.src
+    im1.src=path2;
+    im2.src=path3;
+    im3.src=path4;
+    im4.src=path1;
+}
+window.setInterval(demo,1000)
+    </script>
+</body>
+</html>

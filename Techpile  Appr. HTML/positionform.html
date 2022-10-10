@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+#outer
+{
+min-height:300px;
+width:350px;
+position:absolute;
+right:-300px;
+top:150px;
+transition:all ease 1s;
+}
+#outer:hover{
+right:0px;
+transition:all ease 2s;
+}
+#left{
+min-height:400px;
+width:50px;
+float:left;
+background:linear-gradient(45deg,navy ,purple);
+color:white;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+border-radius:8px 0px 0px 8px;
+box-sizing:border-box;
+padding-top:85px;
+}
+#right{
+min-height:300px;
+background:linear-gradient(45deg,navy ,skyblue);
+width:300px;
+border-radius:0px 8px 8px 0px;
+padding:25px;
+box-sizing:border-box;
+float:left;
+color:white;
+}
+.txt
+{
+height:35px;
+width:100%;
+margin-bottom:10px;
+}
+.txta
+{
+margin-bottom:10px;
+height:60px;
+width:100%;
+}
+.btn
+{
+height:35px;
+width:100%;
+background:purple;
+color:white;
+}
+</style>
+</head>
+<body>
+<center><h1>Wah Kya Seen Hai</h1></center>
+<div id="outer">
+<div id="left">
+E<br/>N<br/>Q<br/>U<br/>I<br/>R<br/>Y
+</div>
+<div id="right">
+<fieldset>
+<legend>Enquiry Form</legend>
+Name<br/><input type="text" class="txt"/><br/>
+Email<br/><input type="text" class="txt"/><br/>
+Mobile No.<br/><input type="text" class="txt"/><br/>
+Message<br/><textarea class="txta"></textarea><br/>
+<input type="submit" value="save" class="btn"/>
+</fieldset>
+
+</div>
+</div>
+</body>
+</html>

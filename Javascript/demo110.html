@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 350px;
+            height: 40px;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        #btn{
+            background-color: green;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return demo()" name="frm">
+        <input type="password" name="password" id="txt1" placeholder="Enter Password"/><br/>
+        <input type="password" name="cpassword" id="txt2" placeholder="Enter Confirm Password"/><br/><br/>
+        <input type="submit" id="btn" value="Submit"/>
+        <p></p>
+    </form>
+    <script>
+        function demo()
+        {
+            var a=document.forms['frm']['password'];
+            var b=document.forms['frm']['cpassword'];
+            if(a.value!=b.value)
+            {
+                a.style.border="2px solid red";
+                b.style.border="2px solid red";
+                document.querySelector("p").innerText="Invalid Password";
+                document.querySelector("p").style.color="red";
+                document.querySelector("p").style.fontSize="20px";
+                return false;
+            }
+            else{
+                
+                document.querySelector("p").innerText="Form Has Been Submitted";
+                document.querySelector("p").style.color="Green";
+                document.querySelector("p").style.fontSize="20px";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

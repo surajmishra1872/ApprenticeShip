@@ -1,0 +1,571 @@
+DevOps : it is Not a Technology But a Culture in IT for Software Modelling and Production
+according to SDLC
+SDLC : Software Development Life Cycle.
+In SDLC There were several Model Proposed by different Engineer and IT Experts
+1. Waterfall Model
+	
+Requirment Gathering
+	------
+	     | Requirement Analysis or Study
+		 -------| Design
+		        ------| coding
+				      ------
+					       |Testing
+						   ---------
+						            |Maintaince
+									---------
+											| Delivery
+											------------
+
+Each Phase must be complete with 100% Accuracy why because undo is not possible
+2. ProtoType Model
+
+We prepare a ProtoType 
+Requirement Full and Final 
+Desiging Full Complete
+Time Line is Very good
+3. Spiral Model
+
+@ each Loop represent Modularity
+and Project is highly flexible work load distributed 
+
+4. Evolution Model
+	spiral + water fall = MashUp
+
+5. Scrum Model (AGILE MODEL)
+It follows WBS Architecture : work Break down Structure
+Team Work 
+1. Coding Team(collabs 5) 5 Copies 5 Branches(Dev Environment)
+
+Designer : 5 
+Coding : 5
+Testing : 5
+
+2. Operational Team.(collabes 2)
+Sales : 2
+installing : 2
+Delivery : 2 
+client Handling : 2
+
+If you are working in a Distributed system there should be Some Centeral Server Where every developer can submit there project or code such type of Mechanism is Version Control Mechanism.
+Small Small of Code Source or Module is called Scrum 
+Tools Available In Market is Called Version Control Softwares
+Example : SVN (Sub Version) 
+GIT : 
+
+Such Type of Mechanis or Culture running In IT Company Is DevOps
+Developer + Operational Team
+Infinity
+
+*******************************
+Working git Terminal
+*******************************
+
+ls : list out all the files
+pwd : print working directory
+ls -lart
+show hidden files list
+ctrl + font Up
+ctrl - font small
+Arrow Keys command History
+clear used to clear the screen
+
+Important Command for Working with .git repo
+---------------------------------------------
+1. How to create or set up global signature
+git config --global user.name ""
+git config --global user.email ""
+
+2. Create or Intialise .git repo
+git init
+
+Terminology
+1. git repo : any project having .git folder will called as git repo
+2. master : it is main branch of your project(Main Developer)
+
+3. How to cross check 
+ls -lart
+
+How to create Resource
+touch <filename.ext>
+Example : 
+touch index.html
+touch about.html
+touch contact.html
+
+How to create Folder
+mkdir <folder-name>
+
+How to track level of your project
+git status -s : for short description
+git status : long description
+
+Difference B/w git status and git status -s
+git status -s: it should tracking activity of files 
+git status : Branch name 
+			Last Commits 
+			Tracking Levels of all files
+			
+			
+			
+How to  Add files to staging 
+Single file
+git add <filename>
+git add -A
+git add --all
+
+If you want to track complete current directory.
+git add .
+
+How to disable tracking
+remove the file from staging you need to clear cache
+git rm --cached <file-name>
+
+Note : Each Tracking must be committed other wise cached will conflict
+then you to force fully remove the file
+You can raise flag -f forcefully
+git rm --cached <file-name> -f
+
+Commit Story
+Every file must be committed
+git commit -m "Message any valid "
+
+Gives you Entire log for the committed changes
+git log
+Committed File is created by Unique Id of 40 Random Character Bits
+
+How to get Back Last Committed Result
+git checkout <filename>
+
+How to Know Current Branch
+git branch
+
+How to create New Branch
+git branch <branchname>
+Example  : git branch ravi
+
+Show that branch
+git branch
+
+How to switch Branch
+git checkout branchname
+
+Important Question
+1. What is a difference b/w git clone and git init
+clone means making changes in  exisiting project then we need to clone it 
+
+clone : public repo
+clone : private repo (ssh Keys: rsa Key Ciper Code)
+clone is performed to make changes like maintaince, deplyoing new functionlity or
+testing.
+ 
+How clone url looks:
+http://someclouds/donwloads/myfiles.zip
+https://github/Anshul881/mycustom-project/myfiles.git
+        git-url/Auther-Id/url_project/.git repo
+		
+Git init is when we want to start the project scratch.
+branch :master
+		
+2. what is git repo
+Any  project having .git folder initialised becomes a repository
+
+public repo : url it is globally accessible
+private repo : only can accessed by loginned user one having ssh key
+
+How to manage tracking of All Files other than few files
+git add --all
+git add -A
+git add .
+
+remove the files which you dont want to track
+git rm --cached <filename>
+
+Best way is :
+to .gitignore file
+
+what is .gitignore file
+it is a special file which trackes untracked files and donot add them to staging.
+touch .gitignore
+
+Note : git donot track any files registered inside .gitignore file
+if you want .gitignore file itself not to be tragged you can add .gitignore inside
+.gitignore but gitignore will not be added in staging Area. then next time when you want to clone the project you wont be able to know which files to working
+under tracking and which file to ignore.
+
+git labelling
+.git*
+.gitlock
+
+git diff command
+-------------------------
+used to find out the difference B/w last Committed Code with lastest modified Code.
+git diff <filename>
+for example 
+git diff index.html
+
+How to checkout last Code from a file
+git checkout <filename>
+git checkout index.html
+
+How to checkout lastcode from a deleted file
+file name is missing
+check out the branch
+git checkout <Branch-Name>
+git checkout Master
+you will get deleted filename
+
+git status
+deleted : filename
+git checkout filename
+
+How to auto Add and Commit to Staging
+--------------------------------------
+git commit -a -m "Any message to the existing code..."
+git status 
+You will no status tree is clean
+
+How to check out full project
+git checkout -f 
+-f flag will revert back all the changes from the project of current Branch
+
+Q1 : A empty folder cannot be tragged 
+Ans : Minimum one file must exist
+Q2 : Checkout cannot be performed at One Condition
+in case of git init
+since there is no commit file  checkout cannot be until and unless initial commit.
+
+How to work with GitHub or Any Remote Repository
+------------------------------------------------
+there are millions of Online server which allow vcs Intregation
+vcs here refers to version control system which means you have multiple developers
+working under agile model or scrum model
+scrum or sprint model
+
+each(scrum) sprint is committed by different developer as a Collab
+and each scrum is a part of a Branch
+Git Hub is Popular online server mostly use for submitting or commits 
+Is GitHub only the Possible way?
+No we have bit-Keeper (Git older Server Repository),bitbucket,aws,Git Lab
+
+GitHub Owned by Microsoft.
+
+You can create two types of repository
+1. public : Any one Using Internet Can access.
+	clone: No permission is required in pull
+	push : Requires Permission and Credentials
+	Collab :Requires Permission and Credentials
+	forks : Requires Permission and Credentials
+	
+2. private : You are Owner with Single Access
+	clone : Requires Permission of the Owne for pull and such type of request is called as pull request.
+	push : Requires Permission and Credentials
+	Collab :Requires Permission and Credentials
+	forks : Requires Permission and Credentials
+
+How to create First Repo
+------------------------
+1. Login to GitHub Account
+2. Access Code May Be asked to Login into gmail and Get the Otp send by GitHub
+	[May or May Not be]
+3. create Repository On The Right Hand side
+	Before You create a Repo You should have 
+	Following Things  Ready
+	1. Owner Ship Type: public or Private
+	2. Unique url for repo (repo-name)
+	3. ReadMe File(Optional) : It is Local Documentation
+	4. .gitignore file(Optional) : Which files or folder to commit or not
+	5. (Optional) License
+	
+	Tag or Description: Information about the project....
+	Create the Repository
+	
+	
+How to switch Branch
+git checkout <branch-name>
+Head ->ravi
+Ownership is created master will never know that ravi branch has been created.
+
+How to Push The Code to server
+1. Add the remote url
+git remote add origin <url....>
+git remote add origin <repository-url>
+git remote add origin <https://github.com/owner_id/repo-name/>
+
+How to confirm Origin
+git remote -v
+
+origin https://github.com/owner_id/repo-name/(fetch)
+origin https://github.com/owner_id/repo-name/(push)
+
+How to push the Code
+git push <origin> <branch-name>
+git push https://github.com/owner_id/repo-name/ master
+
+You have Any Other Branch
+git push https://github.com/owner_id/repo-name/ ravi
+git push <origin> ravi
+
+origin is varible name
+git remote add url https://github.com/owner_id/repo-name/
+
+Push in the Url
+git push url master
+Git ask for the credential and Push the Entire with the Branch.
+
+
+How to clone the project
+git clone <public-repo>
+git clone <private-repo> <ssh Key>
+
+How to setup a New branch and Switch to It
+git branch 
+master Existed
+
+
+Now create the New branch
+git checkout -b <branch-name>
+
+$ Output : creating a New branch and Switching
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

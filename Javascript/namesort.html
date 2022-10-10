@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Name Sorting Program</title>
+<style>
+input{
+width:300px;
+height:50px;
+}
+</style>
+</head>
+<body>
+<input type="text" id="txt1" placeholder="Write Here" onblur="demo()" />
+<p></p>
+
+<script>
+function demo()
+{
+var obj=document.getElementById("txt1");
+var name=obj.value;
+var arr=name.split(" ");
+var cname="";
+for(var x=0;x<=arr.length-2;x++)
+{
+cname+=arr[x][0]+"."+" ";
+}
+cname+=arr[arr.length-1]
+document.querySelector("p").innerText=cname;
+obj.value=cname;
+}
+</script>
+
+</body>
+</html>

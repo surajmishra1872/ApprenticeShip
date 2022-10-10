@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:340px;
+            height: 300px;
+            border: 5px solid purple;
+            padding: 5px;
+            margin: 6px;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+            color:white;
+            background-color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body  onload="demo1()">
+    <center>
+    <img src="../../img/1.jpg" id="img1"/>
+    <img src="../../img/2.jpg" id="img2"/>
+    <img src="../../img/3.jpg" id="img3"/>
+    <img src="../../img/11.jpg" id="img4"/>
+    <img src="../../img/5.jpg" id="img5"/>
+    <img src="../../img/6.jpg" id="img6"/>
+    <img src="../../img/7.jpg" id="img7"/>
+    <img src="../../img/8.jpg" id="img8"/>
+    
+    <button onclick="demo2()">Stop</button>
+</center>
+    <script>
+        function demo()
+        {
+            var a1=document.getElementById("img1")
+            var a2=document.getElementById("img2")
+            var a3=document.getElementById("img3")
+            var a4=document.getElementById("img4")
+            var a5=document.getElementById("img5")
+            var a6=document.getElementById("img6")
+            var a7=document.getElementById("img7")
+            var a8=document.getElementById("img8")
+
+            var b1=a1.src
+            var b2=a2.src
+            var b3=a3.src
+            var b4=a4.src
+            var b5=a5.src
+            var b6=a6.src
+            var b7=a7.src
+            var b8=a8.src
+            
+            a1.src=b7
+            a2.src=b5
+            a3.src=b3
+            a4.src=b6
+            a5.src=b2
+            a6.src=b1
+            a7.src=b8
+            a8.src=b4
+
+        }
+    function demo1()
+    {
+        a=window.setInterval(demo,2000)
+    }
+    function demo2()
+    {
+        window.clearInterval(a)
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width: 630px;
+            height: 200px;
+            margin: 200px auto;
+            background-color: white;
+        }
+        .cls1{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background: black;
+            color: rgb(51, 255, 51);
+            float: left;
+            font-size: 70px; 
+            margin-left: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   <div id="outer">
+    <div id="h" class="cls1">HH</div>
+    <div id="m" class="cls1">MM</div>
+    <div id="s" class="cls1">SS</div>
+    <button onclick="demo1()">Start</button>
+    <button onclick="demo2()">Stop</button>
+</div>
+    <script>
+        /*
+        var hh=0
+        var ss=0
+        var mm=0
+         function demo()
+         {
+             var h=document.getElementById("h")
+             var m=document.getElementById("m")
+             var s=document.getElementById("s") 
+             ss++
+             if(ss>=60)
+             {
+                 ss=0;
+                 mm++;
+             }
+             if(mm>=60)
+             {
+                 mm=0;
+                 hh++;
+             }
+         }
+         h.innerText=hh;
+         m.innerText=mm;
+         s.innerText=ss;
+    
+         function demo1()
+         {
+            a=window.setInterval(demo,1000)
+         }
+         function demo2()
+         {
+            window.clearInterval(a)
+         }
+*/
+
+var hh=0
+var mm=0
+var ss=0;
+function demo()
+{
+var h=document.getElementById("h")
+var m=document.getElementById("m")
+var s=document.getElementById("s")
+
+ss++;
+if(ss>=60)
+{
+ss=0;
+mm++;
+if(mm>=60)
+{
+mm=0;
+hh++;
+}
+}
+s.innerText=ss;
+m.innerText=mm;
+h.innerText=hh;
+}
+function demo1()
+{
+a=window.setInterval(demo,1000)
+}
+function demo2()
+{
+window.clearInterval(a)
+}
+
+    </script>
+</body>
+</html>

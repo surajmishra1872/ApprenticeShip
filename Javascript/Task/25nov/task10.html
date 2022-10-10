@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="id1" placeholder="Enter Your Name"><br/><br/>
+  <input type="text" id="id2" placeholder="Enter Your Mobile No."><br/><br/>
+  <input type="text" id="id3" placeholder="Enter Your Email Id."><br/><br/>
+  <input type="text" id="id4" placeholder="Enter Your Password"><br/><br/>
+  <button onclick="demo()">Click Here</button>
+  <br/><br/>
+  <h1 id="h1"></h1>
+  <h1 id="h2"></h1>
+  <h1 id="h3"></h1>
+  <h1 id="h4"></h1>
+  <script>
+    function demo(){
+    var a=document.getElementById("id1")
+    var b=document.getElementById("id2")
+    var c=document.getElementById("id3")
+    var d=document.getElementById("id4")
+    var e=document.getElementById("h1")
+    var f=document.getElementById("h2")
+    var g=document.getElementById("h3")
+    var h=document.getElementById("h4")
+    e.innerHTML="Your Name is:"+a.value
+    f.innerText="Your Mobile No. is:"+b.value
+    g.innerText="Your Email Id is:"+c.value
+    h.innerText="Yoiur Password is:"+d.value
+  }
+    </script>
+</body>
+</html>

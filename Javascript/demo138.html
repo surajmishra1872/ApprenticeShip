@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<form action="" onsubmit="return demo()" name="frm">
+SELECT COURSE<input type="radio" class="a" name="c"/>HTML
+<input type="radio" class="a" name="c"/>CSS
+<input type="radio" class="a" name="c"/>JS<input type="radio" class="a" name="c"/>JQ
+<input type="Submit" value="SAVE"/> 
+</form>
+<p></p>
+<script>
+"use strict"  //Strict Mode
+function demo()
+{
+var rdbtn=document.getElementsByClassName("a");//[]
+var count=0;
+for(var x of rdbtn)
+{
+if(x.checked==true)
+{
+count++;
+}
+}
+if(count==0)
+{
+document.querySelector("p").innerText="Please select any one option..";
+document.querySelector("p").style.color="red";
+return false;
+}
+}
+</script>
+</body>
+</html>

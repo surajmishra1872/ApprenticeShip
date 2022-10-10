@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+body
+{
+background:black;
+}
+#outer
+{
+height:300px;
+width:900px;
+margin:200px auto;
+}
+.col
+{
+height:250px;
+width:250px;
+background:white;
+border:25px solid red;
+float:left;
+font-size:90px;
+text-align:center;
+line-height:250px;
+color:red;
+font-family:impact;
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="h" class="col">HH</div>
+<div id="m" class="col">MM</div>
+<div id="s" class="col">SS</div>
+<button onclick="demo1()">START</button>
+<button onclick="demo2()">STOP</button>
+</div>
+<script>
+var hh=0
+var mm=0
+var ss=0;
+function demo()
+{
+var h=document.getElementById("h")
+var m=document.getElementById("m")
+var s=document.getElementById("s")
+
+ss++;
+if(ss>=60)
+{
+ss=0;
+mm++;
+if(mm>=60)
+{
+mm=0;
+hh++;
+}
+}
+s.innerText=ss;
+m.innerText=mm;
+h.innerText=hh;
+}
+function demo1()
+{
+a=window.setInterval(demo,1000)
+}
+function demo2()
+{
+window.clearInterval(a)
+}
+</script>
+</body>
+</html>

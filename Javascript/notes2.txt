@@ -1,0 +1,52 @@
+toString
+----------
+=>toString function is used to convert other datatype value into string.
+
+typeof
+---------
+typeof function is used to check type of data presents in variable.
+
+Syntax
+-------
+typeof(variableName)
+
+=>getElementById
+=>getElementsByTagName
+=>getElementsByClassName
+=>querySelector
+=>querySelectorAll
+
+
+getElementsByTagName
+---------------------------------
+=>getElementsByTagName function is used to return collection of all element with specified tag name as collectionHTMLObject.
+=>it is located in document object.
+
+Syntax
+--------
+var a=document.getElementsByTagName("h1")[0].innerText//HTML
+var a1=document.getElementsByTagName("h1")[1].innerText//CSS
+var a2=document.getElementsByTagName("h1")[2].innerText//JS
+var a3=document.getElementsByTagName("h1")[3].innerText//PHP
+Exa:
+var a=document.getElementsByTagName("h1")
+<h1>HTML</h1>
+<h1>CSS</h1>
+<h1>JS</h1>
+<h1>PHP</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

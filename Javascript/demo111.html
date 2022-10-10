@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="demo(event)" action="">
+        <input type="text" id="txt" />
+        <input type="submit" id="save"/>
+    </form>
+    <p></p>
+    <script>
+        function demo(x)
+        {
+            document.querySelector("p").innerText="Welcome to world of JS";
+            var msg=document.querySelector("p")
+            //x.preventDefault();
+
+            var v=document.querySelector("#txt").value //ra
+            if(v.length<3 || v.length>50)
+                {
+                    msg.innerText="Invalid Inputed Name";
+                    msg.style.color="red";
+                    x.preventDefault();
+                }
+        }
+    </script>
+</body>
+</html>
